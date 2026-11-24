@@ -28,16 +28,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check GitHub Pages configuration
+        id: check_pages
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/pages)
+          echo "HTTP response from GitHub Pages API: $STATUS"
+          if [ "$STATUS" = "200" ]; then
+            echo "enabled=true" >> $GITHUB_OUTPUT
+            echo "GitHub Pages is enabled."
+          else
+            echo "enabled=false" >> $GITHUB_OUTPUT
+            echo "::notice title=GitHub Pages Deployment Notice::GitHub Pages is not currently activated in Repo Settings (Source: GitHub Actions). Primary live deployment is active on Vercel at https://toolkit-readiness-agent.vercel.app. To also enable GitHub Pages, navigate to Settings -> Pages and set Source to 'GitHub Actions'."
+          fi
+
       - name: Setup Pages
+        if: steps.check_pages.outputs.enabled == 'true'
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload artifact
+        if: steps.check_pages.outputs.enabled == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
 
       - name: Deploy to GitHub Pages
+        if: steps.check_pages.outputs.enabled == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
