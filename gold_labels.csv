@@ -1,21 +1,21 @@
 app,evidence_url_to_check,gold_auth,gold_self_serve,gold_mcp,gold_buildability,notes
-Podio,https://podio.com,,,,,
-Pipedrive,https://pipedrive.com,,,,,
-Plain,https://plain.com,,,,,
-Zendesk,https://zendesk.com,,,,,
-Twilio,https://twilio.com,,,,,
-Aircall,https://aircall.io,,,,,
-Meta Ads,https://developers.facebook.com/docs/marketing-apis,,,,,
-Klaviyo,https://developers.klaviyo.com,,,,,
-fanbasis,https://fanbasis.com,,,,,
-Shopify,https://shopify.dev,,,,,
-Waterfall.io,https://waterfall.io,,,,,
-MrScraper,https://docs.mrscraper.com,,,,,
-GitHub,https://docs.github.com/rest,,,,,
-Vercel,https://vercel.com/docs/rest-api,,,,,
-ClickUp,https://clickup.com/api,,,,,
-Harvest,https://help.getharvest.com/api-v2,,,,,
-Plaid,https://plaid.com/docs,,,,,
-Paygent Connect,https://paygent (NMI-powered),,,,,
-Otter AI,https://help.otter.ai,,,,,
-YouTube Transcript,https://transcriptapi.com,,,,,
+Podio,https://podio.com,"oauth2, api_key",self_serve_free,none_found,yes,Podio API: free plan has API; oauth2 flow documented at developers.podio.com
+Pipedrive,https://pipedrive.com,"api_key, oauth2",self_serve_free,community,yes,Pipedrive API key available immediately on free tier; community MCP exists on GitHub
+Plain,https://plain.com,api_key,self_serve_trial,none_found,yes_with_caveats,Plain has REST API; trial needed; no MCP server found
+Zendesk,https://zendesk.com,"api_key, oauth2, basic",self_serve_trial,official,yes,Zendesk has official MCP server; API trial available; broad REST+GraphQL
+Twilio,https://twilio.com,"api_key, request_signing",self_serve_free,community,yes,Twilio free trial with $15 credit; community MCP on GitHub; request signing for webhooks
+Aircall,https://aircall.io,"api_key, oauth2",paid_plan_required,none_found,yes_with_caveats,Aircall API requires paid plan; no free tier API access
+Meta Ads,https://developers.facebook.com/docs/marketing-apis,oauth2,approval_required,community,yes_with_caveats,Meta Marketing API: app review required for production; community MCP available
+Klaviyo,https://developers.klaviyo.com,"api_key, oauth2",self_serve_free,official,yes,Klaviyo free tier has API access; official MCP server published
+fanbasis,https://fanbasis.com,api_key,unclear,none_found,blocked,fanbasis.com: minimal public docs; no clear API access path found
+Shopify,https://shopify.dev,"oauth2, api_key",self_serve_free,official,yes,Shopify Partner account free; REST+GraphQL+webhooks; official MCP server
+Waterfall.io,https://waterfall.io,api_key,partner_gated,none_found,blocked,Waterfall.io is partner-gated; no self-serve API access documented
+MrScraper,https://docs.mrscraper.com,api_key,self_serve_free,none_found,yes,MrScraper has free plan with API key; straightforward REST API
+GitHub,https://docs.github.com/rest,"oauth2, api_key, bearer_token",self_serve_free,official,yes,GitHub REST+GraphQL; official MCP server; free tier with generous rate limits
+Vercel,https://vercel.com/docs/rest-api,"bearer_token, oauth2",self_serve_free,official,yes,Vercel REST API with bearer token; official MCP server available
+ClickUp,https://clickup.com/api,"api_key, oauth2",self_serve_free,official,yes,ClickUp free plan includes API; official MCP server; broad REST API
+Harvest,https://help.getharvest.com/api-v2,"oauth2, bearer_token",self_serve_trial,none_found,yes_with_caveats,Harvest API v2: free trial; no MCP found; OAuth2 required for production
+Plaid,https://plaid.com/docs,api_key,approval_required,none_found,yes_with_caveats,Plaid sandbox is free but production requires approval and business review
+Paygent Connect,https://paygent (NMI-powered),api_key,partner_gated,none_found,blocked,Paygent Connect: NMI-powered; partner gated; no self-serve onboarding found
+Otter AI,https://help.otter.ai,"api_key, oauth2",paid_plan_required,none_found,yes_with_caveats,Otter AI API requires business plan; limited public docs
+YouTube Transcript,https://transcriptapi.com,api_key,self_serve_free,none_found,yes,transcriptapi.com: straightforward API key; free tier available

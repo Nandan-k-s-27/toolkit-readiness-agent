@@ -1,0 +1,10 @@
+[
+  {"app": "fanbasis", "issue": "Minimal public documentation; could not find API endpoint or authentication method from public sources."},
+  {"app": "Waterfall.io", "issue": "Partner-gated access; no self-serve developer portal; landing page requires contact-sales."},
+  {"app": "Paygent Connect", "issue": "NMI-powered white-label; API access requires partnership agreement, not self-serve."},
+  {"app": "Gladly", "issue": "Enterprise-only; no public developer docs found; pricing and API access gated behind sales."},
+  {"app": "PitchBook", "issue": "Financial data platform; API access is license-gated; no free or trial tier documented."},
+  {"app": "Clay", "issue": "API surface limited; primary use is UI-driven enrichment workflow; API in early access."},
+  {"app": "higgsfield", "issue": "CLI-first AI video tool; API surface not publicly documented at time of research."},
+  {"app": "Paygent Connect", "issue": "JS-rendered pricing page returned minimal content; human verification recommended."}
+]
