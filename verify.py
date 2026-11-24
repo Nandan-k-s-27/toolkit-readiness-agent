@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""python verify.py sample  -> gold_labels.csv template (stratified 20 apps, 2 per category) to fill BY HAND from real docs
+"""python verify.py sample  -> gold_labels.csv template (stratified 30 apps, 3 per category) to fill BY HAND from real docs
    python verify.py score   -> accuracy.json (pass1 vs final vs your gold labels)"""
 import json, csv, sys, random, pathlib
 ROOT = pathlib.Path(__file__).parent
@@ -14,7 +14,7 @@ if sys.argv[1] == "sample":
     res = json.load(open(ROOT / "results_final.json", encoding="utf-8")); random.seed(7)
     by = {}
     for r in res: by.setdefault(r["category"], []).append(r)
-    pick = [x for c in by.values() for x in random.sample(c, 2)]
+    pick = [x for c in by.values() for x in random.sample(c, 3)]
     with open(ROOT / "gold_labels.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["app", "evidence_url_to_check", *F.values(), "notes"])
         for r in pick: w.writerow([r["app"], (r.get("evidence", {}).get("auth_methods") or {}).get("url", ""), "", "", "", "", ""])

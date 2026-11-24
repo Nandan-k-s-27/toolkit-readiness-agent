@@ -9,7 +9,6 @@ Supported Providers:
 Usage:
   python research.py pass1 [--app Slack] [--workers 4]
   python research.py pass2 [--app Slack]
-  python research.py pass1 --app Slack --demo   # offline demo mode (no keys needed)
 
 Environment:
   GEMINI_API_KEY      Google Gemini API key (Free tier available at aistudio.google.com)
@@ -62,25 +61,42 @@ def search(q, n=4):
     urls = []
     if backend == "composio":
         global _composio
-        from composio import Composio
-        _composio = _composio or Composio()
-        r = _composio.tools.execute(
-            slug=os.getenv("COMPOSIO_SEARCH_SLUG", "COMPOSIO_SEARCH_DUCK_DUCK_GO_SEARCH"),
-            arguments={"query": q}, user_id=os.getenv("COMPOSIO_USER_ID", "default"),
-            dangerously_skip_version_check=True)
-        urls = re.findall(r"https?://[^\s\"'\\<>)]+", json.dumps(r))
-    else:  # direct DuckDuckGo HTML fallback (free, no API key needed)
+        try:
+            from composio import Composio
+            _composio = _composio or Composio()
+            r = _composio.tools.execute(
+                slug=os.getenv("COMPOSIO_SEARCH_SLUG", "COMPOSIO_SEARCH_DUCK_DUCK_GO_SEARCH"),
+                arguments={"query": q}, user_id=os.getenv("COMPOSIO_USER_ID", "default"),
+                dangerously_skip_version_check=True)
+            urls = re.findall(r"https?://[^\s\"'\\<>)]+", json.dumps(r))
+        except Exception as e:
+            print(f"[search composio] {e}", file=sys.stderr)
+    
+    # Try ddgs (duckduckgo_search) first if direct or as fallback
+    if not urls:
+        try:
+            from duckduckgo_search import DDGS
+            res = list(DDGS().text(q, max_results=n))
+            for r in res:
+                if r.get("href"):
+                    urls.append(r["href"])
+        except Exception as e:
+            pass
+
+    # Direct DuckDuckGo HTML fallback
+    if not urls:
         try:
             h = requests.get(
                 "https://html.duckduckgo.com/html/",
-                params={"q": q}, headers=UA, timeout=20).text
+                params={"q": q}, headers=UA, timeout=15).text
             for a in BeautifulSoup(h, "html.parser").select("a.result__a"):
                 u = urllib.parse.parse_qs(
                     urllib.parse.urlparse(a.get("href", "")).query
                 ).get("uddg", [a.get("href", "")])[0]
                 urls.append(u)
         except Exception as e:
-            print(f"[search direct] {e}", file=sys.stderr)
+            pass
+
     seen, out = set(), []
     for u in urls:
         if any(b in u for b in ("duckduckgo", "composio.dev/api", "backend.composio")) or u in seen:
@@ -92,8 +108,13 @@ def fetch(url, cap=9000):
     p = CACHE / (hashlib.sha1(url.encode()).hexdigest() + ".txt")
     if p.exists(): return p.read_text(encoding="utf-8", errors="ignore")
     try:
-        r = requests.get(url, headers=UA, timeout=20)
-        soup = BeautifulSoup(r.text, "html.parser")
+        r = requests.get(url, headers=UA, timeout=15)
+        raw_html = r.text
+        soup = BeautifulSoup(raw_html, "html.parser")
+        
+        # Check for SPA skeleton marker
+        is_spa = any(s in raw_html.lower() for s in ["<div id=\"root\"></div>", "<div id=\"app\"></div>", "enable javascript to run this app"])
+        
         for t in soup(["script", "style", "nav", "footer"]): t.decompose()
         txt = re.sub(r"\s+", " ", soup.get_text(" "))[:cap]
         if r.status_code >= 400: txt = ""
@@ -101,10 +122,26 @@ def fetch(url, cap=9000):
         txt = ""
     p.write_text(txt, encoding="utf-8"); return txt
 
+def get_candidate_doc_urls(hint):
+    if not hint:
+        return []
+    domain = hint.replace("https://", "").replace("http://", "").split("/")[0]
+    sub = domain.split(".")
+    base_domain = ".".join(sub[-2:]) if len(sub) >= 2 else domain
+    return [
+        f"https://{hint}" if not hint.startswith("http") else hint,
+        f"https://developers.{base_domain}",
+        f"https://docs.{base_domain}",
+        f"https://developer.{base_domain}",
+        f"https://{base_domain}/docs",
+        f"https://{base_domain}/api",
+    ]
+
 def gather(app, hint, queries, have=()):
     urls = []
     if hint and not have:
-        urls.append(hint if hint.startswith("http") else "https://" + hint.split()[0])
+        for cu in get_candidate_doc_urls(hint):
+            if cu not in urls: urls.append(cu)
     for q in queries:
         try: urls += search(q, 3)
         except Exception as e: print(f"[search] {app}: {e}", file=sys.stderr)
@@ -231,79 +268,24 @@ def load_apps(only=None):
     rows = list(csv.DictReader(open(ROOT / "apps.csv")))
     return [r for r in rows if not only or r["app"].lower() == only.lower()]
 
-# ---------------------------------------------------------------------------
-# Demo mode: returns a plausible record without hitting any external service
-# ---------------------------------------------------------------------------
-_DEMO_TEMPLATES = {
-    "CRM and Sales": dict(auth_methods=["oauth2", "api_key"], self_serve="self_serve_free",
-        api_type=["rest"], api_breadth="broad", existing_mcp="community",
-        buildability="yes", blocker="none", confidence=0.85),
-    "Support and Helpdesk": dict(auth_methods=["api_key", "oauth2"], self_serve="self_serve_trial",
-        api_type=["rest"], api_breadth="medium", existing_mcp="none_found",
-        buildability="yes_with_caveats", blocker="rate_or_cost", confidence=0.78),
-    "Communications and Messaging": dict(auth_methods=["oauth2", "bearer_token"], self_serve="self_serve_free",
-        api_type=["rest", "websocket"], api_breadth="broad", existing_mcp="official",
-        buildability="yes", blocker="none", confidence=0.90),
-    "Marketing, Ads, Email and Social": dict(auth_methods=["oauth2", "api_key"], self_serve="approval_required",
-        api_type=["rest"], api_breadth="medium", existing_mcp="community",
-        buildability="yes_with_caveats", blocker="approval_gate", confidence=0.72),
-    "Ecommerce": dict(auth_methods=["api_key", "oauth2"], self_serve="self_serve_trial",
-        api_type=["rest", "graphql"], api_breadth="broad", existing_mcp="community",
-        buildability="yes", blocker="none", confidence=0.82),
-    "Data, SEO and Scraping": dict(auth_methods=["api_key"], self_serve="paid_plan_required",
-        api_type=["rest"], api_breadth="medium", existing_mcp="none_found",
-        buildability="yes_with_caveats", blocker="paid_gate", confidence=0.75),
-    "Developer, Infra and Data platforms": dict(auth_methods=["api_key", "bearer_token"], self_serve="self_serve_free",
-        api_type=["rest"], api_breadth="broad", existing_mcp="official",
-        buildability="yes", blocker="none", confidence=0.92),
-    "Productivity and Project Management": dict(auth_methods=["oauth2", "api_key"], self_serve="self_serve_free",
-        api_type=["rest"], api_breadth="broad", existing_mcp="community",
-        buildability="yes", blocker="none", confidence=0.88),
-    "Finance and Fintech": dict(auth_methods=["oauth2", "api_key"], self_serve="paid_plan_required",
-        api_type=["rest"], api_breadth="medium", existing_mcp="none_found",
-        buildability="yes_with_caveats", blocker="paid_gate", confidence=0.70),
-    "AI, Research and Media-native": dict(auth_methods=["api_key"], self_serve="self_serve_trial",
-        api_type=["rest", "sdk_only"], api_breadth="narrow", existing_mcp="none_found",
-        buildability="yes_with_caveats", blocker="unclear", confidence=0.65),
-}
-
-def _demo_record(app, category, hint):
-    tmpl = _DEMO_TEMPLATES.get(category, _DEMO_TEMPLATES["CRM and Sales"])
-    url = hint if hint.startswith("http") else f"https://{hint}"
-    ev = {f: {"url": url, "quote": f"[DEMO] {app} supports {f} as described in developer docs."}
-          for f in EVIDENCE_FIELDS}
-    return dict(**tmpl, one_liner=f"{app} provides APIs for integration and automation workflows.",
-                mcp_url="", blocker_note="Demo mode — run with real keys for verified data.",
-                evidence=ev, evidence_ok={f: False for f in EVIDENCE_FIELDS},
-                needs_human=True, human_reasons=EVIDENCE_FIELDS,
-                log=[], pages=[url])
-
-def pass1(r, demo=False):
+def pass1(r):
     a = r["app"]
-    if demo:
-        rec = _demo_record(a, r["category"], r.get("hint", a + ".com"))
-    else:
-        pages = gather(a, r["hint"], [
-            f"{a} API authentication developer docs",
-            f"{a} API pricing free developer account",
-            f"{a} MCP server"])
-        rec = (extract(a, pages)
-               if pages
-               else {"confidence": 0, "self_serve": "unclear", "buildability": "blocked",
-                     "blocker": "unclear", "auth_methods": [], "existing_mcp": "unknown",
-                     "api_type": []})
-        rec.update(pages=list(pages))
-        check_evidence(rec, pages)
+    pages = gather(a, r["hint"], [
+        f"{a} API authentication developer docs",
+        f"{a} API pricing free developer account",
+        f"{a} MCP server"])
+    rec = (extract(a, pages)
+           if pages
+           else {"confidence": 0, "self_serve": "unclear", "buildability": "blocked",
+                 "blocker": "unclear", "auth_methods": [], "existing_mcp": "unknown",
+                 "api_type": []})
+    rec.update(pages=list(pages))
+    check_evidence(rec, pages)
     rec.update(app=a, category=r["category"], id=int(r["id"]))
     return rec
 
-def pass2(rec, r, demo=False):
+def pass2(rec, r):
     a = rec["app"]
-    if demo:
-        rec["log"] = [{"attempt": 1, "issues": [], "low_conf": False, "note": "demo"}]
-        rec["needs_human"] = False
-        rec["human_reasons"] = []
-        return rec
     pages = {u: fetch(u) for u in rec.get("pages", [])}
     rec["log"] = []
     for attempt in range(2):
@@ -335,14 +317,11 @@ if __name__ == "__main__":
     ap.add_argument("stage", choices=["pass1", "pass2"])
     ap.add_argument("--app", help="Single app name to process")
     ap.add_argument("--workers", type=int, default=4)
-    ap.add_argument("--demo", action="store_true",
-                    help="Demo mode: generate plausible results without hitting any API")
     a = ap.parse_args()
     apps = load_apps(a.app)
 
     provider = get_provider()
-    if not a.demo:
-        print(f"[*] Research agent running stage '{a.stage}' using provider: {provider.upper()}")
+    print(f"[*] Research agent running stage '{a.stage}' using provider: {provider.upper()}")
 
     if a.stage == "pass1":
         # If running a single app, merge into existing results_pass1.json rather than overwriting all 100
@@ -356,7 +335,7 @@ if __name__ == "__main__":
                 pass
 
         with ThreadPoolExecutor(a.workers) as ex:
-            new_res = list(ex.map(lambda r: pass1(r, demo=a.demo), apps))
+            new_res = list(ex.map(pass1, apps))
 
         for item in new_res:
             existing_p1[item["app"]] = item
@@ -387,7 +366,7 @@ if __name__ == "__main__":
                 pass
 
         with ThreadPoolExecutor(a.workers) as ex:
-            new_res = list(ex.map(lambda r: pass2(p1[r["app"]], r, demo=a.demo), apps_to_run))
+            new_res = list(ex.map(lambda r: pass2(p1[r["app"]], r), apps_to_run))
 
         for item in new_res:
             existing_final[item["app"]] = item

@@ -1,6 +1,766 @@
 [
  {
-  "one_liner": "Slack connects teams, people, and AI agents through channels, workflows, and an MCP server.",
+  "one_liner": "Salesforce is the #1 AI CRM platform providing agentic workflows, APIs, and developer tools for enterprise intelligence.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token",
+   "jwt"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "soap"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.salesforce.com",
+    "quote": "Developer : Salesforce APIs, programming guides, SDKs, and reference documentation."
+   },
+   "self_serve": {
+    "url": "https://salesforce.com",
+    "quote": "Start for free"
+   },
+   "api_type": {
+    "url": "https://docs.salesforce.com",
+    "quote": "Developer : Salesforce APIs, programming guides, SDKs, and reference documentation."
+   },
+   "existing_mcp": {
+    "url": "https://salesforce.com",
+    "quote": "Salesforce in Claude combines a prebuilt Salesforce MCP server with 37 ready-to-use sales skills"
+   },
+   "buildability": {
+    "url": "https://salesforce.com",
+    "quote": "Use Salesforce MCPs, APIs, plug-ins, skills, and developer tools to bring Salesforce into any AI, agent, application, or custom interface"
+   }
+  },
+  "pages": [
+   "https://salesforce.com",
+   "https://docs.salesforce.com"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "id": 1
+ },
+ {
+  "one_liner": "Customer platform connecting marketing, sales, service, and data with AI agents and tools.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "API access available via developer platform, though specific endpoints require correct scopes and plans.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.hubspot.com",
+    "quote": "Explore our docs to learn more about our APIs, Apps, Developer Tooling, and CMS"
+   },
+   "self_serve": {
+    "url": "https://hubspot.com",
+    "quote": "Get started free with HubSpot's free tools"
+   },
+   "api_type": {
+    "url": "https://developers.hubspot.com",
+    "quote": "Explore our docs to learn more about our APIs, Apps, Developer Tooling, and CMS"
+   },
+   "existing_mcp": {
+    "url": "https://developers.hubspot.com",
+    "quote": "Explore our docs to learn more about our APIs, Apps, Developer Tooling, and CMS"
+   },
+   "buildability": {
+    "url": "https://developers.hubspot.com",
+    "quote": "Efficiently integrate the data your solutions need\u2014so you can automate workflows and scale with confidence."
+   }
+  },
+  "pages": [
+   "https://hubspot.com",
+   "https://developers.hubspot.com",
+   "https://developer.hubspot.com",
+   "https://www.hubspot.com/",
+   "https://app.hubspot.com/login"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "id": 2
+ },
+ {
+  "one_liner": "Pipedrive is an easy and effective sales CRM and pipeline management software with automation and AI features.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.pipedrive.com",
+    "quote": "Easily build integrations with our API and developer platform to reach over 100,000 companies through the Pipedrive Marketplace"
+   },
+   "self_serve": {
+    "url": "https://developers.pipedrive.com",
+    "quote": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment"
+   },
+   "api_type": {
+    "url": "https://www.pipedrive.com/en/products",
+    "quote": "Eliminate sales reps\u2019 busywork and data entry with task automation, one-click contact management, webhooks and an open API"
+   },
+   "existing_mcp": {
+    "url": "https://developers.pipedrive.com",
+    "quote": "Pipedrive API clients Kick-start your development by using one of the many API clients available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developers.pipedrive.com",
+    "quote": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment"
+   }
+  },
+  "pages": [
+   "https://pipedrive.com",
+   "https://developers.pipedrive.com",
+   "https://developer.pipedrive.com",
+   "https://pipedrive.com/api",
+   "https://www.pipedrive.com/",
+   "https://www.pipedrive.com/en/products"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "id": 3
+ },
+ {
+  "one_liner": "Attio is a customizable, data-driven CRM platform featuring an App SDK, REST API, MCP support, and SQL querying.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://attio.com/docs",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://attio.com/api",
+    "quote": "To get up and running, read our guide on how to authenticate requests ."
+   },
+   "self_serve": {
+    "url": "https://attio.com",
+    "quote": "Start for free"
+   },
+   "api_type": {
+    "url": "https://attio.com/api",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS."
+   },
+   "existing_mcp": {
+    "url": "https://attio.com/docs",
+    "quote": "MCP Manage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and manage your Attio workspace."
+   },
+   "buildability": {
+    "url": "https://attio.com/docs",
+    "quote": "In these guides, you can find everything you need to build powerful integrations, automations and data pipelines on top of Attio."
+   }
+  },
+  "pages": [
+   "https://attio.com",
+   "https://docs.attio.com",
+   "https://attio.com/docs",
+   "https://attio.com/api",
+   "https://translate.google.co.in/details",
+   "https://tvu.pspl.world/home/regulations_syllabus"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "id": 4
+ },
+ {
+  "one_liner": "An open-source CRM platform providing technical teams with building blocks and SDKs to build custom CRMs.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://twenty.com",
+    "quote": "API API - Key name 1162 Sammy Creek Ivan Zhao False $750,000 notion Productivity Software Ivan Zhao"
+   },
+   "self_serve": {
+    "url": "https://docs.twenty.com",
+    "quote": "Ready to get started? Set up Twenty in under 5 minutes \u2014 cloud or self-hosted."
+   },
+   "api_type": {
+    "url": "https://twenty.com",
+    "quote": "import { defineObject, FieldType, RelationType } from 'twenty-sdk';"
+   },
+   "existing_mcp": {
+    "url": "https://docs.twenty.com",
+    "quote": "Built for Agents Agents operate inside your data model with real permissions. Skills, Tools, MCP."
+   },
+   "buildability": {
+    "url": "https://twenty.com",
+    "quote": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves."
+   }
+  },
+  "pages": [
+   "https://twenty.com",
+   "https://docs.twenty.com",
+   "https://support.google.com/drive/answer/2424384?hl=nl&co=GENIE.Platform=iOS",
+   "https://support.google.com/googleone/?hl=en-GB",
+   "https://testkart.in/mock-test/bihar-librarian-eligibility-test-slet-mock-test-series-10-full-length-mocks",
+   "https://seatbeat.in/blogs/bihar-librarian-let-mock-test-2026-online"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "id": 5
+ },
+ {
+  "one_liner": "A work management platform providing customizable no-code workspaces, flexible workflows, and a programmable API.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.podio.com",
+    "quote": "Get an API key Get started right away - generate your API key ."
+   },
+   "self_serve": {
+    "url": "https://developers.podio.com",
+    "quote": "You'll need a Podio account, first of all. Then you should review our Terms of API use and then grab an API key for each app you want to build from your account settings page."
+   },
+   "api_type": {
+    "url": "https://developers.podio.com",
+    "quote": "The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for PHP , .NET , Ruby , Java , Python , Android and Objective-C"
+   },
+   "existing_mcp": {
+    "url": "https://developers.podio.com",
+    "quote": "The Podio API lets you integrate with other services and build tools and applications on top of Podio"
+   },
+   "buildability": {
+    "url": "https://developers.podio.com",
+    "quote": "The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for PHP , .NET , Ruby , Java , Python , Android and Objective-C"
+   }
+  },
+  "pages": [
+   "https://podio.com",
+   "https://developers.podio.com",
+   "https://docs.podio.com",
+   "https://developer.podio.com",
+   "https://podio.com/docs",
+   "https://podio.com/api"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "id": 6
+ },
+ {
+  "one_liner": "Top-rated sales CRM software with intelligent automation, custom modules, AI agents, and a fully-featured free developer edition.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://developers.zoho.com",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://www.zoho.com/crm/developer/developer-edition.html",
+    "quote": "Zoho CRM's Developer Edition comes with its own built-in Code Editor. Use Deluge scripting to create and test serverless functions that perform integration tasks and event-driven automation."
+   },
+   "self_serve": {
+    "url": "https://www.zoho.com/crm/developer/developer-edition.html",
+    "quote": "Zoho CRM's free developer edition is a fully-featured application environment that helps developers explore Zoho CRM and test their applications. Sign Up For Free"
+   },
+   "api_type": {
+    "url": "https://developers.zoho.com",
+    "quote": "Zoho APIs Build integrations for Zoho using any programming language and infrastructure. Extract or input data in an XML or JSON format between Zoho and third-party apps."
+   },
+   "existing_mcp": {
+    "url": "https://developers.zoho.com",
+    "quote": "MCP (Model Context Protocol) Turn natural language into real business outcomes by building agent-driven actions across your apps that connect LLMs like GPT or Claude to Zoho\u2019s APIs..."
+   },
+   "buildability": {
+    "url": "https://www.zoho.com/crm/developer/developer-edition.html",
+    "quote": "The Developer Edition is totally free and an added bonus is that it allows for a single Zoho account to have two CRMs, a normal one and a developer one."
+   }
+  },
+  "pages": [
+   "https://zoho.com/crm",
+   "https://developers.zoho.com",
+   "https://developer.zoho.com",
+   "https://www.zoho.com/crm/developer/developer-edition.html",
+   "https://www.zoho.com/crm/developer/docs/dev-edition.html",
+   "https://help.zoho.com/portal/en/community/topic/kaizen-34-api-credits"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": false,
+   "buildability": false
+  },
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "id": 7
+ },
+ {
+  "one_liner": "A sales CRM built for teams that sell, combining calling, email, SMS, pipeline management, reporting, and AI.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://developer.close.com/",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1.0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.close.com/",
+    "quote": "Authentication API keys for scripts or OAuth 2.0 for user-facing integrations."
+   },
+   "self_serve": {
+    "url": "https://close.com",
+    "quote": "Try Close free or Sign up with Google"
+   },
+   "api_type": {
+    "url": "https://developer.close.com/",
+    "quote": "REST API Reference Full endpoint docs with schemas, examples, and an interactive API explorer. Webhooks & Events Real-time event notifications and a 30-day event log."
+   },
+   "existing_mcp": {
+    "url": "https://developer.close.com/",
+    "quote": "MCP Server Model Context Protocol for AI agents."
+   },
+   "buildability": {
+    "url": "https://developer.close.com/",
+    "quote": "Whether you\u2019re a Close customer automating your sales process or a partner building an integration, the Close Developer Platform gives everything you or your AI agents need."
+   }
+  },
+  "pages": [
+   "https://close.com",
+   "https://developer.close.com",
+   "https://close.com/api",
+   "https://www.close.com/",
+   "https://app.close.com/login/",
+   "https://developer.close.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Close",
+  "category": "CRM and Sales",
+  "id": 8
+ },
+ {
+  "one_liner": "Google Workspace-native CRM software with a REST API for managing contacts, leads, deals, projects, and tasks.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "paid_gate",
+  "blocker_note": "API access starts on the Professional plan ($59+/mo).",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://www.onegtmlab.dev/tool-directory/crm/copper",
+    "quote": "Basic Auth API key"
+   },
+   "self_serve": {
+    "url": "https://www.onegtmlab.dev/tool-directory/crm/copper",
+    "quote": "API access starts on the Professional plan."
+   },
+   "api_type": {
+    "url": "https://developer.copper.com",
+    "quote": "The Copper Developer API (\"Dev API\") provides a RESTful interface with JSON-formatted responses to access most Copper resources."
+   },
+   "existing_mcp": {
+    "url": "https://www.onegtmlab.dev/tool-directory/crm/copper",
+    "quote": "Official MCP: No official server"
+   },
+   "buildability": {
+    "url": "https://www.onegtmlab.dev/tool-directory/crm/copper",
+    "quote": "API access starts on the Professional plan."
+   }
+  },
+  "pages": [
+   "https://copper.com",
+   "https://developer.copper.com",
+   "https://en.wikipedia.org/wiki/Copper",
+   "https://copperprice.in/",
+   "https://www.onegtmlab.dev/tool-directory/crm/copper",
+   "https://developer.copper.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": false,
+   "buildability": true
+  },
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "id": 9
+ },
+ {
+  "one_liner": "AI-powered deal and relationship intelligence platform for professional firms with an official MCP server and REST API.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://api.docs.dealcloud.com/mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://api.docs.dealcloud.com",
+    "quote": "API Keys Authorization Token"
+   },
+   "self_serve": {
+    "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+    "quote": "Licensing DealCloud with Celeste license."
+   },
+   "api_type": {
+    "url": "https://api.docs.dealcloud.com",
+    "quote": "Intapp REST Client"
+   },
+   "existing_mcp": {
+    "url": "https://api.docs.dealcloud.com/mcp",
+    "quote": "DealCloud MCP Server"
+   },
+   "buildability": {
+    "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+    "quote": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+   }
+  },
+  "pages": [
+   "https://api.docs.dealcloud.com",
+   "https://dealcloud.com/docs",
+   "https://dealcloud.com/api",
+   "https://www.intapp.com/dealcloud/",
+   "https://api.docs.dealcloud.com/mcp",
+   "https://api.docs.dealcloud.com/mcp/getting-started"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "id": 10
+ },
+ {
+  "one_liner": "AI-powered customer service platform providing ticketing, support, messaging, and knowledge base APIs and SDKs.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token",
+   "basic"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "sdk_only",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://zendesk.com/api",
+    "quote": "For each API, you'll find information about who can authenticate requests, detailed descriptions of endpoints, example requests, and other essential information"
+   },
+   "self_serve": {
+    "url": "https://developer.zendesk.com",
+    "quote": "Try out the Sunshine Platform with a free, 14-day trial account. Create an account"
+   },
+   "api_type": {
+    "url": "https://developer.zendesk.com",
+    "quote": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses."
+   },
+   "existing_mcp": {
+    "url": "https://zendesk.com/api",
+    "quote": "API Reference Welcome to the Zendesk API reference docs."
+   },
+   "buildability": {
+    "url": "https://zendesk.com/api",
+    "quote": "You'll find APIs for ticketing, help center, live chat, voice, sales CRM as well as some features that span capabilities, such as omnichannel routing and custom data."
+   }
+  },
+  "pages": [
+   "https://zendesk.com",
+   "https://developers.zendesk.com",
+   "https://developer.zendesk.com",
+   "https://zendesk.com/api",
+   "https://www.whatsapp.com/",
+   "https://www.whatsapp.com/download"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "id": 11
+ },
+ {
+  "one_liner": "A complete system for human and AI customer service featuring an omnichannel helpdesk and Fin AI agent.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.intercom.com",
+    "quote": "Create seamless customized experiences in the Intercom Help Desk and Messenger using our APIs and SDKS."
+   },
+   "self_serve": {
+    "url": "https://intercom.com",
+    "quote": "Get started by setting up a free development workspace to test and publish your app. Sign up for free"
+   },
+   "api_type": {
+    "url": "https://developers.intercom.com",
+    "quote": "Build an integration using webhooks and the Tickets API to create a GitHub issue when a ticket is created in Intercom."
+   },
+   "existing_mcp": {
+    "url": "https://intercom.com",
+    "quote": "Fin pulls in customer data and takes action through APIs or MCP."
+   },
+   "buildability": {
+    "url": "https://developers.intercom.com",
+    "quote": "Get started by setting up a free development workspace to test and publish your app. Sign up for free"
+   }
+  },
+  "pages": [
+   "https://intercom.com",
+   "https://developers.intercom.com",
+   "https://docs.intercom.com",
+   "https://intercom.com/docs",
+   "https://intercom.com/api",
+   "https://www.intercom.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": false,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "id": 12
+ },
+ {
+  "one_liner": "AI-powered customer service software and helpdesk platform with ready-to-use AI, automated workflows, and developer APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.freshdesk.com",
+    "quote": "Log in with your Freshdesk account Enter your helpdesk URL to proceed to login"
+   },
+   "self_serve": {
+    "url": "https://developers.freshdesk.com",
+    "quote": "Signup for free"
+   },
+   "api_type": {
+    "url": "https://developers.freshdesk.com",
+    "quote": "All the endpoints you need to access and manage your data, and bridge your helpdesk with the other tools you use. View the API Docs"
+   },
+   "existing_mcp": {
+    "url": "https://freshdesk.com",
+    "quote": "Through MCP, bring customer data into everyday workflows and automate support at scale. Explore Freshdesk MCP"
+   },
+   "buildability": {
+    "url": "https://developers.freshdesk.com",
+    "quote": "All the endpoints you need to access and manage your data, and bridge your helpdesk with the other tools you use."
+   }
+  },
+  "pages": [
+   "https://freshdesk.com",
+   "https://developers.freshdesk.com",
+   "https://developer.freshdesk.com",
+   "https://freshdesk.com/docs",
+   "https://forums.commentcamarche.net/forum/affich-33999260-carte-sim-se-deconnecte-sans-arret",
+   "https://forums.commentcamarche.net/forum/affich-3241898-office2003-supprimer-liaison-publipostage"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "id": 13
+ },
+ {
+  "one_liner": "A customer service and operations platform powered by AI agents and shared team inboxes.",
   "auth_methods": [
    "oauth2",
    "bearer_token"
@@ -11,36 +771,446 @@
    "websocket"
   ],
   "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://dev.frontapp.com/docs/authentication",
+    "quote": "The Core API uses Bearer tokens to authenticate its user. You MUST send the token for each request in the Authorization header. The token MUST be preceded by Bearer . ... There are two ways to get a Bearer token \u2014 through API tokens in your settings or through an OAuth implementation ."
+   },
+   "self_serve": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You can create a developer account by signing up here . You\u2019ll get access to a free developer environment that will provide everything you need to begin building with our APIs."
+   },
+   "api_type": {
+    "url": "https://front.com/api",
+    "quote": "Through our flexible, robust REST API and 160+ integrations, Front connects your CRM (including Salesforce), core apps, and external systems directly to customer conversations."
+   },
+   "existing_mcp": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "MCP Server Access Front data and actions through the MCP protocol, allowing AI agents like Claude and ChatGPT to read and reply to conversations and other Front resources."
+   },
+   "buildability": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "quote": "You can create a developer account by signing up here . You\u2019ll get access to a free developer environment that will provide everything you need to begin building with our APIs."
+   }
+  },
+  "pages": [
+   "https://front.com",
+   "https://front.com/api",
+   "https://dev.frontapp.com/docs/welcome",
+   "https://dev.frontapp.com/docs/authentication",
+   "https://help.front.com/en/articles/2309",
+   "https://support.google.com/youtube/troubleshooter/13572679?hl=en-GB"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "id": 14
+ },
+ {
+  "one_liner": "An agentic B2B support platform enabling human-AI collaboration for customer operations.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "unknown",
   "existing_mcp": "official",
+  "mcp_url": "https://docs.usepylon.com",
+  "buildability": "yes_with_caveats",
+  "blocker": "unclear",
+  "blocker_note": "API authentication and access details require further investigation into the developer documentation.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.usepylon.com",
+    "quote": "Developer API"
+   },
+   "self_serve": {
+    "url": "https://usepylon.com",
+    "quote": "Book a demo"
+   },
+   "api_type": {
+    "url": "https://docs.usepylon.com",
+    "quote": "Developer API"
+   },
+   "existing_mcp": {
+    "url": "https://docs.usepylon.com",
+    "quote": "Agents can also search and read this documentation through its MCP server ."
+   },
+   "buildability": {
+    "url": "https://docs.usepylon.com",
+    "quote": "Pylon MCP"
+   }
+  },
+  "pages": [
+   "https://usepylon.com",
+   "https://docs.usepylon.com",
+   "https://forum.lowyat.net/topic/5556445",
+   "https://forum.lowyat.net/topic/5538738",
+   "https://jingyan.baidu.com/article/020278118ba1ed1bcc9ce506.html",
+   "https://jingyan.baidu.com/article/9f63fb916663e2c8400f0eb0.html"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "id": 15
+ },
+ {
+  "one_liner": "Cloud help desk software for small and growing teams featuring shared inbox, live chat, and AI agents.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "unclear"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "unclear",
+  "blocker_note": "API details and developer documentation are not mentioned on the provided page excerpt.",
+  "confidence": 0.4,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://liveagent.com",
+    "quote": "LiveAgent is cloud help desk software for small and growing support teams: email, live chat, phone and social media in one shared inbox, with AI agents that answer customers and hand over to your people."
+   },
+   "self_serve": {
+    "url": "https://liveagent.com",
+    "quote": "30-day free trial No credit card required No setup fee Start free trial"
+   },
+   "api_type": {
+    "url": "https://liveagent.com",
+    "quote": "200+ integrations connect tools like Shopify, Slack and Mailchimp."
+   },
+   "existing_mcp": {
+    "url": "https://liveagent.com",
+    "quote": "200+ integrations connect tools like Shopify, Slack and Mailchimp."
+   },
+   "buildability": {
+    "url": "https://liveagent.com",
+    "quote": "LiveAgent doesn't charge for AI: you connect your own AI account and our team sets it up for free."
+   }
+  },
+  "pages": [
+   "https://liveagent.com",
+   "https://support.google.com/youtube/?Hl=en",
+   "https://support.google.com/youtubetv/?hl=en",
+   "https://support.google.com/youtube/answer/3037019?hl=pl"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "id": 16
+ },
+ {
+  "one_liner": "Plain is the agentic platform to orchestrate customer work and support infrastructure for B2B teams.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.plain.com",
+    "quote": "Everything the app can do, the GraphQL API can do"
+   },
+   "self_serve": {
+    "url": "https://plain.com",
+    "quote": "Get your support running on Plain in minutes. Book a demo Start for free"
+   },
+   "api_type": {
+    "url": "https://docs.plain.com",
+    "quote": "Everything the app can do, the GraphQL API can do, so you can automate a workflow, build a support portal inside your own product, or run your own agent against the same data your team uses."
+   },
+   "existing_mcp": {
+    "url": "https://docs.plain.com",
+    "quote": "What is Plain? Plain is a support platform for B2B teams, built API-first so you can change how it works rather than work around it."
+   },
+   "buildability": {
+    "url": "https://docs.plain.com",
+    "quote": "Everything the app can do, the GraphQL API can do, so you can automate a workflow, build a support portal inside your own product, or run your own agent against the same data your team uses."
+   }
+  },
+  "pages": [
+   "https://plain.com",
+   "https://docs.plain.com",
+   "https://plain.com/docs",
+   "https://translate.google.co.in/details",
+   "https://sunrisershyderabad.in/",
+   "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "id": 17
+ },
+ {
+  "one_liner": "Help Scout is an AI-driven customer support platform providing shared inboxes, knowledge bases, and live chat tools.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://helpscout.com/docs",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.helpscout.com",
+    "quote": "Inbox API - read and write data to Help Scout inboxes"
+   },
+   "self_serve": {
+    "url": "https://helpscout.com",
+    "quote": "Start for Free Get a Demo"
+   },
+   "api_type": {
+    "url": "https://developer.helpscout.com",
+    "quote": "Inbox API - read and write data to Help Scout inboxes Chat API - read and answer live Beacon chats while they are still open Docs API - read and write data to your Docs sites"
+   },
+   "existing_mcp": {
+    "url": "https://helpscout.com/docs",
+    "quote": "Help Scout MCP gives external AI agents secure access to Docs so your team can quickly reference them from their tool of choice."
+   },
+   "buildability": {
+    "url": "https://developer.helpscout.com",
+    "quote": "Apps - display your own content as an internal sidebar application in the Inbox Beacon - live chat, help docs, and a customer portal all in one Inbox API - read and write data to Help Scout inboxes"
+   }
+  },
+  "pages": [
+   "https://helpscout.com",
+   "https://docs.helpscout.com",
+   "https://developer.helpscout.com",
+   "https://helpscout.com/docs",
+   "https://support.google.com/?hl=en",
+   "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "id": 18
+ },
+ {
+  "one_liner": "Conversational AI and customer support helpdesk platform for ecommerce brands with native Shopify integration.",
+  "auth_methods": [
+   "basic",
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
   "mcp_url": "",
   "buildability": "yes",
   "blocker": "none",
   "blocker_note": "none",
-  "confidence": 0.8,
+  "confidence": 1,
   "evidence": {
    "auth_methods": {
-    "url": "https://slack.com",
-    "quote": "Feature enhancement Gmail Domain-Wide Auth (DWA) Admins can connect Gmail to Slack org-wide with a single configuration"
+    "url": "https://developers.gorgias.com/reference/authentication",
+    "quote": "The Gorgias API supports two authentication methods: \ud83d\udd10 Private app \u2192 API key \ud83d\udc65 Public app \u2192 OAuth2 Using OAuth2 is mandatory for public apps."
    },
    "self_serve": {
-    "url": "https://slack.com",
-    "quote": "Get started Find your subscription"
+    "url": "https://developers.gorgias.com/",
+    "quote": "For Private apps there is no need for approval. Go ahead and use it!"
    },
    "api_type": {
-    "url": "https://slack.com",
-    "quote": "Slack lists in the Slack MCP server AI assistants like Claude can now create, read, update and delete Slack lists and records through the MCP server."
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "The Gorgias REST API lets you read and write data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication"
    },
    "existing_mcp": {
-    "url": "https://slack.com",
-    "quote": "Slack lists in the Slack MCP server AI assistants like Claude can now create, read, update and delete Slack lists and records through the MCP server."
+    "url": "https://developers.gorgias.com/",
+    "quote": "Home Developer Documentation Explore our guides and technical documentation to integrate with Gorgias."
    },
    "buildability": {
-    "url": "https://slack.com",
-    "quote": "Slack lists in the Slack MCP server AI assistants like Claude can now create, read, update and delete Slack lists and records through the MCP server."
+    "url": "https://developers.gorgias.com/",
+    "quote": "For Private apps there is no need for approval. Go ahead and use it!"
    }
   },
   "pages": [
-   "https://slack.com"
+   "https://gorgias.com",
+   "https://developers.gorgias.com",
+   "https://docs.gorgias.com",
+   "https://developers.gorgias.com/",
+   "https://developers.gorgias.com/reference/authentication",
+   "https://docs.gorgias.com/en-US/rest-api-208286"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "id": 19
+ },
+ {
+  "one_liner": "Agentic commerce and customer service platform featuring conversational AI, chat SDKs, and REST APIs.",
+  "auth_methods": [
+   "bearer_token",
+   "other"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.gladly.com",
+    "quote": "Looking to extend Gladly, use Gladly\u2019s REST APIs, receive notifications with webhooks, build an App Platform integration, or export data? You've come to the right place."
+   },
+   "self_serve": {
+    "url": "https://gladly.com",
+    "quote": "Commerce AI for every customer moment. Get a Demo Try it yourself"
+   },
+   "api_type": {
+    "url": "https://developer.gladly.com",
+    "quote": "REST API Integrate seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services."
+   },
+   "existing_mcp": {
+    "url": "https://developer.gladly.com",
+    "quote": "App Platform Build integrations with external systems to take action and retrieve data. Learn more REST API Integrate seamlessly with Gladly by enabling a connector"
+   },
+   "buildability": {
+    "url": "https://developer.gladly.com",
+    "quote": "Embed Chat SDK in your website or app to let customers search for answers or contact your customer service team."
+   }
+  },
+  "pages": [
+   "https://gladly.com",
+   "https://developer.gladly.com",
+   "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+   "https://support.microsoft.com/en-us/windows/",
+   "https://www.elevenforum.com/t/get-and-give-remote-assistance-with-quick-assist-app-in-windows-11.13205/",
+   "https://forum.lowyat.net/topic/5580378"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "id": 20
+ },
+ {
+  "one_liner": "Slack connects teams through channels, messages, and AI agents with developer tools.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://mcp.slack.com/mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://slack.com/api",
+    "quote": "Copy the bot token ( xoxb- ) from OAuth & Permissions . For Socket Mode, create an app-level token ( xapp- ) with connections:write under Basic Information ."
+   },
+   "self_serve": {
+    "url": "https://slack.com/api",
+    "quote": "Some AI features need a paid plan; a free Developer Program sandbox has them."
+   },
+   "api_type": {
+    "url": "https://slack.com/api",
+    "quote": "For Socket Mode, create an app-level token ( xapp- ) with connections:write under Basic Information ."
+   },
+   "existing_mcp": {
+    "url": "https://slack.com/api",
+    "quote": "Server URL https://mcp.slack.com/mcp"
+   },
+   "buildability": {
+    "url": "https://slack.com/api",
+    "quote": "Pick how you like to build and have something running in Slack in minutes."
+   }
+  },
+  "pages": [
+   "https://slack.com",
+   "https://slack.com/api",
+   "https://www.crazygames.com/t/car",
+   "https://www.crazygames.com/",
+   "https://www.crazygames.com/c/action"
   ],
   "evidence_ok": {
    "auth_methods": true,
@@ -52,5 +1222,4550 @@
   "app": "Slack",
   "category": "Communications and Messaging",
   "id": 21
+ },
+ {
+  "one_liner": "Conversational AI and APIs for SMS, Email, Voice, and customer engagement.",
+  "auth_methods": [
+   "basic",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://twilio.com",
+    "quote": "curl -X POST \"https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json\" \\\n --data-urlencode \"Body=Hi there\" \\\n --data-urlencode \"From=+15017122661\" \\\n --data-urlencode \"To=+15558675310\" \\\n -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN"
+   },
+   "self_serve": {
+    "url": "https://twilio.com",
+    "quote": "Sign up for a free Twilio account and grab one of our official server-side SDKs to get started."
+   },
+   "api_type": {
+    "url": "https://twilio.com",
+    "quote": "Build better and engage your customers across all channels with our API reference documentation, quickstarts, SDKs and multi-language code samples."
+   },
+   "existing_mcp": {
+    "url": "https://docs.twilio.com",
+    "quote": "OpenAPI Integrate our API with community tools for mocking, testing, generating libraries, Postman integrations, and more."
+   },
+   "buildability": {
+    "url": "https://twilio.com",
+    "quote": "Sign up for a free Twilio account and grab one of our official server-side SDKs to get started. Send your first text message, phone call, or email in minutes."
+   }
+  },
+  "pages": [
+   "https://twilio.com",
+   "https://developers.twilio.com",
+   "https://docs.twilio.com",
+   "https://developer.twilio.com",
+   "https://twilio.com/docs",
+   "https://twilio.com/api"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "id": 22
+ },
+ {
+  "one_liner": "Zoho Cliq provides team chat, communication software, and developer tools for business collaboration and workflow automation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+    "quote": "Zoho Cliq's Rest API's follows the OAuth 2.0 protocol to authorize and authenticate requests. Each API request must include an OAuth token in order to receive a success response."
+   },
+   "self_serve": {
+    "url": "https://zoho.com/cliq",
+    "quote": "Try for free ... Start your 15-day free trial ... Sign up for free"
+   },
+   "api_type": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+    "quote": "REST is a kind of web-service architecture used for communication between two applications. REST API is organized around HTTP protocols"
+   },
+   "existing_mcp": {
+    "url": "https://developers.zoho.com",
+    "quote": "MCP (Model Context Protocol) Turn natural language into real business outcomes by building agent-driven actions across your apps that connect LLMs like GPT or Claude to Zoho\u2019s APIs"
+   },
+   "buildability": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+    "quote": "Cliq API is standardized around REST, allowing you to perform read and write operations that you do with our web client."
+   }
+  },
+  "pages": [
+   "https://zoho.com/cliq",
+   "https://developers.zoho.com",
+   "https://developer.zoho.com",
+   "https://www.zoho.com/cliq/help/restapi/v2/",
+   "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+   "https://support.mozilla.org/en-us/kb/enable-and-disable-cookies-website-preferences"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": false,
+   "api_type": true,
+   "existing_mcp": false,
+   "buildability": true
+  },
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "id": 23
+ },
+ {
+  "one_liner": "Productivity superapp combining chat, meetings, docs, project management, and automated workflows into a single digital hub.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.6,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://lark.com.sg/",
+    "quote": "Developers/Applications Integrations/APIs"
+   },
+   "self_serve": {
+    "url": "https://lark.com.sg/",
+    "quote": "Starter Free for everyone Up to 20 users"
+   },
+   "api_type": {
+    "url": "https://lark.com.sg/",
+    "quote": "Integrations/APIs"
+   },
+   "existing_mcp": {
+    "url": "https://lark.com.sg/",
+    "quote": "Developers/Applications Integrations/APIs"
+   },
+   "buildability": {
+    "url": "https://lark.com.sg/",
+    "quote": "Developers/Applications Integrations/APIs"
+   }
+  },
+  "pages": [
+   "https://lark.com.sg/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": false,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "id": 24
+ },
+ {
+  "one_liner": "Pumble is a team communication app featuring channels, direct messaging, video conferencing, file sharing, and an MCP server for AI agents.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://pumble.com/pricing",
+    "quote": "Single sign-on (SSO) Manage access using SSO (SAML2, OAuth2)"
+   },
+   "self_serve": {
+    "url": "https://pumble.com/",
+    "quote": "Free Forever Unlimited users Unlimited channels Unlimited message history See upgrades"
+   },
+   "api_type": {
+    "url": "https://pumble.com/",
+    "quote": "Connect AI agents Use Pumble\u2019s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more."
+   },
+   "existing_mcp": {
+    "url": "https://pumble.com/",
+    "quote": "Connect AI agents Use Pumble\u2019s MCP server to optimize collaboration with AI agents. Summarize conversations, find lost files, automate updates, and much more."
+   },
+   "buildability": {
+    "url": "https://pumble.com/",
+    "quote": "Connect AI agents Use Pumble\u2019s MCP server to optimize collaboration with AI agents."
+   }
+  },
+  "pages": [
+   "https://pumble.com",
+   "https://pumble.com/",
+   "https://pumble.com/apps",
+   "https://pumble.com/pricing",
+   "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features/",
+   "https://developer.trimble.com/en/pricing"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": false,
+   "buildability": false
+  },
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "id": 25
+ },
+ {
+  "one_liner": "Discord is a voice, video, and text communication service for building communities and gaming.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.discord.com",
+    "quote": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more."
+   },
+   "self_serve": {
+    "url": "https://docs.discord.com",
+    "quote": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more."
+   },
+   "api_type": {
+    "url": "https://docs.discord.com",
+    "quote": "Build automated apps, commands, and integrations that run inside Discord servers."
+   },
+   "existing_mcp": {
+    "url": "https://docs.discord.com",
+    "quote": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more."
+   },
+   "buildability": {
+    "url": "https://docs.discord.com",
+    "quote": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more."
+   }
+  },
+  "pages": [
+   "https://discord.com",
+   "https://docs.discord.com",
+   "https://discord.com/",
+   "https://en.wikipedia.org/wiki/Discord"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "id": 26
+ },
+ {
+  "one_liner": "Cloud-based messaging app offering Bot API, MTProto Telegram API, TDLib, and Gateway API for developers.",
+  "auth_methods": [
+   "api_key",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://core.telegram.org",
+    "quote": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API."
+   },
+   "self_serve": {
+    "url": "https://core.telegram.org",
+    "quote": "You are welcome to use both APIs free of charge."
+   },
+   "api_type": {
+    "url": "https://core.telegram.org",
+    "quote": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API."
+   },
+   "existing_mcp": {
+    "url": "https://core.telegram.org",
+    "quote": "Telegram APIs We offer three kinds of APIs for developers."
+   },
+   "buildability": {
+    "url": "https://core.telegram.org",
+    "quote": "You are welcome to use both APIs free of charge."
+   }
+  },
+  "pages": [
+   "https://core.telegram.org",
+   "https://developers.telegram.org",
+   "https://docs.telegram.org",
+   "https://developer.telegram.org",
+   "https://telegram.org/docs",
+   "https://telegram.org/api"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "id": 27
+ },
+ {
+  "one_liner": "Enterprise-grade APIs for messaging, calling, and managing business operations on WhatsApp.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "webhook"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "headers = {\n \"Authorization\": \"Bearer <ACCESS_TOKEN>\",\n \"Content-Type\": \"application/json\",\n}"
+   },
+   "self_serve": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "Get started Demo the API Preview an interactive experience showing how Jasper\u2019s Market (our demo retail business) connects with customers using the WhatsApp Business Platform."
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "url = \"https://graph.facebook.com/<API_VERSION>/<WHATSAPP_BUSINESS_PHONE_NUMBER_ID>/messages\""
+   },
+   "existing_mcp": {
+    "url": "https://developers.facebook.com",
+    "quote": "SEPTEMBER 15, 2026 Announcing WhatsApp Business Tools MCP: Set up and manage WhatsApp business from your AI agent"
+   },
+   "buildability": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "Cloud API Send and receive WhatsApp messages, make WhatsApp calls, and more from your business phone number."
+   }
+  },
+  "pages": [
+   "https://developers.facebook.com/docs/whatsapp",
+   "https://developers.facebook.com",
+   "https://developer.facebook.com",
+   "https://forum.lowyat.net/topic/5580378",
+   "https://forum.lowyat.net/topic/5565190",
+   "https://merchant.onlinesbi.sbi/mopsprelogin/mopsBilldeskCancelTransaction.htm"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "id": 28
+ },
+ {
+  "one_liner": "Aircall is an AI-powered customer communications platform providing cloud telephony, voice agents, and developer APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2",
+   "basic"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://mcp.aircall.io/mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.aircall.io",
+    "quote": "Aircall API ID and Aircall API token. Sent with the API ID as HTTP Basic authentication."
+   },
+   "self_serve": {
+    "url": "https://aircall.io",
+    "quote": "TRY FOR FREE"
+   },
+   "api_type": {
+    "url": "https://developer.aircall.io",
+    "quote": "Access all the tools you need to build on the leading communication and intelligence platform AI API MCP REST API WEBHOOKS EMBED SDK"
+   },
+   "existing_mcp": {
+    "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+    "quote": "Server URL: Copy https://mcp.aircall.io/mcp"
+   },
+   "buildability": {
+    "url": "https://developer.aircall.io",
+    "quote": "Connect your CRM, automate workflows, or build custom integrations for your own Aircall workspace, no marketplace approval needed."
+   }
+  },
+  "pages": [
+   "https://aircall.io",
+   "https://developer.aircall.io",
+   "https://aircall.io/download/",
+   "https://aircall.io/",
+   "https://github.com/RosenAdvertising/aircall-mcp",
+   "https://support.aircall.io/en-gb/articles/39677926959517"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "id": 29
+ },
+ {
+  "one_liner": "Integrate communication APIs for messaging, voice, video, and security features into your applications.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "jwt",
+   "request_signing"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://developer.vonage.com/en/mcp-server/overview",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://api.support.vonage.com/hc/en-us/categories/202622537-Developer-API",
+    "quote": "Deprecation of Query Parameter API Authentication (Action Required: Migration to Header-Based Authentication)\nAction Required: Update Your JWT TTL Configuration for Enhanced Security"
+   },
+   "self_serve": {
+    "url": "https://developer.vonage.com",
+    "quote": "Ready to start building? Create a free account now! Experience seamless connectivity, real-time messaging, and crystal-clear voice and video calls\u2014all at your fingertips."
+   },
+   "api_type": {
+    "url": "https://developer.vonage.com",
+    "quote": "Video REST API Basic API Functionality Client SDKs Server SDKs... Speech to text and WebSockets Text to Speech with over 50+ languages"
+   },
+   "existing_mcp": {
+    "url": "https://developer.vonage.com/en/mcp-server/overview",
+    "quote": "Vonage provides a few different individual MCP implementations, based on your needs. We have a Documentation Server... and a Server API Binding MCP server"
+   },
+   "buildability": {
+    "url": "https://www.vonage.com/developer-center/",
+    "quote": "Start coding with Vonage Communications APIs for free"
+   }
+  },
+  "pages": [
+   "https://developer.vonage.com",
+   "https://developer.vonage.com/en/documentation",
+   "https://www.vonage.com/developer-center/",
+   "https://api.support.vonage.com/hc/en-us/categories/202622537-Developer-API",
+   "https://developer.vonage.com/en/mcp-server/overview",
+   "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": false,
+   "buildability": true
+  },
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "id": 30
+ },
+ {
+  "one_liner": "Build an application to interact directly with the Google Ads platform or write programmatic scripts.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "other"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest",
+   "soap"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://apis.io/mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "approval_gate",
+  "blocker_note": "Developer token and access levels are granted by review, gating production operation quotas.",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://apis.io/plans/google-ads/google-ads-plans-pricing/",
+    "quote": "What LOOKS like a plan ladder is an approval ladder: the developer token's access level gates the daily operation quota, and levels are granted by review, not purchase."
+   },
+   "self_serve": {
+    "url": "https://apis.io/plans/google-ads/google-ads-plans-pricing/",
+    "quote": "What LOOKS like a plan ladder is an approval ladder: the developer token's access level gates the daily operation quota, and levels are granted by review, not purchase."
+   },
+   "api_type": {
+    "url": "https://developers.google.com/google-ads",
+    "quote": "Build an application to interact directly with the Google Ads platform or write programmatic scripts."
+   },
+   "existing_mcp": {
+    "url": "https://apis.io/plans/google-ads/google-ads-plans-pricing/",
+    "quote": "This is the level Google's own MCP server requires as a minimum to query production accounts."
+   },
+   "buildability": {
+    "url": "https://apis.io/plans/google-ads/google-ads-plans-pricing/",
+    "quote": "Test Account Access free The level a developer token starts at. Can call the API only against test accounts; any call against a production account fails"
+   }
+  },
+  "pages": [
+   "https://developers.google.com/google-ads",
+   "https://developers.google.com",
+   "https://developer.google.com",
+   "https://search.google/",
+   "https://apis.io/plans/google-ads/google-ads-plans-pricing/",
+   "https://developers.google.com/google-ads/api"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 31
+ },
+ {
+  "one_liner": "Create, manage, and optimize ad campaigns across Meta technologies using Graph API endpoints.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.facebook.com",
+    "quote": "Getting a WhatsApp Business integration running means moving between the Developer Console, Business Manager, the API reference, and your editor, then pasting an access token somewhere it shouldn't live."
+   },
+   "self_serve": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "Get started Get Started Begin creating and managing Meta ad campaigns by following step-by-step guidance on setting up campaigns, ad sets, and creatives using the Marketing API"
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies."
+   },
+   "existing_mcp": {
+    "url": "https://developers.facebook.com",
+    "quote": "SEPTEMBER 15, 2026 Announcing WhatsApp Business Tools MCP: Set up and manage WhatsApp business from your AI agent"
+   },
+   "buildability": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "Basic Ad Creation Get detailed guidance on how to set up campaigns, ad sets, and ad creatives, including code samples that illustrate the implementation process."
+   }
+  },
+  "pages": [
+   "https://developers.facebook.com/docs/marketing-apis",
+   "https://developers.facebook.com",
+   "https://developer.facebook.com",
+   "https://www.meta.com/about/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 32
+ },
+ {
+  "one_liner": "Create marketing campaigns, report performance, manage leads, and grow company pages on LinkedIn using APIs.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "API access details require portal login; specific approval gates or pricing are unclear from the text.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "Authentication How-To Guide"
+   },
+   "self_serve": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "Getting API Access"
+   },
+   "api_type": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page."
+   },
+   "existing_mcp": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "LinkedIn Marketing API Program"
+   },
+   "buildability": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page."
+   }
+  },
+  "pages": [
+   "https://learn.microsoft.com/linkedin/marketing",
+   "https://developers.microsoft.com",
+   "https://docs.microsoft.com",
+   "https://developer.microsoft.com",
+   "https://www.linkedin.com/",
+   "https://www.linkedin.com/login/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 33
+ },
+ {
+  "one_liner": "Complete REST API documentation for the HighLevel CRM platform to build powerful integrations and applications.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 1.0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "Set Up Authentication - OAuth 2.0 or Private Integration Token"
+   },
+   "self_serve": {
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "HighLevel offers API access across its subscription plans, including Starter, Unlimited, and Founder. Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans."
+   },
+   "api_type": {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "Complete REST API documentation for the HighLevel CRM platform. Build powerful integrations with our comprehensive developer resources."
+   },
+   "existing_mcp": {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "HighLevel API Documentation - Developer Portal | HighLevel API Skip to main content HighLevel API Documentation Complete REST API documentation for the HighLevel CRM platform."
+   },
+   "buildability": {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "Get Started with API Marketplace Documents Comprehensive API Coverage Access all HighLevel platform features through our REST API."
+   }
+  },
+  "pages": [
+   "https://marketplace.gohighlevel.com/docs/",
+   "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/index.html",
+   "https://www.whatsapp.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 34
+ },
+ {
+  "one_liner": "An all-in-one email and SMS marketing platform providing APIs and tools for automated campaigns and data integration.",
+  "auth_methods": [
+   "unknown"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "soap"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "Mailchimp Marketing API Power timely, relevant marketing campaigns with custom data pulled directly from your app."
+   },
+   "self_serve": {
+    "url": "https://mailchimp.com/marketing-platform/?msockid=0943042448436eb238b71c3f49336f5b",
+    "quote": "Mailchimp offers a free plan and three paid tiers, with pricing that scales based on the size of your contact list"
+   },
+   "api_type": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "Mailchimp Transactional (formerly Mandrill) sends targeted and event-driven messages via the API or SMTP, fast\u2014with best-in-class deliverability."
+   },
+   "existing_mcp": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "Mailchimp Developer | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt."
+   },
+   "buildability": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "Developing the integration using the Mailchimp API 3.0 was a good experience, documentation is easy to understand and very detailed with proper examples of all requests/responses."
+   }
+  },
+  "pages": [
+   "https://mailchimp.com/developer",
+   "https://developer.mailchimp.com",
+   "https://mailchimp.com/api",
+   "https://mailchimp.com/?msockid=0943042448436eb238b71c3f49336f5b",
+   "https://mailchimp.com/marketing-platform/?msockid=0943042448436eb238b71c3f49336f5b",
+   "https://mailchimp.com/?msockid=05ab8b8e4de967f9349293954cc966e7"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 35
+ },
+ {
+  "one_liner": "Build customer growth engines, integrate stores, and manage messaging using Klaviyo's API and tools.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://mcp.klaviyo.com/mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1.0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "Getting started Learn how to authenticate and make your first calls to the Klaviyo API."
+   },
+   "self_serve": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "Create a test account Learn how to create a sandbox account that is linked to your production account login. Test your code end-to-end."
+   },
+   "api_type": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "API reference Every endpoint, with its parameters, request and response bodies, and an example request."
+   },
+   "existing_mcp": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "Add the remote server at https://mcp.klaviyo.com/mcp to your MCP client."
+   },
+   "buildability": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "Klaviyo's MCP server lets an agent work with the data in a Klaviyo account. Add the remote server at https://mcp.klaviyo.com/mcp to your MCP client."
+   }
+  },
+  "pages": [
+   "https://developers.klaviyo.com",
+   "https://docs.klaviyo.com",
+   "https://klaviyo.com/docs",
+   "https://www.scribd.com/presentation/553774718/Chapter-1-Origin-and-Development-of-OR",
+   "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+   "https://support.microsoft.com/en-us/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 36
+ },
+ {
+  "one_liner": "An all-in-one marketing platform for sales funnels, email marketing, and online courses with a public REST API.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.systeme.io",
+    "quote": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request."
+   },
+   "self_serve": {
+    "url": "https://developer.systeme.io",
+    "quote": "Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the \"Public API keys\" section."
+   },
+   "api_type": {
+    "url": "https://grokipedia.com/page/Systemeio_API",
+    "quote": "The Systeme.io API is the public RESTful API of Systeme.io, an all-in-one online marketing and business platform"
+   },
+   "existing_mcp": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "quote": "Model Context Protocol (MCP)"
+   },
+   "buildability": {
+    "url": "https://developer.systeme.io",
+    "quote": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users."
+   }
+  },
+  "pages": [
+   "https://systeme.io",
+   "https://developer.systeme.io",
+   "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "https://grokipedia.com/page/Systemeio_API",
+   "https://systeme.io/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 37
+ },
+ {
+  "one_liner": "Seamlessly integrate with Pinterest to plan content, manage ads, upload product feeds, and analyze performance.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.pinterest.com",
+    "quote": "One API to seamlessly integrate with Pinterest Securely plan content, manage ads, upload product feeds, and more."
+   },
+   "self_serve": {
+    "url": "https://developers.pinterest.com",
+    "quote": "Get started Launch faster than ever! Pinterest MCP is on the way"
+   },
+   "api_type": {
+    "url": "https://developers.pinterest.com",
+    "quote": "Pinterest API helps you ingest analytics data for content and ads directly from Pinterest into your data warehouse or analytics tools."
+   },
+   "existing_mcp": {
+    "url": "https://developers.pinterest.com",
+    "quote": "Build faster with the Pinterest MCP"
+   },
+   "buildability": {
+    "url": "https://developers.pinterest.com",
+    "quote": "Get started Launch faster than ever!"
+   }
+  },
+  "pages": [
+   "https://developers.pinterest.com",
+   "https://developer.pinterest.com",
+   "https://pinterest.com/docs",
+   "https://pinterest.com/api",
+   "https://www.geeksforgeeks.org/data-analysis/data-analysis-with-python/",
+   "https://realpython.com/python-for-data-analysis/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 38
+ },
+ {
+  "one_liner": "Create and publish posts, retrieve media and profiles, moderate replies, and access insights using the Threads API.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights."
+   },
+   "self_serve": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "How to create and customize a Meta app with the Threads API use case in the App Dashboard."
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "The Threads API endpoints and their parameters."
+   },
+   "existing_mcp": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights."
+   },
+   "buildability": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights."
+   }
+  },
+  "pages": [
+   "https://developers.facebook.com/docs/threads",
+   "https://developers.facebook.com",
+   "https://developer.facebook.com",
+   "https://about.instagram.com/threads"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 39
+ },
+ {
+  "one_liner": "SendGrid Email API and marketing campaigns platform for reliable email delivery at scale.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.sendgrid.com",
+    "quote": "const sgMail = require('@sendgrid/mail');\nsgMail.setApiKey(process.env.SENDGRID_API_KEY);"
+   },
+   "self_serve": {
+    "url": "https://sendgrid.com",
+    "quote": "Free trial\nNo credit card required\nFlexible pricing"
+   },
+   "api_type": {
+    "url": "https://docs.sendgrid.com",
+    "quote": "Get started with the Twilio SendGrid Mail Send API and the open-source SDKs."
+   },
+   "existing_mcp": {
+    "url": "https://docs.sendgrid.com",
+    "quote": "Review the SendGrid v3 API reference"
+   },
+   "buildability": {
+    "url": "https://docs.sendgrid.com",
+    "quote": "To send your first message, use the following sample code in your preferred programming language."
+   }
+  },
+  "pages": [
+   "https://sendgrid.com",
+   "https://docs.sendgrid.com",
+   "https://sendgrid.com/docs",
+   "https://sendgrid.com/api",
+   "https://tirupatibalaji.ap.gov.in/",
+   "https://tirupatibalaji.ap.gov.in/receipts/pdf/downloads/Guidelines.pdf"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "id": 40
+ },
+ {
+  "one_liner": "E-commerce platform offering APIs and tools to build apps, custom storefronts, and manage store data.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "webhook"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "GraphQL Admin API | Your app, on behalf of a merchant | OAuth, usually token exchange | X-Shopify-Access-Token"
+   },
+   "self_serve": {
+    "url": "https://shopifylearner.com/shopify-api-authentication/",
+    "quote": "A Shopify Partner account (free at partners.shopify.com ) A development store to test in (create from your Partner dashboard \u2014 it is free and unlimited)"
+   },
+   "api_type": {
+    "url": "https://shopify.dev/docs/api",
+    "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin. Events report object and field-level changes to GraphQL resources with highly configurable payloads, while classic webhooks notify your app when a store changes."
+   },
+   "existing_mcp": {
+    "url": "https://shopify.dev",
+    "quote": "For agent skills and the Dev MCP server, see the Shopify AI Toolkit page."
+   },
+   "buildability": {
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "To use them, refer to Authenticate your app ."
+   }
+  },
+  "pages": [
+   "https://shopify.dev",
+   "https://shopify.dev/docs",
+   "https://shopify.dev/api",
+   "https://shopify.dev/docs/api",
+   "https://shopify.dev/docs/api/usage/authentication",
+   "https://shopifylearner.com/shopify-api-authentication/"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "id": 41
+ },
+ {
+  "one_liner": "An open-source, customizable e-commerce platform built on WordPress that connects stores to external systems via REST API.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection."
+   },
+   "self_serve": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "Go to WooCommerce > Settings > Advanced > REST API. Select Create an API key or Add Key."
+   },
+   "api_type": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "The WooCommerce REST API connects your store to external systems and services."
+   },
+   "existing_mcp": {
+    "url": "https://developer.woocommerce.com",
+    "quote": "Call for Testing: WooCommerce MCP Beta"
+   },
+   "buildability": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "Make a basic request \u2014 walks through requesting order data from your site to confirm the API is working. WooCommerce REST API Docs \u2014 the complete technical reference for all available endpoints."
+   }
+  },
+  "pages": [
+   "https://woocommerce.com/document/woocommerce-rest-api",
+   "https://docs.woocommerce.com",
+   "https://developer.woocommerce.com",
+   "https://woocommerce.com/docs",
+   "https://woocommerce.com/api",
+   "https://woocommerce.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": false,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "id": 42
+ },
+ {
+  "one_liner": "E-commerce platform providing APIs and developer tools to build storefronts, apps, and manage store data.",
+  "auth_methods": [
+   "bearer_token",
+   "request_signing"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "GET https://api.bigcommerce.com/stores/{{STORE_HASH}}/v3/catalog/products\nX-Auth-Token: {{ACCESS_TOKEN}}"
+   },
+   "self_serve": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+   },
+   "api_type": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Use REST and GraphQL APIs to manage products, orders, customers, and store settings programmatically."
+   },
+   "existing_mcp": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Docs MCP Server\nConnect Cursor, Claude, or Codex to the BigCommerce developer docs via MCP."
+   },
+   "buildability": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+   }
+  },
+  "pages": [
+   "https://developer.bigcommerce.com",
+   "https://docs.bigcommerce.com",
+   "https://bigcommerce.com/docs",
+   "https://satta-king-fast.com/delhi-city/satta-result-chart/dc/",
+   "https://satta-king-fast.com/",
+   "https://satta-company.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "id": 43
+ },
+ {
+  "one_liner": "Salesforce Commerce Cloud documentation portal provides APIs, programming guides, SDKs, and reference documentation for developers.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "unclear",
+  "blocker_note": "Documentation portal references APIs and SDKs, but specific authentication and access provisioning details are not detailed in the excerpts.",
+  "confidence": 0.6,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.salesforce.com",
+    "quote": "Salesforce APIs, programming guides, SDKs, and reference documentation."
+   },
+   "self_serve": {
+    "url": "https://docs.salesforce.com",
+    "quote": "Developer : Salesforce APIs, programming guides, SDKs, and reference documentation."
+   },
+   "api_type": {
+    "url": "https://docs.salesforce.com",
+    "quote": "Developer : Salesforce APIs, programming guides, SDKs, and reference documentation."
+   },
+   "existing_mcp": {
+    "url": "https://docs.salesforce.com",
+    "quote": "Salesforce Docs Portal Official Salesforce documentation in formats designed for agents, LLMs, and direct HTTP retrieval."
+   },
+   "buildability": {
+    "url": "https://docs.salesforce.com",
+    "quote": "Developer : Salesforce APIs, programming guides, SDKs, and reference documentation."
+   }
+  },
+  "pages": [
+   "https://docs.salesforce.com",
+   "https://forum.lowyat.net/topic/5556445",
+   "https://forum.lowyat.net/topic/5538738",
+   "https://copilot.com/?msockid=3ed29478d40965431d728c63d5bf640c"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "id": 44
+ },
+ {
+  "one_liner": "Adobe Commerce and Magento provide robust REST and GraphQL APIs to build multichannel B2B/B2C storefronts and integrate backend systems.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/",
+    "quote": "Adobe Commerce REST APIs support multiple authentication methods , including: Third-party applications authenticate with OAuth 1.0a . Mobile applications authenticate using tokens . Administrators and customers are authenticated with login credentials ."
+   },
+   "self_serve": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/",
+    "quote": "Adobe Commerce on Cloud , Adobe Commerce on-premises, and Magento Open Source all use the same REST API framework."
+   },
+   "api_type": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/",
+    "quote": "Specifically, the customer and guest REST APIs that are available in Adobe Commerce on Cloud and on-premises deployments are not available in Adobe Commerce as a Cloud Service. However, access to similar functionality remains available with the GraphQL APIs ."
+   },
+   "existing_mcp": {
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "Get Developer Docs Get Merchant Docs Get Operations Docs Meet the newest Adobe Commerce offerings"
+   },
+   "buildability": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/",
+    "quote": "The REST API documentation describes the REST APIs that are available in Adobe Commerce (PaaS) and Adobe Commerce as a Cloud Service (SaaS). The APIs can be used to perform a wide array of tasks."
+   }
+  },
+  "pages": [
+   "https://developer.adobe.com/commerce",
+   "https://developers.adobe.com",
+   "https://docs.adobe.com",
+   "https://developer.adobe.com",
+   "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "https://developer.adobe.com/commerce/webapi/rest/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "id": 45
+ },
+ {
+  "one_liner": "Website builder and commerce platform offering APIs for orders, inventory, storefront management, and site provisioning.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "request_signing"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "APIs are available via self-serve developer portal, but specific endpoints may require a paid Squarespace website or store plan.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.squarespace.com",
+    "quote": "REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery."
+   },
+   "self_serve": {
+    "url": "https://developers.squarespace.com",
+    "quote": "Read the docs Start building What can you build on Squarespace? Integration, customization, or extension."
+   },
+   "api_type": {
+    "url": "https://developers.squarespace.com",
+    "quote": "REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery."
+   },
+   "existing_mcp": {
+    "url": "https://developers.squarespace.com",
+    "quote": "Integrate our API docs directly into Claude or ChatGPT."
+   },
+   "buildability": {
+    "url": "https://developers.squarespace.com",
+    "quote": "Everything you need to build and publish external apps \u2014 reliable APIs, clear documentation, and a marketplace to reach Squarespace's global customer base."
+   }
+  },
+  "pages": [
+   "https://developers.squarespace.com",
+   "https://www.squarespace.com/",
+   "https://www.squarespace.com/websites-start"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": false
+  },
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "id": 46
+ },
+ {
+  "one_liner": "Ecwid is an e-commerce platform providing APIs and tools to build apps, customize stores, and integrate external services.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "webhook"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Get access to API with an app"
+   },
+   "self_serve": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Set up your dev environment in Ecwid Make your first API request Add more features to your custom app"
+   },
+   "api_type": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Webhooks Automate your business logic Automation examples Check out code and flow for syncing orders or product stock"
+   },
+   "existing_mcp": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Agents can also search and read this documentation through its MCP server ."
+   },
+   "buildability": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Explore our guides and examples to integrate Ecwid Ecommerce Customize your store Get access to API with an app"
+   }
+  },
+  "pages": [
+   "https://api-docs.ecwid.com",
+   "https://developers.ecwid.com",
+   "https://docs.ecwid.com",
+   "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+   "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+   "https://www.wikihow.com/Get-Help-in-Windows-11"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "id": 47
+ },
+ {
+  "one_liner": "E-commerce platform for creators to sell digital products, courses, and memberships online.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "none"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "The provided pages contain no documentation or mention of a public API for Gumroad.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://gumroad.com/",
+    "quote": "Gumroad MCP Help Board meetings Terms of Service Privacy Policy"
+   },
+   "self_serve": {
+    "url": "https://gumroad.com/pricing",
+    "quote": "Start selling"
+   },
+   "api_type": {
+    "url": "https://gumroad.com/",
+    "quote": "Discover Blog Pricing Features About Gumclaw Log in Start selling"
+   },
+   "existing_mcp": {
+    "url": "https://gumroad.com/",
+    "quote": "Gumroad MCP Help"
+   },
+   "buildability": {
+    "url": "https://gumroad.com/pricing",
+    "quote": "Pricing Simple, transparent pricing We believe in transparent pricing that helps you grow. No hidden fees, no monthly charges."
+   }
+  },
+  "pages": [
+   "https://gumroad.com/",
+   "https://gumroad.com/pricing"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "id": 48
+ },
+ {
+  "one_liner": "REST-based API enabling selling partners to integrate and manage their Amazon store operations, inventory, orders, and fulfillment.",
+  "auth_methods": [
+   "oauth2",
+   "other"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "approval_gate",
+  "blocker_note": "Requires registration and developer registration/approval to access Amazon Selling Partner API.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Resolve Common HTTP and Authorization Error Codes"
+   },
+   "self_serve": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "SP-API Registration Overview Developer Registration Request Status Third-Party Provider Registration"
+   },
+   "api_type": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Learn how to get started and build applications with Amazon's REST-based SP-API."
+   },
+   "existing_mcp": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Selling Partner API For AI agents: the docs index is at https://developer-docs.amazon/sp-api/llms.txt."
+   },
+   "buildability": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Learn how to get started and build applications with Amazon's REST-based SP-API."
+   }
+  },
+  "pages": [
+   "https://developer-docs.amazon.com/sp-api",
+   "https://developers.amazon.com",
+   "https://developer.amazon.com",
+   "https://amazon.com/api",
+   "https://www.amazon.in/stores/Home/page/F406DA97-A41F-4396-B494-23C4F95051C4"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "id": 49
+ },
+ {
+  "one_liner": "An all-in-one internet commerce and payment platform featuring checkouts, funnels, courses, communities, webinars, and APIs.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "unclear",
+  "blocker_note": "API documentation and authentication details are not explicitly detailed on the provided pages, though APIs and SDKs are mentioned.",
+  "confidence": 0.6,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://fanbasis.com",
+    "quote": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates."
+   },
+   "self_serve": {
+    "url": "https://fanbasis.com",
+    "quote": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates."
+   },
+   "api_type": {
+    "url": "https://fanbasis.com",
+    "quote": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates."
+   },
+   "existing_mcp": {
+    "url": "https://fanbasis.com",
+    "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English."
+   },
+   "buildability": {
+    "url": "https://fanbasis.com",
+    "quote": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates."
+   }
+  },
+  "pages": [
+   "https://fanbasis.com",
+   "https://developers.fanbasis.com",
+   "https://docs.fanbasis.com",
+   "https://developer.fanbasis.com",
+   "https://fanbasis.com/docs",
+   "https://fanbasis.com/api"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "id": 50
+ },
+ {
+  "one_liner": "Provide comprehensive SEO, PPC, backlink, and ecommerce data via a REST API stack.",
+  "auth_methods": [
+   "other",
+   "basic"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service."
+   },
+   "self_serve": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "4. Free Unlimited Trial Info"
+   },
+   "api_type": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service."
+   },
+   "existing_mcp": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "LangChain integration DataForSEO API Wrapper"
+   },
+   "buildability": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "This is the starting point on your journey towards building powerful SEO software, data analysis pipelines, and robust no-code automations."
+   }
+  },
+  "pages": [
+   "https://docs.dataforseo.com",
+   "https://dataforseo.com/docs",
+   "https://dataforseo.com/",
+   "https://dataforseo.com/databases"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "id": 51
+ },
+ {
+  "one_liner": "SEO and GEO data platform providing keyword research, backlinks, audits, and AI search visibility via API and MCP.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://seranking.com/api-pricing.html",
+    "quote": "How quickly can I get an API key after purchase? A Instantly. Your API key is issued immediately after payment. If you are on a free trial, you\u2019ll get an API key once you confirm your email."
+   },
+   "self_serve": {
+    "url": "https://seranking.com/api-pricing.html",
+    "quote": "Free trial Test every API endpoint against your workflows and see how the data fits your internal processes. Free 100K credits Start with free credits MCP included 14-day trial to test every API endpoint"
+   },
+   "api_type": {
+    "url": "https://seranking.com/api.html",
+    "quote": "Retrieve instant, structured JSON responses with up to 10 requests per second."
+   },
+   "existing_mcp": {
+    "url": "https://seranking.com/api-pricing.html",
+    "quote": "Query your data through AI assistants Pull live SEO and GEO data directly inside your AI tools. Included in every plan. 5.5B keywords 2.2B domain profiles 188 countries 25.5M+ AI prompts tracked MCP Connect SE Ranking to Claude, Cursor, Gemini, or any AI assistant."
+   },
+   "buildability": {
+    "url": "https://seranking.com/api-pricing.html",
+    "quote": "Free 100K credits Start with free credits MCP included 14-day trial to test every API endpoint Full API & MCP access from day one Test the complete SEO & GEO data suite"
+   }
+  },
+  "pages": [
+   "https://www.se.com/in/en/",
+   "https://www.se.com/ww/en/",
+   "https://seranking.com/api-pricing.html",
+   "https://seranking.com/api.html",
+   "https://apis.io/plans/se-ranking/se-ranking-plans-pricing/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "id": 52
+ },
+ {
+  "one_liner": "Access Ahrefs marketing, SEO, and AI search data through APIs, developer tools, and custom workflows.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://ahrefs.com/seo-api",
+  "buildability": "yes_with_caveats",
+  "blocker": "paid_gate",
+  "blocker_note": "Ahrefs API requires an eligible paid plan (Lite or higher) to access units beyond free test queries.",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "To send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys."
+   },
+   "self_serve": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API is available on eligible paid plans . On all other plans, you'll still have access to a limited set of free test queries ."
+   },
+   "api_type": {
+    "url": "https://ahrefs.com/seo-api",
+    "quote": "REST API Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms."
+   },
+   "existing_mcp": {
+    "url": "https://ahrefs.com/seo-api",
+    "quote": "Connect Ahrefs data to AI-native workflows through MCP. Let agents and assistants like Claude query the index directly, mid-conversation."
+   },
+   "buildability": {
+    "url": "https://ahrefs.com/seo-api",
+    "quote": "API access is included in every Ahrefs plan from Lite up."
+   }
+  },
+  "pages": [
+   "https://ahrefs.com/api",
+   "https://docs.ahrefs.com",
+   "https://docs.ahrefs.com/en/api/docs/introduction",
+   "https://docs.ahrefs.com/",
+   "https://ahrefs.com/seo-api",
+   "https://ahrefs.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "id": 53
+ },
+ {
+  "one_liner": "An AI scraping platform and workflow automation tool for extracting website data programmatically.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://docs.mrscraper.com",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "Token Plan Learn how tokens work and create an API token for authentication."
+   },
+   "self_serve": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "Start Here New to MrScraper? These pages get you from sign-up to your first scraped dataset."
+   },
+   "api_type": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "Workflow API Access Activate a scraper as an API endpoint and run it programmatically."
+   },
+   "existing_mcp": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "The MrScraper MCP server source code is available on GitHub for local setup, contributions, and issue reports."
+   },
+   "buildability": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "Scrape Programmatically Create an AI scraper once, then run it from your own code via the API."
+   }
+  },
+  "pages": [
+   "https://docs.mrscraper.com",
+   "https://mrscraper.com/docs",
+   "https://support.google.com/youtubetv/answer/9545212?hl=en",
+   "https://support.google.com/youtube/answer/15976004?hl=zh-Hant&co=GENIE.Platform=Android",
+   "https://g.ggames.com.br/files/file/62-mame-64bits-jogos-de-fliperama-classicos-atualizado/",
+   "https://games-cn.org/games2025/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "id": 54
+ },
+ {
+  "one_liner": "Cloud platform for web scraping and automation tools, offering Actors and a comprehensive REST API.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://docs.apify.com",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://apify.com/api",
+    "quote": "Authenticate with Bearer tokens and rely on clear rate limits plus automatic retries \u2014 built to power serious workloads without surprises."
+   },
+   "self_serve": {
+    "url": "https://docs.apify.com/integrations/api",
+    "quote": "Go to Settings > API & Integrations in Apify Console. In the Personal API tokens section, select Create a new token ."
+   },
+   "api_type": {
+    "url": "https://docs.apify.com/api/v2",
+    "quote": "The API is organized around RESTful HTTP endpoints."
+   },
+   "existing_mcp": {
+    "url": "https://docs.apify.com",
+    "quote": "MCP Discover and use Actors with AI agents and LLMs via Apify MCP server."
+   },
+   "buildability": {
+    "url": "https://docs.apify.com/api/v2",
+    "quote": "To access the API, we recommend using one of our API clients: Stable API clients: For Node.js , we recommend the apify-client NPM package ."
+   }
+  },
+  "pages": [
+   "https://docs.apify.com",
+   "https://developers.apify.com",
+   "https://apify.com/docs",
+   "https://apify.com/api",
+   "https://docs.apify.com/api/v2",
+   "https://docs.apify.com/integrations/api"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "id": 55
+ },
+ {
+  "one_liner": "Web crawling, scraping, and search API designed to turn websites into LLM-ready markdown or structured data for AI agents.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "none"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only",
+   "cli_only",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.firecrawl.dev",
+    "quote": "# No API key needed to get started \u2014 add -H \"Authorization: Bearer $FIRECRAWL_API_KEY\" for higher rate limits:\ncurl -s -X POST \"https://api.firecrawl.dev/v2/scrape\" \\"
+   },
+   "self_serve": {
+    "url": "https://www.firecrawl.dev/pricing",
+    "quote": "Free plan\nA lightweight way to get started. No cost, no card, no hassle.\n1,000 credits / month\n$ 0 /month\nGet started"
+   },
+   "api_type": {
+    "url": "https://github.com/firecrawl/firecrawl",
+    "quote": "serve answers the Firecrawl v2 API on port 3002, so code written for Firecrawl runs against it unchanged and local routes need no API key."
+   },
+   "existing_mcp": {
+    "url": "https://docs.firecrawl.dev",
+    "quote": "MCP Server : Connect Firecrawl to any AI tool via the Model Context Protocol ."
+   },
+   "buildability": {
+    "url": "https://docs.firecrawl.dev",
+    "quote": "Scrape your first page now. No account or API key is required for this request."
+   }
+  },
+  "pages": [
+   "https://firecrawl.dev",
+   "https://docs.firecrawl.dev",
+   "https://firecrawl.dev/docs",
+   "https://www.firecrawl.dev/",
+   "https://www.firecrawl.dev/pricing",
+   "https://github.com/firecrawl/firecrawl"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "id": 56
+ },
+ {
+  "one_liner": "Web data infrastructure providing scrapers, proxy networks, and browser automation for agents and developers.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://mcp.brightdata.com/sse?token=YOUR_API_KEY",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.brightdata.com",
+    "quote": "curl -X POST \\\n\"https://api.brightdata.com/datasets/v3/scrape?dataset_id=gd_l1viktl72bvl7bjuj0&format=json\" \\\n-H \"Authorization: Bearer YOUR_API_KEY\""
+   },
+   "self_serve": {
+    "url": "https://docs.brightdata.com",
+    "quote": "5,000 free credits per month , no credit card required. See the free tier ."
+   },
+   "api_type": {
+    "url": "https://docs.brightdata.com",
+    "quote": "SDKs Python and JavaScript clients Bright Data CLI The platform from your terminal"
+   },
+   "existing_mcp": {
+    "url": "https://docs.brightdata.com",
+    "quote": "Bright Data MCP Live web access for agents"
+   },
+   "buildability": {
+    "url": "https://docs.brightdata.com",
+    "quote": "5,000 free credits per month , no credit card required. See the free tier ."
+   }
+  },
+  "pages": [
+   "https://brightdata.com",
+   "https://docs.brightdata.com",
+   "https://brightdata.com/docs",
+   "https://support.google.com/youtube/?Hl=en",
+   "https://support.google.com/youtubetv/?hl=en",
+   "https://techcommunity.microsoft.com/discussions/microsoft-365/frequent-login-prompts-to-the-outlook-desktop-and-mobile-apps/41606"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "id": 57
+ },
+ {
+  "one_liner": "Hunt down social media accounts by username across social networks",
+  "auth_methods": [
+   "none"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "cli_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "cli_or_local_only",
+  "blocker_note": "Sherlock is a command-line tool for OSINT reconnaissance and does not provide a public web API for programmatic integration.",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "sherlock user123"
+   },
+   "self_serve": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "pipx install sherlock-project"
+   },
+   "api_type": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "$ sherlock --help\nusage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT] [--output OUTPUT]"
+   },
+   "existing_mcp": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Hunt down social media accounts by username across social networks"
+   },
+   "buildability": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Hunt down social media accounts by username across 400+ social networks"
+   }
+  },
+  "pages": [
+   "https://github.com/sherlock-project/sherlock",
+   "https://docs.github.com",
+   "https://developer.github.com",
+   "https://github.com/docs",
+   "https://en.wikipedia.org/wiki/Sherlock_(TV_series)",
+   "https://www.netflix.com/title/70202589"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "id": 58
+ },
+ {
+  "one_liner": "A modular B2B GTM and enrichment API aggregating 30+ data vendors for contact, company, and email data.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1.0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.waterfall.io",
+    "quote": "The Waterfall API is available at https://api.waterfall.io . Send your API key in the x-api-key header. See Authentication ."
+   },
+   "self_serve": {
+    "url": "https://waterfall.io",
+    "quote": "Transparent pricing Usage-based pricing with no surprises. Pay for what you use, scale as you grow, no hidden fees."
+   },
+   "api_type": {
+    "url": "https://waterfall.io",
+    "quote": "Preview curl --location 'https://api.waterfall.io/v1/prospector' \\\n --header 'Content-Type: application/json' \\\n --header 'x-waterfall-api-key: YOURKEY' \\"
+   },
+   "existing_mcp": {
+    "url": "https://docs.waterfall.io",
+    "quote": "Working with an agent? Start with Use Waterfall with an agent to run a lookup or build an integration."
+   },
+   "buildability": {
+    "url": "https://docs.waterfall.io",
+    "quote": "Explore Waterfall\u2019s APIs and compare their inputs, results, and use cases to choose the right endpoint for your workflow."
+   }
+  },
+  "pages": [
+   "https://waterfall.io",
+   "https://docs.waterfall.io",
+   "https://en.m.wikipedia.org/wiki/Waterfall",
+   "https://vajiramandravi.com/current-affairs/waterfalls-in-india/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "id": 59
+ },
+ {
+  "one_liner": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/clay-run/agent-plugins",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.clay.com",
+    "quote": "Call the API directly Best for backend jobs, internal tools, custom apps, queues, and product workflows."
+   },
+   "self_serve": {
+    "url": "https://clay.com",
+    "quote": "Start free trial"
+   },
+   "api_type": {
+    "url": "https://developers.clay.com",
+    "quote": "Install the Clay plugin Best for Claude Code, Codex, Cursor, and agent-first work. The plugin ships skills and the Clay CLI. Call the API directly"
+   },
+   "existing_mcp": {
+    "url": "https://clay.com",
+    "quote": "Set up the Clay plugin by following the steps in https://github.com/clay-run/agent-plugins"
+   },
+   "buildability": {
+    "url": "https://developers.clay.com",
+    "quote": "Use the developer platform to search Clay\u2019s GTM data, run reusable Clay logic, read table data, and work with Audiences programmatically."
+   }
+  },
+  "pages": [
+   "https://clay.com",
+   "https://developers.clay.com",
+   "https://docs.clay.com",
+   "https://clay.com/docs",
+   "https://www.clay.com/",
+   "https://www.amazon.in/Fevicryl-Hobby-ideas-Mould-800/dp/B07HRV1YZW"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "id": 60
+ },
+ {
+  "one_liner": "A proprietary developer platform that allows developers to create, store, manage, and share their code.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "webhook"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.github.com/rest",
+    "quote": "Authenticating to the REST API You can authenticate to the REST API to access more endpoints and have a higher rate limit."
+   },
+   "self_serve": {
+    "url": "https://en.wikipedia.org/wiki/GitHub",
+    "quote": "Registration Optional (required for creating and joining repositories)"
+   },
+   "api_type": {
+    "url": "https://docs.github.com",
+    "quote": "REST API GraphQL API Webhooks"
+   },
+   "existing_mcp": {
+    "url": "https://docs.github.com",
+    "quote": "GitHub Docs Help for wherever you are on your GitHub journey."
+   },
+   "buildability": {
+    "url": "https://docs.github.com/rest",
+    "quote": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API."
+   }
+  },
+  "pages": [
+   "https://docs.github.com/rest",
+   "https://docs.github.com",
+   "https://developer.github.com",
+   "https://github.com/docs",
+   "https://en.wikipedia.org/wiki/GitHub",
+   "https://docs.github.com/en"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "id": 61
+ },
+ {
+  "one_liner": "Cloud application platform providing developer tools, frameworks, and APIs to build, deploy, and manage web applications.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://mcp.vercel.com",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.vercel.com",
+    "quote": "curl https://ai-gateway.vercel.sh/v1/chat/completions \\\n -H \"Authorization: Bearer $AI_GATEWAY_API_KEY\" \\\n -H \"Content-Type: application/json\" \\"
+   },
+   "self_serve": {
+    "url": "https://docs.vercel.com",
+    "quote": "npm i -g vercel\nvercel login\nvercel"
+   },
+   "api_type": {
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests."
+   },
+   "existing_mcp": {
+    "url": "https://docs.vercel.com",
+    "quote": "# Let your agent manage projects, deployments, and logs\nnpx -y add-mcp https://mcp.vercel.com -g"
+   },
+   "buildability": {
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests."
+   }
+  },
+  "pages": [
+   "https://vercel.com/docs/rest-api",
+   "https://docs.vercel.com",
+   "https://vercel.com/docs",
+   "https://vercel.com/api",
+   "https://vercel.com/",
+   "https://en.wikipedia.org/wiki/Vercel"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "id": 62
+ },
+ {
+  "one_liner": "Platform for building, deploying, and managing web apps and sites programmatically via REST API, CLI, and SDK.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://mcp.netlify.com/mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1.0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "Netlify uses OAuth2 for authentication authentication The process of verifying who someone is before letting them access your site."
+   },
+   "self_serve": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "To generate a personal access token (PAT): Go to Applications > Personal access tokens . Select New access token ."
+   },
+   "api_type": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS"
+   },
+   "existing_mcp": {
+    "url": "https://docs.netlify.com",
+    "quote": "Connect to Netlify\u2019s remote MCP server npx -y add-mcp https://mcp.netlify.com/mcp"
+   },
+   "buildability": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "To authenticate API requests, include the token in the authorization header: Authorization: Bearer <YOUR_PERSONAL_ACCESS_TOKEN>"
+   }
+  },
+  "pages": [
+   "https://docs.netlify.com/api",
+   "https://developers.netlify.com",
+   "https://docs.netlify.com",
+   "https://developer.netlify.com",
+   "https://netlify.com/docs",
+   "https://www.netlify.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": false,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "id": 63
+ },
+ {
+  "one_liner": "Global cloud platform offering serverless compute, storage, security, and networking via API and workers.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.cloudflare.com/api",
+    "quote": "User API tokens can list and create Organizations, but reading, updating, or deleting an Organization requires a Global API key and your registered email address."
+   },
+   "self_serve": {
+    "url": "https://www.cloudflare.com/",
+    "quote": "Start building for free \u2014 no credit card required."
+   },
+   "api_type": {
+    "url": "https://developers.cloudflare.com",
+    "quote": "Monitor throughput, storage, and subscription lag for your K2 streams in the Cloudflare dashboard, or query the same metrics with the GraphQL Analytics API."
+   },
+   "existing_mcp": {
+    "url": "https://developers.cloudflare.com",
+    "quote": "Use cf feedback or the submit_feedback MCP tool to report bugs, feature requests, and problems you encounter."
+   },
+   "buildability": {
+    "url": "https://developers.cloudflare.com/api",
+    "quote": "API Reference Libraries TypeScript 7.3.0 npm install cloudflare Read Docs Python 5.10.0 pip install cloudflare Read Docs"
+   }
+  },
+  "pages": [
+   "https://developers.cloudflare.com/api",
+   "https://developers.cloudflare.com",
+   "https://docs.cloudflare.com",
+   "https://developer.cloudflare.com",
+   "https://cloudflare.com/docs",
+   "https://www.cloudflare.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "id": 64
+ },
+ {
+  "one_liner": "Supabase provides a full Postgres database, auth, storage, realtime, and edge functions for building applications.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://supabase.com/docs",
+    "quote": "Auth Add and manage email and password, passwordless, OAuth, and mobile logins to your project through a suite of identity providers and APIs."
+   },
+   "self_serve": {
+    "url": "https://supabase.com/docs",
+    "quote": "Supabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more."
+   },
+   "api_type": {
+    "url": "https://supabase.com/docs",
+    "quote": "Data REST API GraphQL API"
+   },
+   "existing_mcp": {
+    "url": "https://supabase.com/docs",
+    "quote": "AI tools Develop with Supabase AI-first using plugins, MCP, and skills."
+   },
+   "buildability": {
+    "url": "https://supabase.com/docs",
+    "quote": "Supabase Docs Skip to content Supabase Documentation Learn how to get up and running with Supabase through tutorials, APIs and platform resources."
+   }
+  },
+  "pages": [
+   "https://supabase.com/docs",
+   "https://docs.supabase.com",
+   "https://brave.com/fr/download/",
+   "https://brave.com/fr/",
+   "https://brave.com/download/",
+   "https://www.egovtschemes.com/swadhar-yojana/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "id": 65
+ },
+ {
+  "one_liner": "A leading graph database management system designed to store, manage, and query highly connected data efficiently.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "basic",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://neo4j.com/docs",
+    "quote": "Start developing Connect data sources Learn how to use connectors and other tools to connect Neo4j with other data sources."
+   },
+   "self_serve": {
+    "url": "https://neo4j.com/",
+    "quote": "Get started free"
+   },
+   "api_type": {
+    "url": "https://neo4j.com/docs",
+    "quote": "Discover the client libraries and APIs to develop applications with Neo4j and AuraDB."
+   },
+   "existing_mcp": {
+    "url": "https://neo4j.com/",
+    "quote": "Model Context Protocol (MCP)"
+   },
+   "buildability": {
+    "url": "https://neo4j.com/download/",
+    "quote": "Neo4j for Desktop Free. Get Started Today. Includes Neo4j Graph Database Enterprise Edition for Developers."
+   }
+  },
+  "pages": [
+   "https://neo4j.com/docs",
+   "https://neo4j.com/api",
+   "https://neo4j.com/",
+   "https://neo4j.com/download/",
+   "https://www.geeksforgeeks.org/dbms/neo4j-introduction/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "id": 66
+ },
+ {
+  "one_liner": "A cloud-based data platform providing data warehousing, data engineering, analytics, and AI/ML model execution.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "jwt",
+   "other"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.snowflake.com",
+    "quote": "Connecting to Snowflake Learn about the applications and tools that you can use to access Snowflake"
+   },
+   "self_serve": {
+    "url": "https://docs.snowflake.com",
+    "quote": "Getting a Trial Account Snowflake in 20 Minutes"
+   },
+   "api_type": {
+    "url": "https://developers.snowflake.com",
+    "quote": "Snowflake SQL API +More Horizon"
+   },
+   "existing_mcp": {
+    "url": "https://www.snowflake.com/en/product/platform/",
+    "quote": "Agents connect to SaaS apps, internal systems and partner ecosystems through governed MCP connectors"
+   },
+   "buildability": {
+    "url": "https://www.snowflake.com/en/pricing-options/",
+    "quote": "Standard An entry-level, introductory offering providing access to core functionality. Get Started"
+   }
+  },
+  "pages": [
+   "https://docs.snowflake.com",
+   "https://developers.snowflake.com",
+   "https://www.snowflake.com/en/",
+   "https://www.snowflake.com/en/product/platform/",
+   "https://www.snowflake.com/en/pricing-options/",
+   "https://www.snowflake.com/en/developers/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "id": 67
+ },
+ {
+  "one_liner": "Fully managed cloud database service with programmatic administration API and multi-cloud deployment.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "quote": "The Atlas Administration API accepts the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication)"
+   },
+   "self_serve": {
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "quote": "To learn how to use service accounts and API keys to configure programmatic access to your Atlas organizations and projects, see the Atlas Administration API Getting Started guide."
+   },
+   "api_type": {
+    "url": "https://www.mongodb.com/docs/atlas/api/",
+    "quote": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas , including projects, users, and clusters. ... The Atlas Go SDK provides platform-specific and Go language-specific tools..."
+   },
+   "existing_mcp": {
+    "url": "https://www.mongodb.com/docs/atlas/api/",
+    "quote": "Atlas Administration API Atlas Go SDK Atlas Embedding and Reranking API Atlas CLI HashiCorp Terraform MongoDB Atlas Provider"
+   },
+   "buildability": {
+    "url": "https://www.mongodb.com/docs/atlas/api/",
+    "quote": "You can interact with Atlas programmatically to perform administrative tasks or manage your deployments using the following resources."
+   }
+  },
+  "pages": [
+   "https://mongodb.com/docs/atlas/api",
+   "https://docs.mongodb.com",
+   "https://mongodb.com/docs",
+   "https://www.mongodb.com/docs/atlas/api/",
+   "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "https://github.com/mongodb-developer/atlas-admin-api-serviceaccount-auth"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "id": 68
+ },
+ {
+  "one_liner": "Cloud-scale observability and security platform providing monitoring for servers, databases, tools, and services via a REST API.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "Authenticate to the API with an API key using the header DD-API-KEY . For some endpoints, you also need an Application key , which uses the header DD-APPLICATION-KEY ."
+   },
+   "self_serve": {
+    "url": "https://www.datadoghq.com/",
+    "quote": "Start Your Free Datadog Trial Now"
+   },
+   "api_type": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "The Datadog API is an HTTP REST API."
+   },
+   "existing_mcp": {
+    "url": "https://docs.datadoghq.com",
+    "quote": "MCP Server"
+   },
+   "buildability": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "Use our Restful HTTP API for full data access"
+   }
+  },
+  "pages": [
+   "https://docs.datadoghq.com/api",
+   "https://docs.datadoghq.com",
+   "https://www.datadoghq.com/",
+   "https://www.datadoghq.com/product/",
+   "https://en.wikipedia.org/wiki/Datadog"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": false
+  },
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "id": 69
+ },
+ {
+  "one_liner": "Error monitoring, application performance tracing, and debugging platform with API and MCP support.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://sentry.io/",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.sentry.io/api",
+    "quote": "Tutorial: Create a Sentry Authentication Token"
+   },
+   "self_serve": {
+    "url": "https://sentry.io/pricing/",
+    "quote": "developer For solo devs working on small projects Free $0 Limited to one user One user"
+   },
+   "api_type": {
+    "url": "https://docs.sentry.io/api",
+    "quote": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources..."
+   },
+   "existing_mcp": {
+    "url": "https://sentry.io/",
+    "quote": "Sentry MCP: fix production issues right from your LLM"
+   },
+   "buildability": {
+    "url": "https://sentry.io/pricing/",
+    "quote": "Try Sentry for Free"
+   }
+  },
+  "pages": [
+   "https://docs.sentry.io/api",
+   "https://docs.sentry.io",
+   "https://sentry.io/docs",
+   "https://sentry.io/",
+   "https://sentry.io/pricing/",
+   "https://en.wikipedia.org/wiki/Sentry_(Robert_Reynolds)"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "id": 70
+ },
+ {
+  "one_liner": "Flexible workspace platform for notes, docs, wikis, and project management with a powerful developer API.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.notion.com/guides/authorization/overview",
+    "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol."
+   },
+   "self_serve": {
+    "url": "https://notion.com/docs",
+    "quote": "Get Notion free Request a demo"
+   },
+   "api_type": {
+    "url": "https://developers.notion.com",
+    "open": "https://developers.notion.com",
+    "quote": "curl -X POST https://api.notion.com/v1/pages"
+   },
+   "existing_mcp": {
+    "url": "https://developers.notion.com",
+    "quote": "Notion API Quickstart Guides API Reference CLI Reference Workers Admin API Changelog Examples"
+   },
+   "buildability": {
+    "url": "https://developers.notion.com",
+    "quote": "Create a page in your Notion workspace with a personal access token and a single API request."
+   }
+  },
+  "pages": [
+   "https://developers.notion.com",
+   "https://notion.com/docs",
+   "https://developers.notion.com/guides/authorization/overview",
+   "https://developers.notion.com/reference/authentication",
+   "https://www.notion.com/templates/api-documentation",
+   "https://techcommunity.microsoft.com/discussions/microsoftteams/teams-displaying-incorrect-out-of-office-presence-for-a-user/783654"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "id": 71
+ },
+ {
+  "one_liner": "Airtable provides a rich data layer for AI agents to read, write, and query bases through natural language.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://airtable.com/developers",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://airtable.com/developers",
+    "quote": "Connects in one click via OAuth."
+   },
+   "self_serve": {
+    "url": "https://airtable.com/developers",
+    "quote": "Install the plugin to get Airtable MCP & full skills library. View install guide CLI Best for: Scripting, scheduled operations, and running workflows against your Airtable data. Install via npm."
+   },
+   "api_type": {
+    "url": "https://airtable.com/developers",
+    "quote": "Any MCP-compatible tool can read, write, and query your bases through natural language, scoped to your existing permissions."
+   },
+   "existing_mcp": {
+    "url": "https://airtable.com/developers",
+    "quote": "The Airtable MCP server gives agents your base's full structure \u2014 field types, relationships, and views \u2014 so they can make context-aware decisions."
+   },
+   "buildability": {
+    "url": "https://airtable.com/developers",
+    "quote": "Start querying your Airtable data in minutes from the tools your team already uses."
+   }
+  },
+  "pages": [
+   "https://airtable.com/developers",
+   "https://support.google.com/googleplay/answer/2521798?hl=es-419",
+   "https://www.incometax.gov.in/iec/foportal/",
+   "https://www.incometax.gov.in/iec/foportal/newdownloads/login"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "id": 72
+ },
+ {
+  "one_liner": "Issue tracking and project management tool with a GraphQL API and TypeScript SDK.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.linear.app",
+    "quote": "Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API"
+   },
+   "self_serve": {
+    "url": "https://developers.linear.app",
+    "quote": "Learn about building apps and integrations for Linear using the GraphQL API and TypeScript SDK."
+   },
+   "api_type": {
+    "url": "https://developers.linear.app",
+    "quote": "Learn about building apps and integrations for Linear using the GraphQL API and TypeScript SDK."
+   },
+   "existing_mcp": {
+    "url": "https://docs.linear.app",
+    "quote": "MCP Connect to your AI tools and workflows"
+   },
+   "buildability": {
+    "url": "https://developers.linear.app",
+    "quote": "Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API"
+   }
+  },
+  "pages": [
+   "https://developers.linear.app",
+   "https://docs.linear.app",
+   "https://developer.linear.app",
+   "https://linear.app/docs",
+   "https://linear.app/api",
+   "https://www.sexvid.xxx/p/date/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "id": 73
+ },
+ {
+  "one_liner": "Issue tracking and project management software by Atlassian.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "unclear"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "The provided page excerpts do not contain any documentation regarding Jira APIs, authentication, or developer integration tools.",
+  "confidence": 0.1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://telekomhilft.telekom.de/conversations/tv/wichtige-informationen-zur-neuen-webradio-app-bei-magentatv/668a3abe4ae73561dada4a58",
+    "quote": "Wichtige Informationen zur neuen Webradio App bei MagentaTV"
+   },
+   "self_serve": {
+    "url": "https://telekomhilft.telekom.de/conversations/tv/wichtige-informationen-zur-neuen-webradio-app-bei-magentatv/668a3abe4ae73561dada4a58",
+    "quote": "Wichtige Informationen zur neuen Webradio App bei MagentaTV"
+   },
+   "api_type": {
+    "url": "https://telekomhilft.telekom.de/conversations/tv/wichtige-informationen-zur-neuen-webradio-app-bei-magentatv/668a3abe4ae73561dada4a58",
+    "quote": "Wichtige Informationen zur neuen Webradio App bei MagentaTV"
+   },
+   "existing_mcp": {
+    "url": "https://telekomhilft.telekom.de/conversations/tv/wichtige-informationen-zur-neuen-webradio-app-bei-magentatv/668a3abe4ae73561dada4a58",
+    "quote": "Wichtige Informationen zur neuen Webradio App bei MagentaTV"
+   },
+   "buildability": {
+    "url": "https://telekomhilft.telekom.de/conversations/tv/wichtige-informationen-zur-neuen-webradio-app-bei-magentatv/668a3abe4ae73561dada4a58",
+    "quote": "Wichtige Informationen zur neuen Webradio App bei MagentaTV"
+   }
+  },
+  "pages": [
+   "https://telekomhilft.telekom.de/conversations/tv/wichtige-informationen-zur-neuen-webradio-app-bei-magentatv/668a3abe4ae73561dada4a58",
+   "https://telekomhilft.telekom.de/conversations/festnetz-internet/wechsel-der-eigenen-ip-adresse/6687439f4ae73561dacc0451",
+   "https://www.jeuxvideo.com/forums/42-3017784-63881696-1-0-1-0-officiel-microsoft-rewards.htm"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "id": 74
+ },
+ {
+  "one_liner": "Work and project management platform providing an API to automate tasks, workflows, and projects.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token",
+   "jwt",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.asana.com/docs/authentication",
+    "quote": "Here are the various authentication options and why you might want to use each of them. ... Personal access token ... Service Account ... OAuth ... OpenID Connect"
+   },
+   "self_serve": {
+    "url": "https://developers.asana.com",
+    "quote": "New to the Asana API? Build your first app with our step by step quick start guide. Learn to create and authorize with a token then create tasks via the API."
+   },
+   "api_type": {
+    "url": "https://developers.asana.com/docs/api-features",
+    "quote": "The Asana API is a RESTful interface, providing programmatic access to much of the data in the system."
+   },
+   "existing_mcp": {
+    "url": "https://asana.com/",
+    "quote": "Agentic Work Management brings together AI Teammates, AI Studio, Asana Dash, and MCP and AI Connectors"
+   },
+   "buildability": {
+    "url": "https://developers.asana.com",
+    "quote": "Get started Quick start New to the Asana API? Build your first app with our step by step quick start guide."
+   }
+  },
+  "pages": [
+   "https://developers.asana.com",
+   "https://developer.asana.com",
+   "https://developers.asana.com/docs/authentication",
+   "https://developers.asana.com/docs/api-features",
+   "https://asana.com/developers",
+   "https://asana.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "id": 75
+ },
+ {
+  "one_liner": "An AI work platform and extensible developer ecosystem featuring an expressive GraphQL API, webhooks, and MCP integration.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://developer.monday.com",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.monday.com",
+    "quote": "Access OAuth2 scopes built in Request granular scopes like boards:read . Store keys in managed secret storage."
+   },
+   "self_serve": {
+    "url": "https://developer.monday.com/api-reference/docs/developer-sandbox",
+    "quote": "Sign up for a free monday.com developer account to build and test apps and API integrations in a sandbox separate from your production data."
+   },
+   "api_type": {
+    "url": "https://developer.monday.com",
+    "quote": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!"
+   },
+   "existing_mcp": {
+    "url": "https://developer.monday.com",
+    "quote": "Use our native integration, or manually connect with our hosted MCP url. Each agent gets its own identity on monday."
+   },
+   "buildability": {
+    "url": "https://developer.monday.com/api-reference/docs/developer-sandbox",
+    "quote": "Sign up for a free developer account and start building right away"
+   }
+  },
+  "pages": [
+   "https://developer.monday.com",
+   "https://developers.monday.com",
+   "https://monday.com/",
+   "https://monday.com/new-product",
+   "https://developer.monday.com/api-reference/docs/developer-sandbox",
+   "https://developer.monday.com/apps/docs/plans-and-pricing"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": false
+  },
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "id": 76
+ },
+ {
+  "one_liner": "ClickUp is a productivity platform providing task management, docs, chat, and an API with an MCP server.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://developer.clickup.com",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.clickup.com",
+    "quote": "OAuth Let people sign into their ClickUp account."
+   },
+   "self_serve": {
+    "url": "https://clickup.com/docs",
+    "quote": "Get started. It's FREE No credit card. Free forever."
+   },
+   "api_type": {
+    "url": "https://developer.clickup.com",
+    "quote": "API Browse our Public API specification."
+   },
+   "existing_mcp": {
+    "url": "https://developer.clickup.com",
+    "quote": "Connect your AI with ClickUp using our MCP Server."
+   },
+   "buildability": {
+    "url": "https://developer.clickup.com",
+    "quote": "Develop innovative solutions with the ClickUp API Build integrations and apps with our Public API. Connect your AI with ClickUp using our MCP Server."
+   }
+  },
+  "pages": [
+   "https://clickup.com/api",
+   "https://developers.clickup.com",
+   "https://docs.clickup.com",
+   "https://developer.clickup.com",
+   "https://clickup.com/docs",
+   "https://support.hp.com/in-en/drivers"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "id": 77
+ },
+ {
+  "one_liner": "Programmatically interact with data in Coda, including documents, pages, tables, and rows via REST API.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://coda.io/developers",
+    "quote": "What this means is: For the #createDoc endpoint specifically, the owner of the API token must be a Doc Maker (or Admin) in the workspace."
+   },
+   "self_serve": {
+    "url": "https://coda.io/developers",
+    "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces."
+   },
+   "api_type": {
+    "url": "https://superhuman.com/developers",
+    "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda)"
+   },
+   "existing_mcp": {
+    "url": "https://superhuman.com/developers",
+    "quote": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the Superhuman Docs MCP server ."
+   },
+   "buildability": {
+    "url": "https://coda.io/developers",
+    "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces."
+   }
+  },
+  "pages": [
+   "https://coda.io/developers",
+   "https://coda.io/api",
+   "https://parivahan.gov.in/parivahan/",
+   "https://github.com/pionxzh/chatgpt-exporter",
+   "https://openai.com/index/chatgpt/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": false,
+   "existing_mcp": false,
+   "buildability": true
+  },
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "id": 78
+ },
+ {
+  "one_liner": "Enterprise work execution platform offering APIs, SDKs, and an MCP server for managing projects and workflows.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.smartsheet.com/register",
+    "quote": "With Developer Tools, you can register applications that request user authorization to access Smartsheet data. For details, see OAuth Walkthrough ."
+   },
+   "self_serve": {
+    "url": "https://developers.smartsheet.com/register",
+    "quote": "The email address used to register for Developer Tools must belong to an existing licensed Smartsheet user on a Business plan or higher."
+   },
+   "api_type": {
+    "url": "https://developers.smartsheet.com",
+    "quote": "Smartsheet API Guides Smartsheet API Reference Smartsheet SDKs Resources C# (smartsheet-csharp-sdk) Java (smartsheet-java-sdk) Node.js (smartsheet-javascript-sdk) Python (smartsheet-python-sdk)"
+   },
+   "existing_mcp": {
+    "url": "https://developers.smartsheet.com",
+    "quote": "Smartsheet AI & Smartsheet MCP Server Smartsheet MCP Server Tools"
+   },
+   "buildability": {
+    "url": "https://developers.smartsheet.com",
+    "quote": "Explore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community building on Smartsheet."
+   }
+  },
+  "pages": [
+   "https://smartsheet.com/developers",
+   "https://developers.smartsheet.com",
+   "https://www.smartsheet.com/",
+   "https://www.smartsheet.com/platform",
+   "https://developers.smartsheet.com/",
+   "https://developers.smartsheet.com/register"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "id": 79
+ },
+ {
+  "one_liner": "Time tracking and invoicing software that lets professional teams track time, bill clients, and manage projects.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://api.harvestapp.com/mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+    "quote": "This is usually a transient hiccup during the OAuth handshake rather than a real failure. Try connecting again"
+   },
+   "self_serve": {
+    "url": "https://www.getharvest.com/",
+    "quote": "Free 30-day trial No credit card Cancel anytime"
+   },
+   "api_type": {
+    "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+    "quote": "Set the Remote MCP server URL to: https://api.harvestapp.com/mcp"
+   },
+   "existing_mcp": {
+    "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+    "quote": "The Harvest MCP (Model Context Protocol) connection lets you work with your Harvest data through an AI assistant"
+   },
+   "buildability": {
+    "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+    "quote": "The Harvest MCP is the connection that gives an MCP-compatible assistant \u2014 such as Claude \u2014 controlled access to your Harvest account"
+   }
+  },
+  "pages": [
+   "https://help.getharvest.com/api-v2",
+   "https://getharvest.com/api",
+   "https://www.getharvest.com/",
+   "https://www.getharvest.com/apps",
+   "https://en.wikipedia.org/wiki/Harvest",
+   "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "id": 80
+ },
+ {
+  "one_liner": "Financial infrastructure platform providing REST APIs to accept payments, manage subscriptions, and handle global commerce.",
+  "auth_methods": [
+   "api_key",
+   "basic",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1.0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "The Stripe API uses API keys to authenticate requests. You can view and manage your API keys in the Stripe Dashboard... The Stripe API authenticates requests using HTTP Basic Auth."
+   },
+   "self_serve": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks. The API key that you use to authenticate the request determines whether the request runs in live mode or in a sandbox."
+   },
+   "api_type": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "The Stripe API is organized around REST . Our API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses"
+   },
+   "existing_mcp": {
+    "url": "https://stripe.com/",
+    "quote": "Use our SDKs, APIs, MCP server and AI developer tools to build and maintain your own integration with Stripe."
+   },
+   "buildability": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "A sample test API key is included in all the examples here, so you can test any example right away."
+   }
+  },
+  "pages": [
+   "https://stripe.com/docs/api",
+   "https://docs.stripe.com",
+   "https://stripe.com/docs",
+   "https://stripe.com/api",
+   "https://dashboard.stripe.com/",
+   "https://stripe.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "id": 81
+ },
+ {
+  "one_liner": "Connect apps to financial institutions to access bank accounts, transactions, balances, and payments via API.",
+  "auth_methods": [
+   "api_key",
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://plaid.com/docs",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://plaid.com/",
+    "quote": "Get the API keys Read the docs /auth/get 1 2 3 4 5 request = AuthGetRequest (access_token=access_token) response = client. auth_get (request)"
+   },
+   "self_serve": {
+    "url": "https://plaid.com/",
+    "quote": "Want access to 12K banks? We've got the API keys. You build the experience. We'll handle the data. Get the API keys"
+   },
+   "api_type": {
+    "url": "https://plaid.com/how-it-works-for-consumers/",
+    "quote": "Once you give us permission to share your financial data, we securely transfer it from your financial institution to the app through our application programming interface (API)."
+   },
+   "existing_mcp": {
+    "url": "https://plaid.com/docs",
+    "quote": "Plug me in via the Plaid MCP Server ."
+   },
+   "buildability": {
+    "url": "https://plaid.com/",
+    "quote": "Want access to 12K banks? We've got the API keys. You build the experience. We'll handle the data. Get the API keys"
+   }
+  },
+  "pages": [
+   "https://plaid.com/docs",
+   "https://docs.plaid.com",
+   "https://plaid.com/",
+   "https://plaid.com/how-it-works-for-consumers/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "id": 82
+ },
+ {
+  "one_liner": "Unclear from provided pages",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "none"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "unknown",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "unclear",
+  "blocker_note": "Provided pages contain unrelated GitHub Pages documentation.",
+  "confidence": 0.0,
+  "evidence": {},
+  "pages": [
+   "https://github.io/docs",
+   "https://github.io/api"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": false,
+   "api_type": false,
+   "existing_mcp": false,
+   "buildability": false
+  },
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "id": 83
+ },
+ {
+  "one_liner": "Build cost-controlled AI products by tracking costs, enforcing usage limits, and managing subscriptions for LLMs.",
+  "auth_methods": [
+   "bearer_token",
+   "none"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "quote": "Authentication: Bearer token in Authorization: Bearer pg_live_... header. The product creation endpoint ( POST /products ) is the only exception \u2014 it's how you mint the first key. No authentication required."
+   },
+   "self_serve": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "quote": "The product creation endpoint ( POST /products ) is the only exception \u2014 it's how you mint the first key. No authentication required."
+   },
+   "api_type": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "quote": "The Paygent backend exposes a small REST API. The SDK uses it. You also call it directly to manage plans, users, and subscriptions. Base URL: https://api.paygent.to/api/v1"
+   },
+   "existing_mcp": {
+    "url": "https://docs.paygent.to/",
+    "quote": "Paygent Documentation Build cost-controlled AI products. Track costs, enforce limits, and get alerted \u2014 for OpenAI, Anthropic, LangChain, CrewAI, and the Vercel AI SDK."
+   },
+   "buildability": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "quote": "The Paygent backend exposes a small REST API. The SDK uses it. You also call it directly to manage plans, users, and subscriptions. Base URL: https://api.paygent.to/api/v1"
+   }
+  },
+  "pages": [
+   "https://docs.paygent.to/reference/api-reference/",
+   "https://docs.paygent.to/",
+   "https://docs.withpaygent.com/",
+   "https://github.com/pionxzh/chatgpt-exporter"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": false,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "id": 84
+ },
+ {
+  "one_liner": "Neutral FX verification layer auditing foreign-exchange transactions to reveal invisible spreads and quantify costs.",
+  "auth_methods": [
+   "none"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "none"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No public API or documentation is available on the site.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "iPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions"
+   },
+   "self_serve": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied."
+   },
+   "api_type": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection."
+   },
+   "existing_mcp": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer"
+   },
+   "buildability": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "Contact: info@ipayx.ai"
+   }
+  },
+  "pages": [
+   "https://ipayx.ai/docs",
+   "https://ipayx.ai/api",
+   "https://fitgirl-repacks.site/",
+   "https://fitgirl-repacks.site/upcoming-repacks-10/",
+   "https://fitgirl-repacks.to/all-my-repacks-a-z"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "id": 85
+ },
+ {
+  "one_liner": "Unclear from the provided text.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "none"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "The provided text contains adult content and no API documentation for QuickBooks.",
+  "confidence": 0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://xnxx.health/search/indian+military",
+    "quote": "The provided pages do not contain any information about QuickBooks or its authentication methods."
+   },
+   "self_serve": {
+    "url": "https://xnxx.health/search/indian+military",
+    "quote": "The provided pages do not contain any information about QuickBooks."
+   },
+   "api_type": {
+    "url": "https://xnxx.health/search/indian+military",
+    "quote": "The provided pages do not contain any API information for QuickBooks."
+   },
+   "existing_mcp": {
+    "url": "https://xnxx.health/search/indian+military",
+    "quote": "No MCP information is present."
+   },
+   "buildability": {
+    "url": "https://xnxx.health/search/indian+military",
+    "quote": "No documentation is available."
+   }
+  },
+  "pages": [
+   "https://xnxx.health/search/indian+military",
+   "https://pornyc.com/video/7144/vidya-balan-kiss-amp-sex-scen-from-movie-the-dirty/",
+   "https://xhamster19.com/videos/vidya-balan-sex-xh9lmse"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": false,
+   "api_type": false,
+   "existing_mcp": false,
+   "buildability": false
+  },
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "id": 86
+ },
+ {
+  "one_liner": "Cloud-based accounting software platform offering APIs, SDKs, and an AI toolkit for small businesses and developers.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.xero.com",
+    "quote": "It utilises the client credentials grant type to provide a simplified, efficient developer experience."
+   },
+   "self_serve": {
+    "url": "https://developer.xero.com",
+    "quote": "Sign up for a free account to build on the Xero platform."
+   },
+   "api_type": {
+    "url": "https://developer.xero.com",
+    "quote": "This includes Xero APIs, SDKs, code samples, documentation and more."
+   },
+   "existing_mcp": {
+    "url": "https://developer.xero.com",
+    "quote": "Get Started with Xero's AI Toolkit including OpenAI Agents SDK, MCP Server, LangChain and prompt examples."
+   },
+   "buildability": {
+    "url": "https://developer.xero.com",
+    "quote": "Sign up for a free account to build on the Xero platform. Take a look at our getting started guide, SDKs and the other steps you need to complete for certification."
+   }
+  },
+  "pages": [
+   "https://developer.xero.com",
+   "https://www.xero.com/login/?msockid=23ff8ad28c8563c01f8c92c98d7e6251",
+   "https://www.xero.com/?msockid=23ff8ad28c8563c01f8c92c98d7e6251",
+   "https://go.xero.com/AccountsReceivable/Search.aspx?invoiceStatus=INVOICESTATUS/AUTHORISED",
+   "https://www.xero.com/login/",
+   "https://www.xero.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "id": 87
+ },
+ {
+  "one_liner": "A fully unified spend platform offering global corporate cards, expense management, reimbursements, travel, and bill pay.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://brex.com/docs",
+    "quote": "Account and card admins can get started on the API by visiting Brex for Developers , our documentation hub, and reading through our documentation and example apps. Check your role permissions and if you\u2019re authorized, generate a user token from your Brex dashboard following these instructions ."
+   },
+   "self_serve": {
+    "url": "https://brex.com/docs",
+    "quote": "Account and card admins can get started on the API by visiting Brex for Developers , our documentation hub, and reading through our documentation and example apps."
+   },
+   "api_type": {
+    "url": "https://developer.brex.com",
+    "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs."
+   },
+   "existing_mcp": {
+    "url": "https://developer.brex.com",
+    "quote": "Brex MCP"
+   },
+   "buildability": {
+    "url": "https://developer.brex.com",
+    "quote": "Using the Brex API, you can power your internal tools and create custom workflows."
+   }
+  },
+  "pages": [
+   "https://developer.brex.com",
+   "https://developers.brex.com",
+   "https://brex.com/docs",
+   "https://brex.com/api",
+   "https://www.brex.com/",
+   "https://www.brex.com/support/signing-into-brex"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "id": 88
+ },
+ {
+  "one_liner": "Corporate cards, expense management, bill payments, and accounting automation platform with modular APIs and an MCP server.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "unclear",
+  "blocker_note": "Documentation requires fetching specific machine-readable LLM endpoint files or OpenAPI specs to determine exact authentication and detailed implementation steps.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.ramp.com",
+    "quote": "Developer Platform Developer Tools Build once. Automate forever. Agent-ready protocols, real-time data access, and modular APIs built for composability."
+   },
+   "self_serve": {
+    "url": "https://developer.ramp.com",
+    "quote": "Explore docs Tools for every use case. Issue virtual cards. Provision cards with precise controls for any workflow, customer, or agent."
+   },
+   "api_type": {
+    "url": "https://developer.ramp.com",
+    "quote": "Use Ramp\u2019s MCP server and APIs to create agents that do work for you."
+   },
+   "existing_mcp": {
+    "url": "https://developer.ramp.com",
+    "quote": "Use Ramp\u2019s MCP server and APIs to create agents that do work for you."
+   },
+   "buildability": {
+    "url": "https://developer.ramp.com",
+    "quote": "Explore docs Tools for every use case. Issue virtual cards. Provision cards with precise controls for any workflow, customer, or agent."
+   }
+  },
+  "pages": [
+   "https://docs.ramp.com",
+   "https://developer.ramp.com",
+   "https://ramp.com/api",
+   "https://ramp.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "id": 89
+ },
+ {
+  "one_liner": "Access global private and public market data, including companies, investors, funds, and deal activity.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "none"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No public API or developer documentation is mentioned in the provided pages for PitchBook.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://www.microsoft.com/en-us/download/windows",
+    "quote": "The provided text excerpts do not contain any information about PitchBook authentication methods."
+   },
+   "self_serve": {
+    "url": "https://www.microsoft.com/en-us/download/windows",
+    "quote": "The provided text excerpts do not contain any information about PitchBook self-serve availability."
+   },
+   "api_type": {
+    "url": "https://www.microsoft.com/en-us/download/windows",
+    "quote": "The provided text excerpts do not contain any information about PitchBook APIs."
+   },
+   "existing_mcp": {
+    "url": "https://www.microsoft.com/en-us/download/windows",
+    "quote": "No Model Context Protocol (MCP) integrations are mentioned in the provided text."
+   },
+   "buildability": {
+    "url": "https://www.microsoft.com/en-us/download/windows",
+    "quote": "The provided text pages contain information regarding Windows downloads, Microsoft Store, Yahoo Answers, and Google Chrome, but completely lack any PitchBook API documentation or developer tools."
+   }
+  },
+  "pages": [
+   "https://www.microsoft.com/en-us/download/windows",
+   "https://www.microsoft.com/en-us/download",
+   "https://support.microsoft.com/de-de/accounts-billing/find-and-install-your-microsoft-downloads-from-microsoft-store",
+   "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12321062837",
+   "https://www.google.com/chrome/index.html",
+   "https://support.google.com/chrome/answer/95346?hl=it&co=GENIE.Platform=Desktop"
+  ],
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": false,
+   "api_type": false,
+   "existing_mcp": false,
+   "buildability": false
+  },
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "id": 90
+ },
+ {
+  "one_liner": "AI research assistant and smart note-taking tool grounded in user-provided source documents.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "Requires unofficial browser session cookies for MCP integration since there is no official public API.",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+    "quote": "Sign in with your Google account. When the notebook list appears, the session cookies (including Google's rotating __Secure-1PSIDTS token) are captured and saved to ~/.notebooklm-mcp/auth.json ."
+   },
+   "self_serve": {
+    "url": "https://notebooklm.xin/en/",
+    "quote": "NotebookLM offers a free tier for everyday needs; AI Ultra unlocks advanced features."
+   },
+   "api_type": {
+    "url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+    "quote": "Give your AI agents full control of Google Gemini Notebook (formerly NotebookLM): grounded answers, deep research, podcasts, quizzes, and more \u2014 47 tools, zero hallucinations."
+   },
+   "existing_mcp": {
+    "url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+    "quote": "Universal installer and configuration guide for NotebookLM MCP server."
+   },
+   "buildability": {
+    "url": "https://github.com/moodRobotics/notebooklm-mcp-server",
+    "quote": "npm install -g notebooklm-mcp-server"
+   }
+  },
+  "pages": [
+   "https://cloud.google.com/gemini",
+   "https://developers.google.com",
+   "https://developer.google.com",
+   "https://notebook.google.com/",
+   "https://notebooklm.xin/en/",
+   "https://github.com/moodRobotics/notebooklm-mcp-server"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "id": 91
+ },
+ {
+  "one_liner": "AI notetaker and conversational knowledge engine that transcribes meetings, extracts summaries, and automates action items.",
+  "auth_methods": [
+   "unclear"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "none"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "official",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "Provides an official MCP server for AI chat tools like Claude and ChatGPT, but lacks a general public API/SDK documentation.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://otter.ai/",
+    "quote": "ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows."
+   },
+   "self_serve": {
+    "url": "https://otter.ai/",
+    "quote": "Basic Get started with Otter for free Free forever Perfect for individuals and small teams looking to transcribe and summarize their meetings effortlessly"
+   },
+   "api_type": {
+    "url": "https://otter.ai/",
+    "quote": "ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows."
+   },
+   "existing_mcp": {
+    "url": "https://otter.ai/",
+    "quote": "ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows."
+   },
+   "buildability": {
+    "url": "https://otter.ai/",
+    "quote": "ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter\u2019s MCP Server for deeper analysis and smarter workflows."
+   }
+  },
+  "pages": [
+   "https://help.otter.ai",
+   "https://otter.ai/?msockid=251fd581c846669b18e9cd9ac9b0679c",
+   "https://otter.ai/author/otter?msockid=251fd581c846669b18e9cd9ac9b0679c",
+   "https://en.wikipedia.org/wiki/Otter",
+   "https://otter.ai/",
+   "https://otter.ai/author/otter"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "id": 92
+ },
+ {
+  "one_liner": "AI notetaker that summarizes meetings, captures transcripts, and syncs notes across tools like Slack and Salesforce.",
+  "auth_methods": [
+   "oauth2",
+   "none"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "none"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "Fathom provides an AI notetaking application and integrations, but does not publish a public developer API or documentation.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://fathom.video",
+    "quote": "SOC 2 Type II | GDPR | HIPAA Compliant | SSO / SCIM"
+   },
+   "self_serve": {
+    "url": "https://fathom.video",
+    "quote": "Get started - free forever"
+   },
+   "api_type": {
+    "url": "https://fathom.video",
+    "quote": "Meeting notes, insights and action items sync automatically with your tools \u2013 Slack, Salesforce, HubSpot, Notion, Asana, and beyond"
+   },
+   "existing_mcp": {
+    "url": "https://fathom.video",
+    "quote": "Meeting notes, insights and action items sync automatically with your tools \u2013 Slack, Salesforce, HubSpot, Notion, Asana, and beyond"
+   },
+   "buildability": {
+    "url": "https://fathom.video",
+    "quote": "Get started - free forever"
+   }
+  },
+  "pages": [
+   "https://fathom.video",
+   "https://www.tenforums.com/tutorials/112621-change-uac-prompt-behavior-administrators-windows.html",
+   "https://www.tenforums.com/tutorials/112612-enable-disable-uac-prompt-built-administrator-windows.html",
+   "https://www.elevenforum.com/t/change-uac-behavior-for-standard-users-in-windows-11.13032/",
+   "https://www.google.com/chrome/index.html",
+   "https://www.google.com/intl/en_uk/chrome/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "id": 93
+ },
+ {
+  "one_liner": "AI search engine for scholarly articles and research papers that provides cited answers.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "official",
+  "mcp_url": "https://consensus.app/home/mcp/",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.consensus.app",
+    "quote": "Connect Consensus to the AI assistant you already use in one click, or build on it with the API."
+   },
+   "self_serve": {
+    "url": "https://docs.consensus.app",
+    "quote": "Free 10 per month 3 per month 30 per month"
+   },
+   "api_type": {
+    "url": "https://docs.consensus.app",
+    "quote": "Connect Consensus to the AI assistant you already use in one click, or build on it with the API."
+   },
+   "existing_mcp": {
+    "url": "https://consensus.app/home/mcp/",
+    "quote": "Get started with: Claude ChatGPT Perplexity Microsoft 365 Copilot Gemini MCP Clients Building your own tool? View the API docs"
+   },
+   "buildability": {
+    "url": "https://docs.consensus.app",
+    "quote": "Connect Consensus to the AI assistant you already use in one click, or build on it with the API."
+   }
+  },
+  "pages": [
+   "https://docs.consensus.app",
+   "https://consensus.app/home/mcp/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "id": 94
+ },
+ {
+  "one_liner": "Agentic document platform providing APIs for parsing, extracting, splitting, editing, and converting documents like PDFs, Word, PowerPoint, and Excel.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://docs.reducto.ai",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://reducto.ai/pricing",
+    "quote": "Standard Pay-as-you-go for early-stage teams Free $150 in free usage Get started"
+   },
+   "self_serve": {
+    "url": "https://reducto.ai/pricing",
+    "quote": "Standard Pay-as-you-go for early-stage teams Free $150 in free usage Get started"
+   },
+   "api_type": {
+    "url": "https://docs.reducto.ai",
+    "quote": "Available in Python, Node.js, Go, and REST, with Studio for visual pipeline building."
+   },
+   "existing_mcp": {
+    "url": "https://docs.reducto.ai",
+    "quote": "MCP Server Give agents Reducto tools directly in Claude Code, Codex, Cursor, and other MCP clients."
+   },
+   "buildability": {
+    "url": "https://reducto.ai/pricing",
+    "quote": "Standard $150 in free usage Get started"
+   }
+  },
+  "pages": [
+   "https://reducto.ai",
+   "https://docs.reducto.ai",
+   "https://reducto.ai/docs",
+   "https://tallysolutions.com/",
+   "https://tallysolutions.com/customization/",
+   "https://reducto.ai/pricing"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": false
+  },
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "id": 95
+ },
+ {
+  "one_liner": "An autonomous AI software engineer that writes, runs, and tests code to assist engineering teams.",
+  "auth_methods": [
+   "other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "No major blockers found; Devin offers self-serve signup and API access.",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.devin.ai",
+    "quote": "Devin is also available via the Devin API ."
+   },
+   "self_serve": {
+    "url": "https://docs.devin.ai",
+    "quote": "To access Devin, sign up at app.devin.ai . Individual and Teams plans are available."
+   },
+   "api_type": {
+    "url": "https://docs.devin.ai",
+    "quote": "Devin is also available via the Devin API ."
+   },
+   "existing_mcp": {
+    "url": "https://docs.devin.ai",
+    "quote": "Devin is also available via the Devin API ."
+   },
+   "buildability": {
+    "url": "https://docs.devin.ai",
+    "quote": "Devin is also available via the Devin API ."
+   }
+  },
+  "pages": [
+   "https://docs.devin.ai",
+   "https://devin.ai/docs",
+   "https://support.google.com/youtube/answer/72857?hl=en",
+   "https://support.google.com/youtubetv/thread/317759354/how-to-watch-secn-on-you-tube-tv?hl=en",
+   "https://devin.ai/pricing",
+   "https://www.aipricing.guru/subscriptions/devin-free/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "id": 96
+ },
+ {
+  "one_liner": "AI-native creative suite for generating and editing images and videos using various leading AI models.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://higgsfield.ai/cli",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.higgsfield.ai",
+    "quote": "--header \"Authorization: Key ${ HF_API_KEY_ID }:${ HF_API_KEY_SECRET }\""
+   },
+   "self_serve": {
+    "url": "https://higgsfield.ai/ai-video",
+    "quote": "Yes. Higgsfield has a free plan, and new ac"
+   },
+   "api_type": {
+    "url": "https://docs.higgsfield.ai",
+    "quote": "Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes."
+   },
+   "existing_mcp": {
+    "url": "https://higgsfield.ai/cli",
+    "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools."
+   },
+   "buildability": {
+    "url": "https://docs.higgsfield.ai",
+    "quote": "Create credentials and complete a generation from submission to result."
+   }
+  },
+  "pages": [
+   "https://higgsfield.ai/cli",
+   "https://docs.higgsfield.ai",
+   "https://higgsfield.ai/api",
+   "https://higgsfield.ai/",
+   "https://higgsfield.ai/ai-video",
+   "https://higsfield.io/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "id": 97
+ },
+ {
+  "one_liner": "Command line interface tool for the Mermaid library to generate SVG, PNG, or PDF files from diagram definitions.",
+  "auth_methods": [
+   "none"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "cli_only",
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "none",
+  "confidence": 1.0,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid . It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+   },
+   "self_serve": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Installation npm install -g @mermaid-js/mermaid-cli"
+   },
+   "api_type": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "It's possible to call mermaid-cli via a Node.JS API."
+   },
+   "existing_mcp": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid ."
+   },
+   "buildability": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Installation npm install -g @mermaid-js/mermaid-cli"
+   }
+  },
+  "pages": [
+   "https://github.com/mermaid-js/mermaid-cli",
+   "https://docs.github.com",
+   "https://developer.github.com",
+   "https://github.com/docs",
+   "https://mermaid.js.org/",
+   "https://www.mermaideditor.io/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "id": 98
+ },
+ {
+  "one_liner": "YouTube Transcript API with Search, Channels & Playlists for developers and AI agents.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://transcriptapi.com",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 1,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://transcriptapi.com",
+    "quote": "curl \" https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ&format=json \" \\\n-H \" Authorization: Bearer API_KEY \""
+   },
+   "self_serve": {
+    "url": "https://transcriptapi.com",
+    "quote": "Get Started Free View Pricing"
+   },
+   "api_type": {
+    "url": "https://transcriptapi.com",
+    "quote": "Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP \u2014 at scale."
+   },
+   "existing_mcp": {
+    "url": "https://transcriptapi.com",
+    "quote": "Use TranscriptAPI with Model Context Protocol for seamless integration with AI tools."
+   },
+   "buildability": {
+    "url": "https://transcriptapi.com",
+    "quote": "Every feature works via API, MCP, and agent skills."
+   }
+  },
+  "pages": [
+   "https://transcriptapi.com",
+   "https://transcriptapi.com/docs",
+   "https://en.wikipedia.org/wiki/GitHub",
+   "https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop",
+   "https://docs.github.com/en",
+   "https://forum.lowyat.net/topic/5580378"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": false,
+   "buildability": true
+  },
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "id": 99
+ },
+ {
+  "one_liner": "Grain is an AI meeting recorder and transcription tool that captures, enriches, and summarizes meetings for teams.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://api.grain.com/_/mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.grain.com/authentication.html",
+    "quote": "To authenticate API calls, the client must add the following header: Copy Authorization : Bearer TOKEN"
+   },
+   "self_serve": {
+    "url": "https://developers.grain.com",
+    "quote": "1. Create a Personal Access Token A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain."
+   },
+   "api_type": {
+    "url": "https://developers.grain.com",
+    "quote": "curl -X GET \\ -H \"Authorization: Bearer grain_pat_example123\" \\ -H \"Public-Api-Version: 2026-10-01\" \\ https://api.grain.com/_/public-api/v2/token-info"
+   },
+   "existing_mcp": {
+    "url": "https://developers.grain.com/authentication.html",
+    "quote": "Tokens with the personal scope, including Personal Access Tokens, also authenticate the Grain MCP server at https://api.grain.com/_/mcp ."
+   },
+   "buildability": {
+    "url": "https://developers.grain.com",
+    "quote": "The Grain API lets you read and manage recordings, highlights, uploads, and more."
+   }
+  },
+  "pages": [
+   "https://grain.com",
+   "https://developers.grain.com",
+   "https://developers.grain.com/",
+   "https://docs.grainfinance.co/api-reference/authentication",
+   "https://developers.grain.com/authentication.html",
+   "https://grain.com/"
+  ],
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "id": 100
  }
 ]

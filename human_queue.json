@@ -1,12 +1,519 @@
 [
  {
-  "app": "YouTube Transcript",
+  "app": "Zoho CRM",
+  "fields": [
+   "buildability"
+  ],
+  "pages": [
+   "https://zoho.com/crm",
+   "https://developers.zoho.com",
+   "https://developer.zoho.com",
+   "https://www.zoho.com/crm/developer/developer-edition.html",
+   "https://www.zoho.com/crm/developer/docs/dev-edition.html",
+   "https://help.zoho.com/portal/en/community/topic/kaizen-34-api-credits",
+   "https://www.talbros.com/talbros-marugo-jv",
+   "https://www.talbros.com/",
+   "https://www.marugo-rubber.co.jp/en/",
+   "https://forum.lowyat.net/topic/5556445",
+   "https://forum.lowyat.net/topic/5519898",
+   "https://www.zoho.com/crm/developer/mcp.html",
+   "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+   "https://help.zoho.com/portal/en/kb/mcp/getting-started/articles/zoho-mcp-help-documentation"
+  ]
+ },
+ {
+  "app": "Copper",
+  "fields": [
+   "existing_mcp"
+  ],
+  "pages": [
+   "https://copper.com",
+   "https://developer.copper.com",
+   "https://en.wikipedia.org/wiki/Copper",
+   "https://copperprice.in/",
+   "https://www.onegtmlab.dev/tool-directory/crm/copper",
+   "https://developer.copper.com/",
+   "https://developer.copper.com/introduction/oauth/flow.html",
+   "https://developer.copper.com/introduction/oauth/index.html",
+   "https://developer.copper.co/api-reference/authentication"
+  ]
+ },
+ {
+  "app": "Intercom",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://intercom.com",
+   "https://developers.intercom.com",
+   "https://docs.intercom.com",
+   "https://intercom.com/docs",
+   "https://intercom.com/api",
+   "https://www.intercom.com/",
+   "https://app.intercom.com/admins/sign_in",
+   "https://www.amazon.in/wireless-intercom/s?k=wireless+intercom",
+   "https://developers.intercom.com/docs/guides/mcp",
+   "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+   "https://mcpservers.org/servers/intercom-mcp"
+  ]
+ },
+ {
+  "app": "Front",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://front.com",
+   "https://front.com/api",
+   "https://dev.frontapp.com/docs/welcome",
+   "https://dev.frontapp.com/docs/authentication",
+   "https://help.front.com/en/articles/2309",
+   "https://support.google.com/youtube/troubleshooter/13572679?hl=en-GB",
+   "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+   "https://www.wikihow.com/Get-Help-in-Windows-11",
+   "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+   "https://bbs.scol.com.cn/"
+  ]
+ },
+ {
+  "app": "LiveAgent",
+  "fields": [],
+  "pages": [
+   "https://liveagent.com",
+   "https://support.google.com/youtube/?Hl=en",
+   "https://support.google.com/youtubetv/?hl=en",
+   "https://support.google.com/youtube/answer/3037019?hl=pl",
+   "https://www.tenforums.com/threads/generate-system-diagnostics-report-in-windows-10.81928/",
+   "https://www.tenforums.com/general-support/70008-rotation-lock-rotation-sensor-not-working-lenovo-yoga-2-1-a.html",
+   "https://bluedart.com/tracking",
+   "https://api.bluedart.com/track-trace",
+   "https://bluedart.com/trackdartresult"
+  ]
+ },
+ {
+  "app": "Zoho Cliq",
+  "fields": [
+   "existing_mcp"
+  ],
+  "pages": [
+   "https://zoho.com/cliq",
+   "https://developers.zoho.com",
+   "https://developer.zoho.com",
+   "https://www.zoho.com/cliq/help/restapi/v2/",
+   "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+   "https://support.mozilla.org/en-us/kb/enable-and-disable-cookies-website-preferences",
+   "https://github.com/pionxzh/chatgpt-exporter",
+   "https://www.astrologyanswers.com/article/uranus-retrograde-in-gemini/",
+   "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+   "https://support.microsoft.com/sv-se/windows/deployment/install-upgrade/getting-ready-for-the-windows-11-upgrade",
+   "https://www.elevenforum.com/t/need-help-upgrading-to-windows-11-on-an-old-toshiba-laptop.3844/",
+   "https://chatgpt.com/download/",
+   "https://openai.com/index/chatgpt/",
+   "https://support.google.com/docs/answer/3093301?hl=en"
+  ]
+ },
+ {
+  "app": "Pumble",
+  "fields": [
+   "existing_mcp"
+  ],
+  "pages": [
+   "https://pumble.com",
+   "https://pumble.com/",
+   "https://pumble.com/apps",
+   "https://pumble.com/pricing",
+   "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features/",
+   "https://developer.trimble.com/en/pricing",
+   "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+   "https://pumble.com/help/workspace-administration/pricing/pumble-free-trial/"
+  ]
+ },
+ {
+  "app": "Vonage",
+  "fields": [
+   "api_type",
+   "existing_mcp"
+  ],
+  "pages": [
+   "https://developer.vonage.com",
+   "https://developer.vonage.com/en/documentation",
+   "https://www.vonage.com/developer-center/",
+   "https://api.support.vonage.com/hc/en-us/categories/202622537-Developer-API",
+   "https://developer.vonage.com/en/mcp-server/overview",
+   "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+   "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+   "https://developer.vonage.com/en/dashboard/build/applications",
+   "https://www.vonage.com/",
+   "https://www.vonage.com/log-in/",
+   "https://developer.vonage.com/en/home",
+   "https://developer.vonage.com/en/dashboard/getting-started"
+  ]
+ },
+ {
+  "app": "Google Ads",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://developers.google.com/google-ads",
+   "https://developers.google.com",
+   "https://developer.google.com",
+   "https://search.google/",
+   "https://apis.io/plans/google-ads/google-ads-plans-pricing/",
+   "https://developers.google.com/google-ads/api",
+   "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+   "https://developers.google.com/google-ads/api/docs/api-policy/developer-token"
+  ]
+ },
+ {
+  "app": "Pinterest",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://developers.pinterest.com",
+   "https://developer.pinterest.com",
+   "https://pinterest.com/docs",
+   "https://pinterest.com/api",
+   "https://www.geeksforgeeks.org/data-analysis/data-analysis-with-python/",
+   "https://realpython.com/python-for-data-analysis/",
+   "https://developers.pinterest.com/docs/getting-started/authentication/",
+   "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "https://developers.pinterest.com/",
+   "https://developers.pinterest.com/docs/api-basics/",
+   "https://dev.pinterest.com/docs/getting-started/",
+   "https://developers.pinterest.com/about-pinterest-mcp/",
+   "https://github.com/postoncehq/pinterest-mcp",
+   "https://github.com/terryso/mcp-pinterest"
+  ]
+ },
+ {
+  "app": "SendGrid",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://sendgrid.com",
+   "https://docs.sendgrid.com",
+   "https://sendgrid.com/docs",
+   "https://sendgrid.com/api",
+   "https://tirupatibalaji.ap.gov.in/",
+   "https://tirupatibalaji.ap.gov.in/receipts/pdf/downloads/Guidelines.pdf",
+   "https://sendgrid.com/en-us"
+  ]
+ },
+ {
+  "app": "Shopify",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://shopify.dev",
+   "https://shopify.dev/docs",
+   "https://shopify.dev/api",
+   "https://shopify.dev/docs/api",
+   "https://shopify.dev/docs/api/usage/authentication",
+   "https://shopifylearner.com/shopify-api-authentication/",
+   "https://www.shopify.com/",
+   "https://www.shopify.com/store-login",
+   "https://themes.shopify.com/designers/shopify"
+  ]
+ },
+ {
+  "app": "BigCommerce",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://developer.bigcommerce.com",
+   "https://docs.bigcommerce.com",
+   "https://bigcommerce.com/docs",
+   "https://satta-king-fast.com/delhi-city/satta-result-chart/dc/",
+   "https://satta-king-fast.com/",
+   "https://satta-company.com/",
+   "https://www.goodreturns.in/gold-rates/bangalore.html",
+   "https://www.goodreturns.in/gold-rates/chennai.html",
+   "https://www.goodreturns.in/gold-rates/",
+   "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+   "https://docs.bigcommerce.com/developer/docs/ai-agent-setup",
+   "https://www.bigcommerce.com/blog/storefront-mcp/",
+   "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+   "https://www.bigcommerce.com/free-trial/"
+  ]
+ },
+ {
+  "app": "Salesforce Commerce Cloud",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://docs.salesforce.com",
+   "https://forum.lowyat.net/topic/5556445",
+   "https://forum.lowyat.net/topic/5538738",
+   "https://copilot.com/?msockid=3ed29478d40965431d728c63d5bf640c",
+   "https://www.whatsapp.com/",
+   "https://www.whatsapp.com/download",
+   "https://translate.google.com/",
+   "https://support.google.com/translate/answer/6142468?hl=fi&co=GENIE.Platform=Android",
+   "https://support.google.com/meet/answer/16221730?hl=en&co=GENIE.Platform=Desktop",
+   "https://www.crazygames.com/",
+   "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/"
+  ]
+ },
+ {
+  "app": "Squarespace",
+  "fields": [
+   "buildability"
+  ],
+  "pages": [
+   "https://developers.squarespace.com",
+   "https://www.squarespace.com/",
+   "https://www.squarespace.com/websites-start"
+  ]
+ },
+ {
+  "app": "Ahrefs",
+  "fields": [
+   "api_type"
+  ],
+  "pages": [
+   "https://ahrefs.com/api",
+   "https://docs.ahrefs.com",
+   "https://docs.ahrefs.com/en/api/docs/introduction",
+   "https://docs.ahrefs.com/",
+   "https://ahrefs.com/seo-api",
+   "https://ahrefs.com/",
+   "https://ahrefs.com/writing-tools/paraphrasing-tool",
+   "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+  ]
+ },
+ {
+  "app": "Supabase",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://supabase.com/docs",
+   "https://docs.supabase.com",
+   "https://brave.com/fr/download/",
+   "https://brave.com/fr/",
+   "https://brave.com/download/",
+   "https://www.egovtschemes.com/swadhar-yojana/",
+   "https://community.adobe.com/questions-27/error-embedding-a-pdf-in-microsoft-word-623939",
+   "https://community.adobe.com/questions-9/page-number-format-in-word-does-not-convert-properly-to-pdf-1308019",
+   "https://en.wikipedia.org/wiki/Sunny_Deol",
+   "https://starsunfolded.com/sunny-deol/",
+   "https://en.wikipedia.org/wiki/Sunny_Deol_filmography",
+   "https://github.com/pionxzh/chatgpt-exporter",
+   "https://supabase.com/docs/guides/ai-tools/mcp",
+   "https://supabase.com/features/mcp-server",
+   "https://mcpservers.org/servers/supabase-mcp-server",
+   "https://support.google.com/youtube/troubleshooter/13572679?hl=en-GB",
+   "https://support.google.com/youtubetv/answer/9545212?hl=en"
+  ]
+ },
+ {
+  "app": "MongoDB Atlas",
+  "fields": [
+   "api_type"
+  ],
+  "pages": [
+   "https://mongodb.com/docs/atlas/api",
+   "https://docs.mongodb.com",
+   "https://mongodb.com/docs",
+   "https://www.mongodb.com/docs/atlas/api/",
+   "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "https://github.com/mongodb-developer/atlas-admin-api-serviceaccount-auth",
+   "https://www.mongodb.com/",
+   "https://www.mongodb.com/try/download/community",
+   "https://www.mongodb.com/products/tools/mcp-server",
+   "https://www.mongodb.com/docs/mcp-server/overview/",
+   "https://mcpservers.org/servers/mongodb-developer/mcp-mongodb-atlas",
+   "https://www.mongodb.com/?msockid=0ad590f04943662f00e288eb489067e6",
+   "https://www.mongodb.com/try/download/community?msockid=0ad590f04943662f00e288eb489067e6"
+  ]
+ },
+ {
+  "app": "Notion",
+  "fields": [
+   "self_serve"
+  ],
+  "pages": [
+   "https://developers.notion.com",
+   "https://notion.com/docs",
+   "https://developers.notion.com/guides/authorization/overview",
+   "https://developers.notion.com/reference/authentication",
+   "https://www.notion.com/templates/api-documentation",
+   "https://techcommunity.microsoft.com/discussions/microsoftteams/teams-displaying-incorrect-out-of-office-presence-for-a-user/783654",
+   "https://www.notion.com/",
+   "https://www.notion.com/desktop"
+  ]
+ },
+ {
+  "app": "Airtable",
+  "fields": [
+   "api_type"
+  ],
+  "pages": [
+   "https://airtable.com/developers",
+   "https://support.google.com/googleplay/answer/2521798?hl=es-419",
+   "https://www.incometax.gov.in/iec/foportal/",
+   "https://www.incometax.gov.in/iec/foportal/newdownloads/login",
+   "https://www.airtable.com/guides/scale/using-airtable-api",
+   "https://support.airtable.com/collections/5274326156-api",
+   "https://support.google.com/youtube/answer/72857?hl=en",
+   "https://support.google.com/youtube/answer/2802027?hl=en&co=GENIE.Platform=Desktop",
+   "https://techenclave.com/t/all-white-build-with-deepcool-ch270-wh/275835",
+   "https://techenclave.com/t/lian-li-lancool-207-compact-atx-case-opinions/271606",
+   "https://github.com/assafelovic/gpt-researcher",
+   "https://github.com/pionxzh/chatgpt-exporter"
+  ]
+ },
+ {
+  "app": "Asana",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://developers.asana.com",
+   "https://developer.asana.com",
+   "https://developers.asana.com/docs/authentication",
+   "https://developers.asana.com/docs/api-features",
+   "https://asana.com/developers",
+   "https://asana.com/",
+   "https://asana.com/download",
+   "https://developers.asana.com/docs/developer-sandbox"
+  ]
+ },
+ {
+  "app": "Monday.com",
+  "fields": [
+   "buildability"
+  ],
+  "pages": [
+   "https://developer.monday.com",
+   "https://developers.monday.com",
+   "https://monday.com/",
+   "https://monday.com/new-product",
+   "https://developer.monday.com/api-reference/docs/developer-sandbox",
+   "https://developer.monday.com/apps/docs/plans-and-pricing"
+  ]
+ },
+ {
+  "app": "Coda",
+  "fields": [
+   "auth_methods",
+   "api_type",
+   "existing_mcp"
+  ],
+  "pages": [
+   "https://coda.io/developers",
+   "https://coda.io/api",
+   "https://parivahan.gov.in/parivahan/",
+   "https://github.com/pionxzh/chatgpt-exporter",
+   "https://openai.com/index/chatgpt/",
+   "https://coda.io/",
+   "https://en.wikipedia.org/wiki/CODA_(2021_film)"
+  ]
+ },
+ {
+  "app": "Harvest",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://help.getharvest.com/api-v2",
+   "https://getharvest.com/api",
+   "https://www.getharvest.com/",
+   "https://www.getharvest.com/apps",
+   "https://en.wikipedia.org/wiki/Harvest",
+   "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+   "https://github.com/taiste/harvest-mcp-server",
+   "https://harvest-mcp.southleft.com/"
+  ]
+ },
+ {
+  "app": "Stripe",
+  "fields": [
+   "auth_methods"
+  ],
+  "pages": [
+   "https://stripe.com/docs/api",
+   "https://docs.stripe.com",
+   "https://stripe.com/docs",
+   "https://stripe.com/api",
+   "https://dashboard.stripe.com/",
+   "https://stripe.com/",
+   "https://stripe.com/payments"
+  ]
+ },
+ {
+  "app": "Binance",
+  "fields": [],
+  "pages": [
+   "https://github.io/docs",
+   "https://github.io/api"
+  ]
+ },
+ {
+  "app": "Paygent Connect",
   "fields": [
    "auth_methods",
    "self_serve"
   ],
   "pages": [
-   "https://transcriptapi.com"
+   "https://docs.paygent.to/reference/api-reference/",
+   "https://docs.paygent.to/",
+   "https://docs.withpaygent.com/",
+   "https://github.com/pionxzh/chatgpt-exporter",
+   "https://gemini.google/about/",
+   "https://gemini.google/in/about/?hl=en-IN",
+   "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+   "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+   "https://www.lifewire.com/get-help-in-windows-11-7866987",
+   "https://www.zhihu.com/topic/19550793/intro",
+   "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
+   "https://forums.commentcamarche.net/forum/affich-37275193-comptes-grises-dans-les-vues-de-story"
+  ]
+ },
+ {
+  "app": "PitchBook",
+  "fields": [
+   "auth_methods",
+   "api_type",
+   "existing_mcp",
+   "buildability"
+  ],
+  "pages": [
+   "https://www.microsoft.com/en-us/download/windows",
+   "https://www.microsoft.com/en-us/download",
+   "https://support.microsoft.com/de-de/accounts-billing/find-and-install-your-microsoft-downloads-from-microsoft-store",
+   "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12321062837",
+   "https://www.google.com/chrome/index.html",
+   "https://support.google.com/chrome/answer/95346?hl=it&co=GENIE.Platform=Desktop"
+  ]
+ },
+ {
+  "app": "Reducto",
+  "fields": [
+   "auth_methods",
+   "buildability"
+  ],
+  "pages": [
+   "https://reducto.ai",
+   "https://docs.reducto.ai",
+   "https://reducto.ai/docs",
+   "https://tallysolutions.com/",
+   "https://tallysolutions.com/customization/",
+   "https://reducto.ai/pricing",
+   "https://www.bleepingcomputer.com/vpn/guides/best-vpn-wireguard/",
+   "https://www.bleepingcomputer.com/forums/t/702552/laptop-shuts-down-instantly-on-gpu-load/",
+   "https://jpg2pdf.com/tr/",
+   "https://jpg2pdf.com/nl/",
+   "https://jpg2pdf.com/de/",
+   "https://docs.reducto.ai/mcp-server",
+   "https://reducto.ai/",
+   "https://support.google.com/youtube/answer/72857?hl=en"
   ]
  }
 ]

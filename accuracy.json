@@ -1,43 +1,78 @@
 {
- "n_apps": 20,
+ "n_apps": 30,
  "fields": {
   "auth_methods": {
-   "pass1": 0.25,
-   "final": 0.2
+   "pass1": 0.267,
+   "final": 0.167
   },
   "self_serve": {
-   "pass1": 0.5,
-   "final": 0.2
+   "pass1": 0.7,
+   "final": 0.6
   },
   "existing_mcp": {
-   "pass1": 0.5,
-   "final": 0.5
+   "pass1": 0.333,
+   "final": 0.3
   },
   "buildability": {
-   "pass1": 0.45,
-   "final": 0.4
+   "pass1": 0.667,
+   "final": 0.7
   }
  },
  "misses": [
   {
-   "stage": "final",
-   "app": "Podio",
+   "stage": "pass1",
+   "app": "Salesforce",
    "field": "auth_methods",
-   "agent": "['api_key']",
+   "agent": "['oauth2', 'api_key', 'bearer_token', 'jwt']",
    "gold": "oauth2, api_key"
   },
   {
-   "stage": "pass1",
+   "stage": "final",
+   "app": "Salesforce",
+   "field": "auth_methods",
+   "agent": "['bearer_token']",
+   "gold": "oauth2, api_key"
+  },
+  {
+   "stage": "final",
+   "app": "HubSpot",
+   "field": "auth_methods",
+   "agent": "['oauth2']",
+   "gold": "oauth2, api_key"
+  },
+  {
+   "stage": "final",
    "app": "Pipedrive",
    "field": "auth_methods",
-   "agent": "['api_key']",
+   "agent": "[]",
    "gold": "api_key, oauth2"
   },
   {
    "stage": "pass1",
+   "app": "Zendesk",
+   "field": "auth_methods",
+   "agent": "['oauth2', 'api_key', 'bearer_token', 'basic']",
+   "gold": "api_key, oauth2, basic"
+  },
+  {
+   "stage": "final",
+   "app": "Zendesk",
+   "field": "auth_methods",
+   "agent": "['oauth2', 'api_key', 'bearer_token', 'basic', 'other']",
+   "gold": "api_key, oauth2, basic"
+  },
+  {
+   "stage": "final",
+   "app": "Intercom",
+   "field": "auth_methods",
+   "agent": "['oauth2']",
+   "gold": "bearer_token, oauth2"
+  },
+  {
+   "stage": "pass1",
    "app": "Plain",
    "field": "auth_methods",
-   "agent": "['bearer_token']",
+   "agent": "['bearer_token', 'api_key']",
    "gold": "api_key"
   },
   {
@@ -49,115 +84,178 @@
   },
   {
    "stage": "pass1",
-   "app": "Zendesk",
+   "app": "Slack",
    "field": "auth_methods",
-   "agent": "['bearer_token']",
-   "gold": "api_key, oauth2, basic"
-  },
-  {
-   "stage": "final",
-   "app": "Zendesk",
-   "field": "auth_methods",
-   "agent": "['bearer_token']",
-   "gold": "api_key, oauth2, basic"
+   "agent": "['oauth2', 'bearer_token', 'other']",
+   "gold": "oauth2, bearer_token"
   },
   {
    "stage": "pass1",
    "app": "Twilio",
    "field": "auth_methods",
-   "agent": "['api_key', 'oauth2']",
+   "agent": "['basic', 'other']",
    "gold": "api_key, request_signing"
   },
   {
    "stage": "final",
    "app": "Twilio",
    "field": "auth_methods",
-   "agent": "['api_key', 'oauth2']",
+   "agent": "['basic']",
    "gold": "api_key, request_signing"
+  },
+  {
+   "stage": "pass1",
+   "app": "Aircall",
+   "field": "auth_methods",
+   "agent": "['api_key', 'oauth2', 'basic']",
+   "gold": "api_key, oauth2"
   },
   {
    "stage": "final",
    "app": "Aircall",
+   "field": "auth_methods",
+   "agent": "['api_key', 'oauth2', 'basic']",
+   "gold": "api_key, oauth2"
+  },
+  {
+   "stage": "pass1",
+   "app": "Meta Ads",
    "field": "auth_methods",
    "agent": "['oauth2', 'bearer_token']",
+   "gold": "oauth2"
+  },
+  {
+   "stage": "final",
+   "app": "Meta Ads",
+   "field": "auth_methods",
+   "agent": "['oauth2', 'bearer_token']",
+   "gold": "oauth2"
+  },
+  {
+   "stage": "pass1",
+   "app": "Mailchimp",
+   "field": "auth_methods",
+   "agent": "['unknown']",
+   "gold": "api_key, oauth2"
+  },
+  {
+   "stage": "final",
+   "app": "Mailchimp",
+   "field": "auth_methods",
+   "agent": "['api_key', 'oauth2', 'bearer_token']",
    "gold": "api_key, oauth2"
   },
   {
    "stage": "pass1",
-   "app": "fanbasis",
+   "app": "Klaviyo",
+   "field": "auth_methods",
+   "agent": "['api_key', 'bearer_token', 'oauth2']",
+   "gold": "api_key, oauth2"
+  },
+  {
+   "stage": "final",
+   "app": "Klaviyo",
+   "field": "auth_methods",
+   "agent": "['bearer_token']",
+   "gold": "api_key, oauth2"
+  },
+  {
+   "stage": "pass1",
+   "app": "Shopify",
+   "field": "auth_methods",
+   "agent": "['oauth2', 'bearer_token', 'other']",
+   "gold": "oauth2, api_key"
+  },
+  {
+   "stage": "final",
+   "app": "Shopify",
+   "field": "auth_methods",
+   "agent": "['oauth2', 'bearer_token', 'other']",
+   "gold": "oauth2, api_key"
+  },
+  {
+   "stage": "pass1",
+   "app": "WooCommerce",
+   "field": "auth_methods",
+   "agent": "['api_key']",
+   "gold": "api_key, basic"
+  },
+  {
+   "stage": "final",
+   "app": "WooCommerce",
+   "field": "auth_methods",
+   "agent": "['api_key']",
+   "gold": "api_key, basic"
+  },
+  {
+   "stage": "pass1",
+   "app": "Apify",
+   "field": "auth_methods",
+   "agent": "['bearer_token']",
+   "gold": "bearer_token, api_key"
+  },
+  {
+   "stage": "final",
+   "app": "Apify",
+   "field": "auth_methods",
+   "agent": "['bearer_token', 'oauth2']",
+   "gold": "bearer_token, api_key"
+  },
+  {
+   "stage": "pass1",
+   "app": "Ahrefs",
    "field": "auth_methods",
    "agent": "['api_key', 'oauth2']",
    "gold": "api_key"
   },
   {
    "stage": "final",
-   "app": "fanbasis",
+   "app": "Ahrefs",
    "field": "auth_methods",
-   "agent": "['oauth2']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "pass1",
-   "app": "Shopify",
-   "field": "auth_methods",
-   "agent": "['api_key']",
-   "gold": "oauth2, api_key"
-  },
-  {
-   "stage": "final",
-   "app": "Shopify",
-   "field": "auth_methods",
-   "agent": "['oauth2']",
-   "gold": "oauth2, api_key"
-  },
-  {
-   "stage": "pass1",
-   "app": "Waterfall.io",
-   "field": "auth_methods",
-   "agent": "['basic', 'api_key']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "final",
-   "app": "MrScraper",
-   "field": "auth_methods",
-   "agent": "['basic', 'api_key']",
+   "agent": "['api_key', 'oauth2']",
    "gold": "api_key"
   },
   {
    "stage": "pass1",
    "app": "GitHub",
    "field": "auth_methods",
-   "agent": "['api_key', 'bearer_token']",
-   "gold": "oauth2, api_key, bearer_token"
+   "agent": "['oauth2', 'bearer_token']",
+   "gold": "bearer_token, oauth2, api_key"
   },
   {
    "stage": "final",
    "app": "GitHub",
    "field": "auth_methods",
-   "agent": "['oauth2', 'api_key']",
-   "gold": "oauth2, api_key, bearer_token"
+   "agent": "['oauth2', 'bearer_token']",
+   "gold": "bearer_token, oauth2, api_key"
   },
   {
    "stage": "pass1",
    "app": "Vercel",
    "field": "auth_methods",
-   "agent": "['api_key', 'bearer_token']",
+   "agent": "['bearer_token', 'api_key']",
    "gold": "bearer_token, oauth2"
   },
   {
    "stage": "final",
    "app": "Vercel",
    "field": "auth_methods",
-   "agent": "['oauth2', 'api_key']",
+   "agent": "['bearer_token', 'api_key']",
    "gold": "bearer_token, oauth2"
   },
   {
    "stage": "pass1",
-   "app": "ClickUp",
+   "app": "Supabase",
    "field": "auth_methods",
-   "agent": "['api_key']",
-   "gold": "api_key, oauth2"
+   "agent": "['oauth2', 'api_key', 'bearer_token']",
+   "gold": "bearer_token, api_key"
+  },
+  {
+   "stage": "final",
+   "app": "Supabase",
+   "field": "auth_methods",
+   "agent": "['oauth2', 'api_key']",
+   "gold": "bearer_token, api_key"
   },
   {
    "stage": "final",
@@ -168,94 +266,108 @@
   },
   {
    "stage": "pass1",
-   "app": "Harvest",
+   "app": "Stripe",
    "field": "auth_methods",
-   "agent": "['oauth2', 'api_key']",
-   "gold": "oauth2, bearer_token"
+   "agent": "['api_key', 'basic', 'bearer_token']",
+   "gold": "bearer_token, api_key, request_signing"
   },
   {
    "stage": "final",
-   "app": "Harvest",
+   "app": "Stripe",
+   "field": "auth_methods",
+   "agent": "['api_key', 'basic', 'bearer_token']",
+   "gold": "bearer_token, api_key, request_signing"
+  },
+  {
+   "stage": "pass1",
+   "app": "Plaid",
+   "field": "auth_methods",
+   "agent": "['api_key', 'other']",
+   "gold": "api_key"
+  },
+  {
+   "stage": "final",
+   "app": "Plaid",
+   "field": "auth_methods",
+   "agent": "['api_key', 'oauth2', 'bearer_token']",
+   "gold": "api_key"
+  },
+  {
+   "stage": "pass1",
+   "app": "Paygent Connect",
+   "field": "auth_methods",
+   "agent": "['bearer_token', 'none']",
+   "gold": "api_key"
+  },
+  {
+   "stage": "final",
+   "app": "Paygent Connect",
+   "field": "auth_methods",
+   "agent": "['bearer_token', 'none']",
+   "gold": "api_key"
+  },
+  {
+   "stage": "pass1",
+   "app": "Otter AI",
+   "field": "auth_methods",
+   "agent": "['unclear']",
+   "gold": "api_key, oauth2"
+  },
+  {
+   "stage": "final",
+   "app": "Otter AI",
+   "field": "auth_methods",
+   "agent": "['unclear']",
+   "gold": "api_key, oauth2"
+  },
+  {
+   "stage": "pass1",
+   "app": "YouTube Transcript",
+   "field": "auth_methods",
+   "agent": "['bearer_token']",
+   "gold": "api_key"
+  },
+  {
+   "stage": "final",
+   "app": "YouTube Transcript",
+   "field": "auth_methods",
+   "agent": "['bearer_token']",
+   "gold": "api_key"
+  },
+  {
+   "stage": "pass1",
+   "app": "NotebookLM",
    "field": "auth_methods",
    "agent": "['oauth2']",
-   "gold": "oauth2, bearer_token"
+   "gold": "none"
+  },
+  {
+   "stage": "final",
+   "app": "NotebookLM",
+   "field": "auth_methods",
+   "agent": "['oauth2']",
+   "gold": "none"
   },
   {
    "stage": "pass1",
-   "app": "Plaid",
-   "field": "auth_methods",
-   "agent": "['request_signing']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "final",
-   "app": "Plaid",
-   "field": "auth_methods",
-   "agent": "['api_key', 'jwt']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "pass1",
-   "app": "Paygent Connect",
-   "field": "auth_methods",
-   "agent": "['api_key', 'jwt']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "final",
-   "app": "Paygent Connect",
-   "field": "auth_methods",
-   "agent": "['oauth2', 'api_key']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "pass1",
-   "app": "Otter AI",
-   "field": "auth_methods",
-   "agent": "['bearer_token', 'api_key']",
-   "gold": "api_key, oauth2"
-  },
-  {
-   "stage": "final",
-   "app": "Otter AI",
-   "field": "auth_methods",
-   "agent": "['api_key']",
-   "gold": "api_key, oauth2"
-  },
-  {
-   "stage": "pass1",
-   "app": "YouTube Transcript",
-   "field": "auth_methods",
-   "agent": "['bearer_token', 'api_key']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "final",
-   "app": "YouTube Transcript",
-   "field": "auth_methods",
-   "agent": "['bearer_token', 'api_key']",
-   "gold": "api_key"
-  },
-  {
-   "stage": "pass1",
-   "app": "Podio",
-   "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "self_serve_free"
-  },
-  {
-   "stage": "final",
-   "app": "Podio",
-   "field": "self_serve",
-   "agent": "approval_required",
-   "gold": "self_serve_free"
-  },
-  {
-   "stage": "final",
    "app": "Pipedrive",
    "field": "self_serve",
-   "agent": "approval_required",
+   "agent": "self_serve_trial",
    "gold": "self_serve_free"
+  },
+  {
+   "stage": "final",
+   "app": "Intercom",
+   "field": "self_serve",
+   "agent": "self_serve_free",
+   "gold": "self_serve_trial"
+  },
+  {
+   "stage": "pass1",
+   "app": "Plain",
+   "field": "self_serve",
+   "agent": "self_serve_free",
+   "gold": "self_serve_trial"
   },
   {
    "stage": "final",
@@ -266,73 +378,31 @@
   },
   {
    "stage": "pass1",
-   "app": "Zendesk",
+   "app": "Aircall",
    "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "self_serve_trial"
+   "agent": "self_serve_trial",
+   "gold": "paid_plan_required"
   },
   {
    "stage": "final",
-   "app": "Zendesk",
+   "app": "Aircall",
    "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "self_serve_trial"
-  },
-  {
-   "stage": "final",
-   "app": "Twilio",
-   "field": "self_serve",
-   "agent": "approval_required",
-   "gold": "self_serve_free"
+   "agent": "self_serve_trial",
+   "gold": "paid_plan_required"
   },
   {
    "stage": "pass1",
-   "app": "Aircall",
+   "app": "Meta Ads",
    "field": "self_serve",
    "agent": "self_serve_free",
-   "gold": "paid_plan_required"
-  },
-  {
-   "stage": "final",
-   "app": "Aircall",
-   "field": "self_serve",
-   "agent": "approval_required",
-   "gold": "paid_plan_required"
+   "gold": "approval_required"
   },
   {
    "stage": "final",
    "app": "Meta Ads",
    "field": "self_serve",
-   "agent": "partner_gated",
+   "agent": "unclear",
    "gold": "approval_required"
-  },
-  {
-   "stage": "final",
-   "app": "Klaviyo",
-   "field": "self_serve",
-   "agent": "partner_gated",
-   "gold": "self_serve_free"
-  },
-  {
-   "stage": "pass1",
-   "app": "fanbasis",
-   "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "unclear"
-  },
-  {
-   "stage": "final",
-   "app": "fanbasis",
-   "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "unclear"
-  },
-  {
-   "stage": "pass1",
-   "app": "Shopify",
-   "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "self_serve_free"
   },
   {
    "stage": "final",
@@ -345,162 +415,197 @@
    "stage": "pass1",
    "app": "Waterfall.io",
    "field": "self_serve",
-   "agent": "self_serve_trial",
+   "agent": "self_serve_free",
    "gold": "partner_gated"
   },
   {
    "stage": "final",
    "app": "Waterfall.io",
    "field": "self_serve",
-   "agent": "self_serve_free",
+   "agent": "unclear",
    "gold": "partner_gated"
   },
   {
-   "stage": "pass1",
-   "app": "MrScraper",
-   "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "self_serve_free"
-  },
-  {
    "stage": "final",
    "app": "MrScraper",
-   "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "self_serve_free"
-  },
-  {
-   "stage": "final",
-   "app": "Harvest",
-   "field": "self_serve",
-   "agent": "self_serve_free",
-   "gold": "self_serve_trial"
-  },
-  {
-   "stage": "pass1",
-   "app": "Plaid",
-   "field": "self_serve",
-   "agent": "paid_plan_required",
-   "gold": "approval_required"
-  },
-  {
-   "stage": "final",
-   "app": "Plaid",
    "field": "self_serve",
    "agent": "self_serve_trial",
+   "gold": "self_serve_free"
+  },
+  {
+   "stage": "final",
+   "app": "Vercel",
+   "field": "self_serve",
+   "agent": "self_serve_trial",
+   "gold": "self_serve_free"
+  },
+  {
+   "stage": "pass1",
+   "app": "Plaid",
+   "field": "self_serve",
+   "agent": "self_serve_free",
    "gold": "approval_required"
+  },
+  {
+   "stage": "final",
+   "app": "Plaid",
+   "field": "self_serve",
+   "agent": "self_serve_free",
+   "gold": "approval_required"
+  },
+  {
+   "stage": "pass1",
+   "app": "Paygent Connect",
+   "field": "self_serve",
+   "agent": "self_serve_free",
+   "gold": "partner_gated"
   },
   {
    "stage": "final",
    "app": "Paygent Connect",
    "field": "self_serve",
-   "agent": "approval_required",
+   "agent": "self_serve_free",
    "gold": "partner_gated"
   },
   {
    "stage": "pass1",
    "app": "Otter AI",
    "field": "self_serve",
-   "agent": "no_public_api",
+   "agent": "self_serve_free",
    "gold": "paid_plan_required"
   },
   {
    "stage": "final",
    "app": "Otter AI",
    "field": "self_serve",
-   "agent": "no_public_api",
+   "agent": "self_serve_free",
    "gold": "paid_plan_required"
   },
   {
    "stage": "pass1",
-   "app": "YouTube Transcript",
+   "app": "NotebookLM",
    "field": "self_serve",
-   "agent": "self_serve_trial",
-   "gold": "self_serve_free"
-  },
-  {
-   "stage": "pass1",
-   "app": "Podio",
-   "field": "existing_mcp",
-   "agent": "official",
-   "gold": "none_found"
+   "agent": "self_serve_free",
+   "gold": "no_public_api"
   },
   {
    "stage": "final",
-   "app": "Podio",
+   "app": "NotebookLM",
+   "field": "self_serve",
+   "agent": "self_serve_free",
+   "gold": "no_public_api"
+  },
+  {
+   "stage": "pass1",
+   "app": "HubSpot",
    "field": "existing_mcp",
-   "agent": "community",
-   "gold": "none_found"
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "HubSpot",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
   },
   {
    "stage": "pass1",
    "app": "Pipedrive",
    "field": "existing_mcp",
-   "agent": "official",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Pipedrive",
+   "field": "existing_mcp",
+   "agent": "none_found",
    "gold": "community"
   },
   {
    "stage": "pass1",
-   "app": "Plain",
-   "field": "existing_mcp",
-   "agent": "community",
-   "gold": "none_found"
-  },
-  {
-   "stage": "final",
-   "app": "Plain",
-   "field": "existing_mcp",
-   "agent": "community",
-   "gold": "none_found"
-  },
-  {
-   "stage": "final",
    "app": "Zendesk",
-   "field": "existing_mcp",
-   "agent": "community",
-   "gold": "official"
-  },
-  {
-   "stage": "pass1",
-   "app": "Twilio",
-   "field": "existing_mcp",
-   "agent": "official",
-   "gold": "community"
-  },
-  {
-   "stage": "final",
-   "app": "Twilio",
-   "field": "existing_mcp",
-   "agent": "official",
-   "gold": "community"
-  },
-  {
-   "stage": "final",
-   "app": "Meta Ads",
-   "field": "existing_mcp",
-   "agent": "official",
-   "gold": "community"
-  },
-  {
-   "stage": "pass1",
-   "app": "Klaviyo",
    "field": "existing_mcp",
    "agent": "none_found",
    "gold": "official"
   },
   {
    "stage": "final",
-   "app": "Klaviyo",
+   "app": "Zendesk",
    "field": "existing_mcp",
-   "agent": "community",
+   "agent": "none_found",
    "gold": "official"
   },
   {
    "stage": "pass1",
-   "app": "fanbasis",
+   "app": "Intercom",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Intercom",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "pass1",
+   "app": "Twilio",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Twilio",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "pass1",
+   "app": "Aircall",
    "field": "existing_mcp",
    "agent": "official",
    "gold": "none_found"
+  },
+  {
+   "stage": "final",
+   "app": "Aircall",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "pass1",
+   "app": "Meta Ads",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Meta Ads",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "pass1",
+   "app": "Mailchimp",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Mailchimp",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
   },
   {
    "stage": "pass1",
@@ -510,67 +615,193 @@
    "gold": "official"
   },
   {
-   "stage": "pass1",
-   "app": "Waterfall.io",
-   "field": "existing_mcp",
-   "agent": "community",
-   "gold": "none_found"
-  },
-  {
    "stage": "final",
-   "app": "Waterfall.io",
-   "field": "existing_mcp",
-   "agent": "official",
-   "gold": "none_found"
-  },
-  {
-   "stage": "pass1",
-   "app": "MrScraper",
-   "field": "existing_mcp",
-   "agent": "official",
-   "gold": "none_found"
-  },
-  {
-   "stage": "final",
-   "app": "MrScraper",
-   "field": "existing_mcp",
-   "agent": "official",
-   "gold": "none_found"
-  },
-  {
-   "stage": "final",
-   "app": "GitHub",
+   "app": "Shopify",
    "field": "existing_mcp",
    "agent": "community",
    "gold": "official"
   },
   {
-   "stage": "final",
-   "app": "Harvest",
+   "stage": "pass1",
+   "app": "Apify",
    "field": "existing_mcp",
-   "agent": "community",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Apify",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "pass1",
+   "app": "MrScraper",
+   "field": "existing_mcp",
+   "agent": "official",
    "gold": "none_found"
+  },
+  {
+   "stage": "final",
+   "app": "MrScraper",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "pass1",
+   "app": "Ahrefs",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "final",
+   "app": "Ahrefs",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "pass1",
+   "app": "GitHub",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "official"
+  },
+  {
+   "stage": "final",
+   "app": "GitHub",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "official"
+  },
+  {
+   "stage": "pass1",
+   "app": "Supabase",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Supabase",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "pass1",
+   "app": "Notion",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Notion",
+   "field": "existing_mcp",
+   "agent": "none_found",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Linear",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "pass1",
+   "app": "ClickUp",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "ClickUp",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
   },
   {
    "stage": "pass1",
    "app": "Plaid",
    "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "final",
+   "app": "Plaid",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "community"
+  },
+  {
+   "stage": "pass1",
+   "app": "Otter AI",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "final",
+   "app": "Otter AI",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "pass1",
+   "app": "YouTube Transcript",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "final",
+   "app": "YouTube Transcript",
+   "field": "existing_mcp",
+   "agent": "official",
+   "gold": "none_found"
+  },
+  {
+   "stage": "pass1",
+   "app": "NotebookLM",
+   "field": "existing_mcp",
    "agent": "community",
    "gold": "none_found"
   },
   {
    "stage": "final",
-   "app": "Podio",
+   "app": "NotebookLM",
+   "field": "existing_mcp",
+   "agent": "community",
+   "gold": "none_found"
+  },
+  {
+   "stage": "pass1",
+   "app": "HubSpot",
    "field": "buildability",
    "agent": "yes_with_caveats",
    "gold": "yes"
   },
   {
    "stage": "pass1",
-   "app": "Pipedrive",
+   "app": "Intercom",
    "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "yes"
+   "agent": "yes",
+   "gold": "yes_with_caveats"
+  },
+  {
+   "stage": "final",
+   "app": "Intercom",
+   "field": "buildability",
+   "agent": "yes",
+   "gold": "yes_with_caveats"
   },
   {
    "stage": "pass1",
@@ -588,17 +819,10 @@
   },
   {
    "stage": "pass1",
-   "app": "Zendesk",
+   "app": "Aircall",
    "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "yes"
-  },
-  {
-   "stage": "pass1",
-   "app": "Twilio",
-   "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "yes"
+   "agent": "yes",
+   "gold": "yes_with_caveats"
   },
   {
    "stage": "final",
@@ -611,82 +835,47 @@
    "stage": "pass1",
    "app": "Meta Ads",
    "field": "buildability",
-   "agent": "blocked",
+   "agent": "yes",
    "gold": "yes_with_caveats"
   },
   {
    "stage": "final",
    "app": "Meta Ads",
    "field": "buildability",
-   "agent": "blocked",
+   "agent": "yes",
    "gold": "yes_with_caveats"
   },
   {
-   "stage": "final",
-   "app": "Klaviyo",
+   "stage": "pass1",
+   "app": "Mailchimp",
    "field": "buildability",
-   "agent": "blocked",
+   "agent": "yes_with_caveats",
+   "gold": "yes"
+  },
+  {
+   "stage": "final",
+   "app": "Mailchimp",
+   "field": "buildability",
+   "agent": "yes_with_caveats",
    "gold": "yes"
   },
   {
    "stage": "pass1",
-   "app": "fanbasis",
+   "app": "Waterfall.io",
    "field": "buildability",
    "agent": "yes",
    "gold": "blocked"
   },
   {
    "stage": "final",
-   "app": "fanbasis",
+   "app": "Waterfall.io",
    "field": "buildability",
    "agent": "yes",
    "gold": "blocked"
   },
   {
    "stage": "pass1",
-   "app": "Waterfall.io",
-   "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "blocked"
-  },
-  {
-   "stage": "final",
-   "app": "Waterfall.io",
-   "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "blocked"
-  },
-  {
-   "stage": "pass1",
-   "app": "MrScraper",
-   "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "yes"
-  },
-  {
-   "stage": "final",
-   "app": "GitHub",
-   "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "yes"
-  },
-  {
-   "stage": "pass1",
-   "app": "Vercel",
-   "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "yes"
-  },
-  {
-   "stage": "pass1",
-   "app": "ClickUp",
-   "field": "buildability",
-   "agent": "yes_with_caveats",
-   "gold": "yes"
-  },
-  {
-   "stage": "final",
-   "app": "Harvest",
+   "app": "Plaid",
    "field": "buildability",
    "agent": "yes",
    "gold": "yes_with_caveats"
@@ -695,35 +884,42 @@
    "stage": "final",
    "app": "Plaid",
    "field": "buildability",
-   "agent": "blocked",
+   "agent": "yes",
    "gold": "yes_with_caveats"
   },
   {
    "stage": "pass1",
-   "app": "Otter AI",
+   "app": "Paygent Connect",
    "field": "buildability",
-   "agent": "blocked",
-   "gold": "yes_with_caveats"
+   "agent": "yes",
+   "gold": "blocked"
   },
   {
    "stage": "final",
-   "app": "Otter AI",
+   "app": "Paygent Connect",
    "field": "buildability",
-   "agent": "blocked",
-   "gold": "yes_with_caveats"
+   "agent": "yes",
+   "gold": "blocked"
+  },
+  {
+   "stage": "pass1",
+   "app": "NotebookLM",
+   "field": "buildability",
+   "agent": "yes_with_caveats",
+   "gold": "blocked"
   },
   {
    "stage": "final",
-   "app": "YouTube Transcript",
+   "app": "NotebookLM",
    "field": "buildability",
-   "agent": "blocked",
-   "gold": "yes"
+   "agent": "yes_with_caveats",
+   "gold": "blocked"
   }
  ],
- "overall_pass1": 0.425,
- "overall_final": 0.325,
+ "overall_pass1": 0.492,
+ "overall_final": 0.442,
  "evidence_quote_valid_rate": {
-  "pass1": 0.0,
-  "final": 0.99
+  "pass1": 0.68,
+  "final": 0.73
  }
 }

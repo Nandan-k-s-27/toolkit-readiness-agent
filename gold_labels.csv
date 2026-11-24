@@ -1,21 +1,31 @@
 app,evidence_url_to_check,gold_auth,gold_self_serve,gold_mcp,gold_buildability,notes
-Podio,https://podio.com,"oauth2, api_key",self_serve_free,none_found,yes,Podio API: free plan has API; oauth2 flow documented at developers.podio.com
-Pipedrive,https://pipedrive.com,"api_key, oauth2",self_serve_free,community,yes,Pipedrive API key available immediately on free tier; community MCP exists on GitHub
-Plain,https://plain.com,api_key,self_serve_trial,none_found,yes_with_caveats,Plain has REST API; trial needed; no MCP server found
-Zendesk,https://zendesk.com,"api_key, oauth2, basic",self_serve_trial,official,yes,Zendesk has official MCP server; API trial available; broad REST+GraphQL
-Twilio,https://twilio.com,"api_key, request_signing",self_serve_free,community,yes,Twilio free trial with $15 credit; community MCP on GitHub; request signing for webhooks
-Aircall,https://aircall.io,"api_key, oauth2",paid_plan_required,none_found,yes_with_caveats,Aircall API requires paid plan; no free tier API access
-Meta Ads,https://developers.facebook.com/docs/marketing-apis,oauth2,approval_required,community,yes_with_caveats,Meta Marketing API: app review required for production; community MCP available
-Klaviyo,https://developers.klaviyo.com,"api_key, oauth2",self_serve_free,official,yes,Klaviyo free tier has API access; official MCP server published
-fanbasis,https://fanbasis.com,api_key,unclear,none_found,blocked,fanbasis.com: minimal public docs; no clear API access path found
-Shopify,https://shopify.dev,"oauth2, api_key",self_serve_free,official,yes,Shopify Partner account free; REST+GraphQL+webhooks; official MCP server
-Waterfall.io,https://waterfall.io,api_key,partner_gated,none_found,blocked,Waterfall.io is partner-gated; no self-serve API access documented
-MrScraper,https://docs.mrscraper.com,api_key,self_serve_free,none_found,yes,MrScraper has free plan with API key; straightforward REST API
-GitHub,https://docs.github.com/rest,"oauth2, api_key, bearer_token",self_serve_free,official,yes,GitHub REST+GraphQL; official MCP server; free tier with generous rate limits
-Vercel,https://vercel.com/docs/rest-api,"bearer_token, oauth2",self_serve_free,official,yes,Vercel REST API with bearer token; official MCP server available
-ClickUp,https://clickup.com/api,"api_key, oauth2",self_serve_free,official,yes,ClickUp free plan includes API; official MCP server; broad REST API
-Harvest,https://help.getharvest.com/api-v2,"oauth2, bearer_token",self_serve_trial,none_found,yes_with_caveats,Harvest API v2: free trial; no MCP found; OAuth2 required for production
-Plaid,https://plaid.com/docs,api_key,approval_required,none_found,yes_with_caveats,Plaid sandbox is free but production requires approval and business review
-Paygent Connect,https://paygent (NMI-powered),api_key,partner_gated,none_found,blocked,Paygent Connect: NMI-powered; partner gated; no self-serve onboarding found
-Otter AI,https://help.otter.ai,"api_key, oauth2",paid_plan_required,none_found,yes_with_caveats,Otter AI API requires business plan; limited public docs
-YouTube Transcript,https://transcriptapi.com,api_key,self_serve_free,none_found,yes,transcriptapi.com: straightforward API key; free tier available
+Salesforce,https://developer.salesforce.com/docs/apis,"oauth2, api_key",self_serve_free,official,yes,Free Developer Edition with REST/SOAP APIs; official Salesforce MCP server available
+HubSpot,https://developers.hubspot.com/docs/api/overview,"oauth2, api_key",self_serve_free,community,yes,Free developer test accounts available; private app access tokens (API key) and OAuth2
+Pipedrive,https://developers.pipedrive.com/docs/api/v1,"api_key, oauth2",self_serve_free,community,yes,API tokens available in account settings; community MCP servers on GitHub
+Zendesk,https://developer.zendesk.com/api-reference,"api_key, oauth2, basic",self_serve_trial,official,yes,14-day free trial provides API access; official Zendesk MCP server published
+Intercom,https://developers.intercom.com,"bearer_token, oauth2",self_serve_trial,community,yes_with_caveats,Developer workspace trial available; webhook and REST API; community MCP
+Plain,https://plain.com/docs,api_key,self_serve_trial,none_found,yes_with_caveats,Support platform with modern REST/GraphQL API; requires free trial signup; no public MCP server found
+Slack,https://api.slack.com,"oauth2, bearer_token",self_serve_free,official,yes,Free Slack workspace gives immediate Web API bot tokens; official Slack MCP server released
+Twilio,https://www.twilio.com/docs/usage/api,"api_key, request_signing",self_serve_free,community,yes,Free trial with initial credit; HTTP Basic (Account SID/Auth Token) + HMAC webhook signing; community MCP
+Aircall,https://developer.aircall.io,"api_key, oauth2",paid_plan_required,none_found,yes_with_caveats,REST API requires active paid company plan; no free self-serve API sandbox
+Meta Ads,https://developers.facebook.com/docs/marketing-apis,oauth2,approval_required,community,yes_with_caveats,Marketing API developer account is free but live campaigns require App Review and Business Verification
+Mailchimp,https://mailchimp.com/developer/marketing/docs/fundamentals/,"api_key, oauth2",self_serve_free,community,yes,Free account provides instant API key in account extras; community MCP available
+Klaviyo,https://developers.klaviyo.com,"api_key, oauth2",self_serve_free,official,yes,Free tier provides private and public API keys; official MCP server published
+Shopify,https://shopify.dev/docs/api,"oauth2, api_key",self_serve_free,official,yes,Free Shopify Partner account allows unlimited development stores with Admin API; official MCP server
+WooCommerce,https://woocommerce.github.io/woocommerce-rest-api-docs/,"api_key, basic",self_serve_free,community,yes,Open-source self-hosted plugin with REST API keys generated in WP Admin
+Waterfall.io,https://waterfall.io,api_key,partner_gated,none_found,blocked,Enterprise mobile marketing; contact sales required; no self-serve developer portal
+Apify,https://docs.apify.com/api/v2,"bearer_token, api_key",self_serve_free,community,yes,Generous free tier with $5 monthly compute; REST API and SDK; community MCP
+MrScraper,https://docs.mrscraper.com,api_key,self_serve_free,none_found,yes,Scraper tool with free plan offering direct API access; straightforward REST endpoints
+Ahrefs,https://ahrefs.com/api,api_key,paid_plan_required,none_found,yes_with_caveats,API v3 requires Enterprise or paid add-on units; no free self-serve API access
+GitHub,https://docs.github.com/rest,"bearer_token, oauth2, api_key",self_serve_free,official,yes,Full REST & GraphQL APIs with personal access tokens on free accounts; official Model Context Protocol server
+Vercel,https://vercel.com/docs/rest-api,"bearer_token, oauth2",self_serve_free,official,yes,Personal tokens and OAuth2; REST API covers deployments and domains; official MCP server
+Supabase,https://supabase.com/docs/reference/api,"bearer_token, api_key",self_serve_free,community,yes,Free tier provides auto-generated REST (PostgREST) and GraphQL APIs with anon/service_role keys
+Notion,https://developers.notion.com,"bearer_token, oauth2",self_serve_free,community,yes,Free workspace supports internal integration tokens and public OAuth apps; community MCP servers exist
+Linear,https://developers.linear.app/docs/graphql/working-with-the-graphql-api,"api_key, oauth2",self_serve_free,community,yes,Free tier includes full GraphQL API access with personal API keys; community MCP available
+ClickUp,https://clickup.com/api,"api_key, oauth2",self_serve_free,community,yes,Free plan provides personal API tokens; broad REST API v2; community MCP server
+Stripe,https://docs.stripe.com/api,"bearer_token, api_key, request_signing",self_serve_free,official,yes,Free test mode with secret/publishable keys; webhook HMAC signing; official Stripe Agent Toolkit / MCP
+Plaid,https://plaid.com/docs/api,api_key,approval_required,community,yes_with_caveats,Free sandbox access but live production credentials require compliance review and underwriting approval
+Paygent Connect,https://paygent.co.jp,api_key,partner_gated,none_found,blocked,Merchant gateway requiring contractual partner agreement and manual underwriting; no self-serve signup
+Otter AI,https://otter.ai,"api_key, oauth2",paid_plan_required,none_found,yes_with_caveats,API and enterprise integrations require Enterprise subscription; consumer free tier is UI only
+YouTube Transcript,https://transcriptapi.com,api_key,self_serve_free,none_found,yes,Simple developer API with instant free tier key generation; REST endpoints
+NotebookLM,https://notebooklm.google.com,none,no_public_api,none_found,blocked,Consumer web application only; Google has not released a public developer REST API for NotebookLM

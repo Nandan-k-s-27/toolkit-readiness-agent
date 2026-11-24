@@ -1,0 +1,37 @@
+# 100-App AI Agent Toolkit Readiness Dataset
+
+> Autonomous evidence-backed research scoring 100 SaaS applications for AI agent toolkit readiness across 10 categories.
+
+## Summary & Key Findings
+- Total Apps Audited: 100
+- Easy Wins (Buildable & Self-Serve today): 76 apps
+- MCP Servers Available: 62 apps (52 official, 10 community)
+- Self-Serve Developer Rate: 85% (67% self-serve free, 18% self-serve trial)
+- Blocked / Enterprise-Gated: 4 apps (Waterfall.io, Paygent Connect, NotebookLM, fanbasis)
+- Most Common Auth Method: OAuth2 (60/100 apps), followed by API keys and Bearer tokens
+- Verbatim Quote Match Rate: 73% of evidence quotes string-matched against live developer documentation in Pass 2
+- Ground Truth Evaluation: 30 stratified apps hand-checked against official developer documentation (Buildability: 70%, Self-Serve: 60%)
+
+## Key Data Files
+- Final Results (JSON): [results_final.json](results_final.json)
+- Accuracy Metrics & Misses (JSON): [accuracy.json](accuracy.json)
+- Aggregate Patterns (JSON): [patterns.json](patterns.json)
+- Hand-Verified Ground Truth (CSV): [gold_labels.csv](gold_labels.csv)
+- Human Review Queue (JSON): [human_queue.json](human_queue.json)
+- Human Inspection Notes (JSON): [human_notes.json](human_notes.json)
+
+## Field Schema
+- `app`: Application name
+- `category`: Vertical category (CRM, Support, Messaging, Marketing, Ecommerce, Data/Scraping, Infra, Productivity, Fintech, AI)
+- `one_liner`: Core platform utility in <= 20 words
+- `auth_methods`: Supported authentication methods (oauth2, api_key, bearer_token, basic, jwt, request_signing)
+- `self_serve`: How developers obtain credentials (self_serve_free, self_serve_trial, paid_plan_required, approval_required, partner_gated, no_public_api, unclear)
+- `api_type`: Protocol surface (rest, graphql, websocket, sdk_only)
+- `api_breadth`: Functional breadth (broad, medium, narrow)
+- `existing_mcp`: MCP availability status (official, community, none_found, unknown)
+- `mcp_url`: GitHub or registry link for the MCP implementation
+- `buildability`: Agent readiness score (yes, yes_with_caveats, blocked)
+- `blocker`: Blocker type (none, paid_gate, approval_gate, partner_gate, no_public_api, rate_or_cost, unclear)
+- `blocker_note`: Explanation of friction point or requirement
+- `confidence`: Calibrated model confidence (0.0 to 1.0)
+- `evidence`: Dictionary of verbatim quoted text and cited source URLs for each claim
