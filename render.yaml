@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: toolkit-readiness-agent
+    env: static
+    buildCommand: "python build_page.py"
+    staticPublishPath: "."
+    pullRequestPreviewsEnabled: true

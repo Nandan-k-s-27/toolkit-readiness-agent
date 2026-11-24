@@ -1,26 +1,48 @@
 # Deployment Guide
 
-## Option 1: GitHub Pages (Recommended — Free, Instant)
+## Option 1: Vercel (Recommended — Instant 10-Second Deploy)
 
-1. Go to your repo → **Settings → Pages**
-2. Under "Source", select **GitHub Actions**
-3. Push any change to `master` — the `deploy-pages.yml` workflow deploys `index.html` automatically
-4. Live URL: `https://nandan-k-s-27.github.io/toolkit-readiness-agent/`
+Since `index.html` is a self-contained, high-performance static web application, Vercel gives you instant edge global delivery, free SSL, and zero configuration:
 
-## Option 2: Netlify (Drag & Drop)
+### Method A: Via Vercel Dashboard (Zero CLI)
+1. Go to [vercel.com/new](https://vercel.com/new).
+2. Import your GitHub repository: `https://github.com/Nandan-k-s-27/toolkit-readiness-agent`.
+3. Keep default settings:
+   - **Framework Preset**: Other
+   - **Root Directory**: `./`
+   - **Build Command**: `python build_page.py` (or leave empty)
+   - **Output Directory**: `./`
+4. Click **Deploy**. Done!
 
-1. Build the page locally: `python build_page.py`
-2. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
-3. Drag and drop the entire project folder
-4. Done — Netlify gives you a live URL instantly
-
-## Option 3: Vercel
-
+### Method B: Via Vercel CLI
 ```bash
 npm i -g vercel
 vercel --prod
-# or via Vercel dashboard: import GitHub repo, root = /, output = index.html
 ```
+
+---
+
+## Option 2: Render (Static Site)
+
+Render is great if you want to host both the frontend and optionally schedule background worker research jobs:
+
+1. Log into [dashboard.render.com](https://dashboard.render.com/).
+2. Click **New +** → **Static Site**.
+3. Connect your repository: `https://github.com/Nandan-k-s-27/toolkit-readiness-agent`.
+4. Configure:
+   - **Name**: `toolkit-readiness-agent`
+   - **Build Command**: `python build_page.py`
+   - **Publish Directory**: `.`
+5. Click **Create Static Site**.
+*(A `render.yaml` blueprint is already included in the repo for 1-click infrastructure deployment!)*
+
+---
+
+## Option 3: GitHub Pages (Already Configured)
+1. Go to your repo → **Settings → Pages**.
+2. Under **Source**, select **GitHub Actions**.
+3. It will deploy automatically via `.github/workflows/deploy-pages.yml` to:
+   `https://nandan-k-s-27.github.io/toolkit-readiness-agent/`
 
 ## Option 4: Local Preview
 
