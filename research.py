@@ -14,7 +14,7 @@ Environment:
   GEMINI_API_KEY      Google Gemini API key (Free tier available at aistudio.google.com)
   ANTHROPIC_API_KEY   Anthropic Claude API key (optional alternative)
   LLM_PROVIDER        gemini | anthropic (auto-detected from environment keys if unset)
-  MODEL               Gemini: default 'gemini-2.0-flash' | Anthropic: default 'claude-sonnet-5-5'
+  MODEL               Gemini: default 'gemini-3.5-flash' | Anthropic: default 'claude-sonnet-5-5'
   SEARCH_BACKEND      direct (DuckDuckGo fallback) | composio (default: direct if COMPOSIO_API_KEY unset)
   COMPOSIO_API_KEY    required only when SEARCH_BACKEND=composio
   COMPOSIO_SEARCH_SLUG default: COMPOSIO_SEARCH_DUCK_DUCK_GO_SEARCH
@@ -157,6 +157,8 @@ def gather(app, hint, queries, have=()):
 # LLM Provider Abstraction: Gemini or Anthropic
 # ---------------------------------------------------------------------------
 _client_lock = threading.Lock()
+_gemini_client = None
+_discovered_gemini_models = None
 
 def get_provider():
     p = os.getenv("LLM_PROVIDER")
@@ -179,28 +181,60 @@ def llm_json(system, user):
         if not api_key:
             raise ValueError("GEMINI_API_KEY environment variable is not set. Add it to .env")
 
-        # Models to try: gemini-2.0-flash (fast & production), fallback to gemini-1.5-flash
-        models_to_try = [
-            os.getenv("MODEL", "gemini-2.0-flash"),
-            "gemini-1.5-flash",
-            "gemini-2.0-flash-lite",
-            "gemini-1.5-pro",
+        global _gemini_client, _discovered_gemini_models
+        with _client_lock:
+            if _gemini_client is None:
+                _gemini_client = genai.Client(
+                    api_key=api_key,
+                    http_options=types.HttpOptions(api_version="v1beta")
+                )
+            client = _gemini_client
+
+            if _discovered_gemini_models is None:
+                try:
+                    disc = []
+                    for m in client.models.list():
+                        actions = getattr(m, "supported_actions", None) or []
+                        if not actions or "generateContent" in actions:
+                            disc.append(m.name.replace("models/", ""))
+                    _discovered_gemini_models = disc
+                except Exception as e:
+                    _discovered_gemini_models = []
+
+        # Candidate models prioritizing Gemini 3.5 Flash
+        user_model = os.getenv("MODEL", "gemini-3.5-flash")
+        candidates = [
+            user_model,
+            "gemini-3.5-flash",
+            "gemini-3.5-flash-lite",
+            "gemini-3-flash-preview",
+            "gemini-2.5-flash",
         ]
 
-        seen_models = set()
-        deduped_models = []
-        for m in models_to_try:
-            if m and m not in seen_models:
-                seen_models.add(m)
-                deduped_models.append(m)
+        models_to_try = []
+        if _discovered_gemini_models:
+            # 1. Add candidates that exist in Google's discovered list for this API key
+            for c in candidates:
+                if c in _discovered_gemini_models and c not in models_to_try:
+                    models_to_try.append(c)
+            # 2. Add any other flash models from discovered list
+            for d in _discovered_gemini_models:
+                if "flash" in d and d not in models_to_try:
+                    models_to_try.append(d)
+        
+        # If discovery list was empty or offline, fallback to candidates
+        if not models_to_try:
+            seen_cand = set()
+            for c in candidates:
+                if c and c not in seen_cand:
+                    seen_cand.add(c)
+                    models_to_try.append(c)
 
         # Retry with exponential backoff for rate limits or temporary unavailability
         last_err = None
-        for model_name in deduped_models:
+        for model_name in models_to_try:
             for attempt in range(3):
                 try:
-                    with _client_lock:
-                        client = genai.Client(api_key=api_key)
                     config = types.GenerateContentConfig(
                         system_instruction=system,
                         response_mime_type="application/json",
@@ -221,11 +255,10 @@ def llm_json(system, user):
                         sleep_time = (attempt + 1) * 3 + random.uniform(0.5, 2.0)
                         time.sleep(sleep_time)
                         if attempt >= 1:
-                            # If a model fails twice with 503 or 429, fall through to the next fallback model (e.g. gemini-1.5-flash)
                             break
                         continue
                     else:
-                        break  # Try next model if 404 or non-transient error
+                        break  # Try next model if 404 or other non-transient error
         raise RuntimeError(f"All Gemini requests failed. Last error: {last_err}")
 
     else:

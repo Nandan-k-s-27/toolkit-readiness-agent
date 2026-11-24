@@ -84,7 +84,7 @@ The agent's performance was evaluated against `gold_labels.csv`, containing **30
 ## Technical Choices & Tooling Roles
 
 ### Google Gemini vs Anthropic Claude
-- **Gemini (Default):** Utilizes `gemini-2.0-flash` with fallback to `gemini-1.5-flash`. Gemini offers a generous free tier with high request limits (15 RPM / 1M TPM), enabling full multi-threaded pipeline execution across 100 apps without requiring a paid subscription.
+- **Gemini (Default):** Utilizes `gemini-3.5-flash` with dynamic discovery of available Flash models (like `gemini-3.5-flash-lite`). Gemini offers a generous free tier with high request limits (15 RPM / 1M TPM), enabling full multi-threaded pipeline execution across 100 apps without requiring a paid subscription.
 - **Claude:** Supports `claude-sonnet-5-5` for high-reasoning critic passes when an Anthropic key is configured.
 
 ### Composio SDK Role
@@ -116,7 +116,7 @@ The agent's performance was evaluated against `gold_labels.csv`, containing **30
 | `GEMINI_API_KEY` | *(free)* | **Google Gemini API Key** ([Get free key here](https://aistudio.google.com/)) |
 | `ANTHROPIC_API_KEY` | optional | Alternative Anthropic API Key |
 | `LLM_PROVIDER` | `gemini` | `gemini` or `anthropic` (auto-detected if keys are set) |
-| `MODEL` | `gemini-2.0-flash` | Model name (`gemini-2.0-flash`, `gemini-1.5-flash`, or `claude-sonnet-5-5`) |
+| `MODEL` | `gemini-3.5-flash` | Model name (`gemini-3.5-flash`, `gemini-3.5-flash-lite`, or `claude-sonnet-5-5`) |
 | `SEARCH_BACKEND` | `direct` | `direct` (Free DuckDuckGo HTML) or `composio` |
 | `COMPOSIO_API_KEY` | optional | Composio API key if using Composio search backend |
 | `REPO_URL` | `#` | Repository URL for page links |
