@@ -1,18 +1,25 @@
 #!/usr/bin/env python3
 """Research agent: search (Composio or DuckDuckGo) -> fetch docs -> LLM extract with quoted evidence.
 pass1: single-shot extraction (baseline).  pass2: evidence-quote check + critic + targeted re-research + human queue.
+
+Supported Providers:
+  - Google Gemini (FREE tier with GEMINI_API_KEY) - default if GEMINI_API_KEY is present
+  - Anthropic Claude (with ANTHROPIC_API_KEY)
+
 Usage:
-  python research.py pass1 [--app Slack] [--workers 6]
+  python research.py pass1 [--app Slack] [--workers 4]
   python research.py pass2 [--app Slack]
-  python research.py pass1 --app Slack --demo   # offline demo mode (no API keys needed)
+  python research.py pass1 --app Slack --demo   # offline demo mode (no keys needed)
 
 Environment:
-  ANTHROPIC_API_KEY   required (unless --demo)
+  GEMINI_API_KEY      Google Gemini API key (Free tier available at aistudio.google.com)
+  ANTHROPIC_API_KEY   Anthropic Claude API key (optional alternative)
+  LLM_PROVIDER        gemini | anthropic (auto-detected from environment keys if unset)
+  MODEL               Gemini: default 'gemini-2.5-flash' | Anthropic: default 'claude-sonnet-5-5'
+  SEARCH_BACKEND      direct (DuckDuckGo fallback) | composio (default: direct if COMPOSIO_API_KEY unset)
   COMPOSIO_API_KEY    required only when SEARCH_BACKEND=composio
-  SEARCH_BACKEND      composio | direct   (default: composio; direct uses DuckDuckGo HTML)
-  COMPOSIO_SEARCH_SLUG  default: COMPOSIO_SEARCH_DUCK_DUCK_GO_SEARCH
+  COMPOSIO_SEARCH_SLUG default: COMPOSIO_SEARCH_DUCK_DUCK_GO_SEARCH
   COMPOSIO_USER_ID    default: default
-  MODEL               default: claude-sonnet-5-5
 """
 import os, re, json, csv, sys, hashlib, argparse, pathlib, urllib.parse
 from concurrent.futures import ThreadPoolExecutor
@@ -21,7 +28,6 @@ from bs4 import BeautifulSoup
 
 ROOT = pathlib.Path(__file__).parent
 CACHE = ROOT / "cache"; CACHE.mkdir(exist_ok=True)
-MODEL = os.getenv("MODEL", "claude-sonnet-5-5")
 UA = {"User-Agent": "Mozilla/5.0 (compatible; ResearchBot/1.0)"}
 EVIDENCE_FIELDS = ["auth_methods", "self_serve", "api_type", "existing_mcp", "buildability"]
 
@@ -45,7 +51,10 @@ def norm(s): return re.sub(r"\s+", " ", s or "").strip().lower()
 
 _composio = None
 def search(q, n=4):
-    backend = os.getenv("SEARCH_BACKEND", "composio")
+    backend = os.getenv("SEARCH_BACKEND")
+    if not backend:
+        backend = "composio" if os.getenv("COMPOSIO_API_KEY") else "direct"
+
     urls = []
     if backend == "composio":
         global _composio
@@ -56,7 +65,7 @@ def search(q, n=4):
             arguments={"query": q}, user_id=os.getenv("COMPOSIO_USER_ID", "default"),
             dangerously_skip_version_check=True)
         urls = re.findall(r"https?://[^\s\"'\\<>)]+", json.dumps(r))
-    else:  # direct DuckDuckGo HTML fallback
+    else:  # direct DuckDuckGo HTML fallback (free, no API key needed)
         try:
             h = requests.get(
                 "https://html.duckduckgo.com/html/",
@@ -103,19 +112,74 @@ def gather(app, hint, queries, have=()):
         if len(pages) >= 6: break
     return pages
 
-def _get_llm():
-    """Lazy-load Anthropic client so --demo mode doesn't require the key."""
-    import anthropic
-    return anthropic.Anthropic()
+# ---------------------------------------------------------------------------
+# LLM Provider Abstraction: Gemini or Anthropic
+# ---------------------------------------------------------------------------
+_gemini_client = None
+_anthropic_client = None
+
+def get_provider():
+    p = os.getenv("LLM_PROVIDER")
+    if p:
+        return p.lower()
+    if os.getenv("GEMINI_API_KEY"):
+        return "gemini"
+    if os.getenv("ANTHROPIC_API_KEY"):
+        return "anthropic"
+    return "gemini"  # default to free Gemini
 
 def llm_json(system, user):
-    llm = _get_llm()
-    m = llm.messages.create(
-        model=MODEL, max_tokens=2500, system=system,
-        messages=[{"role": "user", "content": user}])
-    t = m.content[0].text.strip()
-    t = re.sub(r"^```(?:json)?|```$", "", t, flags=re.M).strip()
-    return json.loads(t[t.find("{"):t.rfind("}") + 1])
+    provider = get_provider()
+
+    if provider == "gemini":
+        global _gemini_client
+        from google import genai
+        from google.genai import types
+
+        api_key = os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY environment variable is not set. Get a free key at https://aistudio.google.com/")
+
+        if _gemini_client is None:
+            _gemini_client = genai.Client(api_key=api_key)
+
+        model_name = os.getenv("MODEL", "gemini-2.5-flash")
+        config = types.GenerateContentConfig(
+            system_instruction=system,
+            response_mime_type="application/json",
+            temperature=0.2,
+        )
+        response = _gemini_client.models.generate_content(
+            model=model_name,
+            contents=user,
+            config=config,
+        )
+        t = (response.text or "").strip()
+        t = re.sub(r"^```(?:json)?|```$", "", t, flags=re.M).strip()
+        return json.loads(t[t.find("{"):t.rfind("}") + 1])
+
+    else:
+        # Anthropic provider
+        global _anthropic_client
+        import anthropic
+
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not api_key:
+            raise ValueError("ANTHROPIC_API_KEY environment variable is not set.")
+
+        if _anthropic_client is None:
+            _anthropic_client = anthropic.Anthropic(api_key=api_key)
+
+        model_name = os.getenv("MODEL", "claude-sonnet-5-5")
+        m = _anthropic_client.messages.create(
+            model=model_name,
+            max_tokens=2500,
+            system=system,
+            messages=[{"role": "user", "content": user}]
+        )
+        t = m.content[0].text.strip()
+        t = re.sub(r"^```(?:json)?|```$", "", t, flags=re.M).strip()
+        return json.loads(t[t.find("{"):t.rfind("}") + 1])
 
 def extract(app, pages, prior=None, issues=None):
     ctx = "\n\n".join(f"URL: {u}\n{t}" for u, t in pages.items())
@@ -248,11 +312,15 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Toolkit readiness research agent")
     ap.add_argument("stage", choices=["pass1", "pass2"])
     ap.add_argument("--app", help="Single app name to process")
-    ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--demo", action="store_true",
                     help="Demo mode: generate plausible results without hitting any API")
     a = ap.parse_args()
     apps = load_apps(a.app)
+
+    provider = get_provider()
+    if not a.demo:
+        print(f"[*] Research agent running stage '{a.stage}' using provider: {provider.upper()}")
 
     if a.stage == "pass1":
         with ThreadPoolExecutor(a.workers) as ex:

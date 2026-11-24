@@ -7,8 +7,12 @@ on:
         description: "Single app name (leave blank for all 100)"
         required: false
         default: ""
+      llm_provider:
+        description: "LLM Provider: gemini or anthropic"
+        required: false
+        default: "gemini"
       search_backend:
-        description: "Search backend: composio or direct"
+        description: "Search backend: direct (DuckDuckGo) or composio"
         required: false
         default: "direct"
   schedule:
@@ -35,21 +39,25 @@ jobs:
 
       - name: Run pass1
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+          LLM_PROVIDER: ${{ github.event.inputs.llm_provider || 'gemini' }}
           SEARCH_BACKEND: ${{ github.event.inputs.search_backend || 'direct' }}
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
         run: |
           APP_FLAG=""
           if [ -n "${{ github.event.inputs.app }}" ]; then
             APP_FLAG="--app ${{ github.event.inputs.app }}"
           fi
-          python research.py pass1 $APP_FLAG --workers 8
+          python research.py pass1 $APP_FLAG --workers 4
 
       - name: Run pass2
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+          LLM_PROVIDER: ${{ github.event.inputs.llm_provider || 'gemini' }}
           SEARCH_BACKEND: ${{ github.event.inputs.search_backend || 'direct' }}
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
         run: |
           APP_FLAG=""
           if [ -n "${{ github.event.inputs.app }}" ]; then
