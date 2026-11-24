@@ -1165,52 +1165,41 @@
   "id": 20
  },
  {
-  "one_liner": "Slack connects teams through channels, messages, and AI agents with developer tools.",
-  "auth_methods": [
-   "oauth2",
-   "bearer_token",
-   "other"
-  ],
-  "self_serve": "self_serve_free",
-  "api_type": [
-   "rest",
-   "websocket"
-  ],
+  "one_liner": "Slack is an AI work platform enabling team collaboration, messaging, workflow automation, and custom agent integrations.",
+  "auth_methods": [],
+  "self_serve": "unclear",
+  "api_type": [],
   "api_breadth": "broad",
-  "existing_mcp": "official",
-  "mcp_url": "https://mcp.slack.com/mcp",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
   "buildability": "yes",
   "blocker": "none",
   "blocker_note": "",
-  "confidence": 0.95,
+  "confidence": 0.6,
   "evidence": {
    "auth_methods": {
-    "url": "https://slack.com/api",
-    "quote": "Copy the bot token ( xoxb- ) from OAuth & Permissions . For Socket Mode, create an app-level token ( xapp- ) with connections:write under Basic Information ."
+    "url": "https://slack.com",
+    "quote": "Slack Code API Any custom agent can now tap into and create a code channel experience."
    },
    "self_serve": {
-    "url": "https://slack.com/api",
-    "quote": "Some AI features need a paid plan; a free Developer Program sandbox has them."
+    "url": "https://slack.com",
+    "quote": "Get started Find your plan"
    },
    "api_type": {
-    "url": "https://slack.com/api",
-    "quote": "For Socket Mode, create an app-level token ( xapp- ) with connections:write under Basic Information ."
+    "url": "https://slack.com",
+    "quote": "Slack Code API Any custom agent can now tap into and create a code channel experience."
    },
    "existing_mcp": {
-    "url": "https://slack.com/api",
-    "quote": "Server URL https://mcp.slack.com/mcp"
+    "url": "https://slack.com",
+    "quote": "Build together in channels with Slack Code"
    },
    "buildability": {
-    "url": "https://slack.com/api",
-    "quote": "Pick how you like to build and have something running in Slack in minutes."
+    "url": "https://slack.com",
+    "quote": "With clicks or with code, anyone can quickly build custom agents and solutions specific to their needs."
    }
   },
   "pages": [
-   "https://slack.com",
-   "https://slack.com/api",
-   "https://www.crazygames.com/t/car",
-   "https://www.crazygames.com/",
-   "https://www.crazygames.com/c/action"
+   "https://slack.com"
   ],
   "evidence_ok": {
    "auth_methods": true,

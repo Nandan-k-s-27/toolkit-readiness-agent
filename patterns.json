@@ -1,8 +1,8 @@
 {
  "n": 100,
  "auth": {
-  "bearer_token": 44,
-  "oauth2": 60,
+  "bearer_token": 43,
+  "oauth2": 59,
   "api_key": 42,
   "basic": 9,
   "other": 14,
@@ -13,10 +13,10 @@
   "none": 5
  },
  "self_serve": {
-  "self_serve_free": 67,
+  "self_serve_free": 66,
   "self_serve_trial": 18,
   "paid_plan_required": 5,
-  "unclear": 7,
+  "unclear": 8,
   "approval_required": 3
  },
  "blockers": {
@@ -32,8 +32,8 @@
   "blocked": 4
  },
  "mcp": {
-  "official": 52,
-  "none_found": 38,
+  "official": 51,
+  "none_found": 39,
   "community": 10
  },
  "by_category": {
@@ -49,7 +49,8 @@
    "unclear": 1
   },
   "Communications and Messaging": {
-   "self_serve_free": 8,
+   "unclear": 1,
+   "self_serve_free": 7,
    "self_serve_trial": 2
   },
   "Marketing, Ads, Email and Social": {
@@ -103,7 +104,6 @@
   "Plain",
   "Help Scout",
   "Gorgias",
-  "Slack",
   "Twilio",
   "Zoho Cliq",
   "Pumble",
@@ -180,11 +180,11 @@
   "PitchBook"
  ],
  "headlines": [
-  "oauth2 is the most common auth: 60/100 apps list it.",
-  "85% of apps are self-serve; 12% need payment, approval or outreach.",
+  "oauth2 is the most common auth: 59/100 apps list it.",
+  "84% of apps are self-serve; 12% need payment, approval or outreach.",
   "Most common blocker: unclear (3 apps).",
-  "76 easy wins (self-serve + buildable now); 4 blocked today.",
+  "75 easy wins (self-serve + buildable now); 4 blocked today.",
   "Most gated category: Marketing, Ads, Email and Social.",
-  "Existing MCP found for 62/100 apps (52 official)."
+  "Existing MCP found for 61/100 apps (51 official)."
  ]
 }

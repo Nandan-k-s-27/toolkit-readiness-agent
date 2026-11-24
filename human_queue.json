@@ -91,6 +91,13 @@
   ]
  },
  {
+  "app": "Slack",
+  "fields": [],
+  "pages": [
+   "https://slack.com"
+  ]
+ },
+ {
   "app": "Zoho Cliq",
   "fields": [
    "existing_mcp"

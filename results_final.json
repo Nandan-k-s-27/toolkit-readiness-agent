@@ -1669,59 +1669,41 @@
   "human_reasons": []
  },
  {
-  "one_liner": "Slack connects teams through channels, messages, and AI agents with developer tools.",
-  "auth_methods": [
-   "oauth2",
-   "bearer_token"
-  ],
-  "self_serve": "self_serve_free",
-  "api_type": [
-   "rest",
-   "websocket"
-  ],
+  "one_liner": "Slack is a team messaging and collaboration platform with AI agents and developer APIs.",
+  "auth_methods": [],
+  "self_serve": "unclear",
+  "api_type": [],
   "api_breadth": "broad",
-  "existing_mcp": "official",
-  "mcp_url": "https://mcp.slack.com/mcp",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
   "buildability": "yes",
   "blocker": "none",
   "blocker_note": "",
-  "confidence": 0.95,
+  "confidence": 0.4,
   "evidence": {
    "auth_methods": {
-    "url": "https://slack.com/api",
-    "quote": "Auth: OAuth 2.0"
+    "url": "https://slack.com",
+    "quote": "Our security program protects your data at every layer."
    },
    "self_serve": {
-    "url": "https://slack.com/api",
-    "quote": "Some AI features need a paid plan; a free Developer Program sandbox has them."
+    "url": "https://slack.com",
+    "quote": "Get started Find your plan"
    },
    "api_type": {
-    "url": "https://slack.com/api",
-    "quote": "For Socket Mode, create an app-level token ( xapp- ) with connections:write under Basic Information ."
+    "url": "https://slack.com",
+    "quote": "Slack Code API Any custom agent can now tap into and create a code channel experience."
    },
    "existing_mcp": {
-    "url": "https://slack.com/api",
-    "quote": "Server URL https://mcp.slack.com/mcp"
+    "url": "https://slack.com",
+    "quote": "From Atlassian to Zoom. Google Drive. ChatGPT. Vercel. Box. Asana. Workday. You name it, it works in Slack."
    },
    "buildability": {
-    "url": "https://slack.com/api",
-    "quote": "Pick how you like to build and have something running in Slack in minutes."
+    "url": "https://slack.com",
+    "quote": "With clicks or with code, anyone can quickly build custom agents and solutions specific to their needs."
    }
   },
   "pages": [
-   "https://slack.com",
-   "https://slack.com/api",
-   "https://www.crazygames.com/t/car",
-   "https://www.crazygames.com/",
-   "https://www.crazygames.com/c/action",
-   "https://www.google.com/intl/en/chrome/browser/",
-   "https://www.google.com/intl/en_uk/chrome/",
-   "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform=Desktop",
-   "https://learn.microsoft.com/en-us/answers/questions/2514671/my-keyboard-now-gives-inverted-commasign-for-theat",
-   "https://learn.microsoft.com/en-us/answers/questions/3201967/the-at-symbol-and-double-inverted-comma-symbol-is",
-   "https://forum.lowyat.net/topic/5556445",
-   "https://support.google.com/mail/answer/8494?hl=iw&co=GENIE.Platform=Desktop",
-   "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform=Android"
+   "https://slack.com"
   ],
   "evidence_ok": {
    "auth_methods": true,
@@ -1737,19 +1719,23 @@
    {
     "attempt": 1,
     "issues": [
-     "auth_methods"
+     "api_type",
+     "auth_methods",
+     "existing_mcp"
     ],
-    "low_conf": false
+    "low_conf": true
    },
    {
     "attempt": 2,
     "issues": [
-     "auth_methods"
+     "api_type",
+     "auth_methods",
+     "existing_mcp"
     ],
-    "low_conf": false
+    "low_conf": true
    }
   ],
-  "needs_human": false,
+  "needs_human": true,
   "human_reasons": []
  },
  {
