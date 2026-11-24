@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       app:
-        description: "Single app name (leave blank for all 100)"
+        description: "App name to research (default: Slack. Use 'all' for full 100)"
         required: false
-        default: ""
+        default: "Slack"
       llm_provider:
         description: "LLM Provider: gemini or anthropic"
         required: false
@@ -46,10 +46,11 @@ jobs:
           COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
         run: |
           APP_FLAG=""
-          if [ -n "${{ github.event.inputs.app }}" ]; then
-            APP_FLAG="--app ${{ github.event.inputs.app }}"
+          TARGET_APP="${{ github.event.inputs.app }}"
+          if [ -n "$TARGET_APP" ] && [ "$TARGET_APP" != "all" ]; then
+            APP_FLAG="--app $TARGET_APP"
           fi
-          python research.py pass1 $APP_FLAG --workers 4
+          python research.py pass1 $APP_FLAG --workers 2
 
       - name: Run pass2
         env:
@@ -60,10 +61,11 @@ jobs:
           COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
         run: |
           APP_FLAG=""
-          if [ -n "${{ github.event.inputs.app }}" ]; then
-            APP_FLAG="--app ${{ github.event.inputs.app }}"
+          TARGET_APP="${{ github.event.inputs.app }}"
+          if [ -n "$TARGET_APP" ] && [ "$TARGET_APP" != "all" ]; then
+            APP_FLAG="--app $TARGET_APP"
           fi
-          python research.py pass2 $APP_FLAG
+          python research.py pass2 $APP_FLAG --workers 2
 
       - name: Analyze patterns
         run: python analyze.py

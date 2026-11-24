@@ -14,13 +14,13 @@ Environment:
   GEMINI_API_KEY      Google Gemini API key (Free tier available at aistudio.google.com)
   ANTHROPIC_API_KEY   Anthropic Claude API key (optional alternative)
   LLM_PROVIDER        gemini | anthropic (auto-detected from environment keys if unset)
-  MODEL               Gemini: default 'gemini-2.5-flash' | Anthropic: default 'claude-sonnet-5-5'
+  MODEL               Gemini: default 'gemini-2.0-flash' | Anthropic: default 'claude-sonnet-5-5'
   SEARCH_BACKEND      direct (DuckDuckGo fallback) | composio (default: direct if COMPOSIO_API_KEY unset)
   COMPOSIO_API_KEY    required only when SEARCH_BACKEND=composio
   COMPOSIO_SEARCH_SLUG default: COMPOSIO_SEARCH_DUCK_DUCK_GO_SEARCH
   COMPOSIO_USER_ID    default: default
 """
-import os, re, json, csv, sys, hashlib, argparse, pathlib, urllib.parse, threading, time
+import os, re, json, csv, sys, hashlib, argparse, pathlib, urllib.parse, threading, time, random
 from concurrent.futures import ThreadPoolExecutor
 import requests
 from bs4 import BeautifulSoup
@@ -179,17 +179,25 @@ def llm_json(system, user):
         if not api_key:
             raise ValueError("GEMINI_API_KEY environment variable is not set. Add it to .env")
 
-        # Models to try: gemini-3.5-flash-lite (fast & high quota), fallback to gemini-2.5-flash
+        # Models to try: gemini-2.0-flash (fast & production), fallback to gemini-1.5-flash
         models_to_try = [
-            os.getenv("MODEL", "gemini-3.5-flash-lite"),
-            "gemini-2.5-flash",
-            "gemini-3.5-flash"
+            os.getenv("MODEL", "gemini-2.0-flash"),
+            "gemini-1.5-flash",
+            "gemini-2.0-flash-lite",
+            "gemini-1.5-pro",
         ]
+
+        seen_models = set()
+        deduped_models = []
+        for m in models_to_try:
+            if m and m not in seen_models:
+                seen_models.add(m)
+                deduped_models.append(m)
 
         # Retry with exponential backoff for rate limits or temporary unavailability
         last_err = None
-        for model_name in models_to_try:
-            for attempt in range(4):
+        for model_name in deduped_models:
+            for attempt in range(3):
                 try:
                     with _client_lock:
                         client = genai.Client(api_key=api_key)
@@ -210,8 +218,11 @@ def llm_json(system, user):
                     last_err = e
                     err_str = str(e).lower()
                     if "429" in err_str or "resource_exhausted" in err_str or "503" in err_str or "unavailable" in err_str or "client has been closed" in err_str:
-                        sleep_time = (attempt + 1) * 3
+                        sleep_time = (attempt + 1) * 3 + random.uniform(0.5, 2.0)
                         time.sleep(sleep_time)
+                        if attempt >= 1:
+                            # If a model fails twice with 503 or 429, fall through to the next fallback model (e.g. gemini-1.5-flash)
+                            break
                         continue
                     else:
                         break  # Try next model if 404 or non-transient error
