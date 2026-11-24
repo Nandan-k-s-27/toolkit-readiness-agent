@@ -1,0 +1,12 @@
+[
+ {
+  "app": "YouTube Transcript",
+  "fields": [
+   "auth_methods",
+   "self_serve"
+  ],
+  "pages": [
+   "https://transcriptapi.com"
+  ]
+ }
+]

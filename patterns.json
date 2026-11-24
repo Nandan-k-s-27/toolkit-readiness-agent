@@ -1,0 +1,186 @@
+{
+ "n": 100,
+ "auth": {
+  "oauth2": 55,
+  "api_key": 66,
+  "bearer_token": 16,
+  "request_signing": 4,
+  "jwt": 9,
+  "basic": 5
+ },
+ "self_serve": {
+  "self_serve_free": 27,
+  "self_serve_trial": 29,
+  "approval_required": 10,
+  "paid_plan_required": 18,
+  "partner_gated": 10,
+  "unclear": 3,
+  "no_public_api": 3
+ },
+ "blockers": {
+  "rate_or_cost": 8,
+  "approval_gate": 4,
+  "partner_gate": 7,
+  "paid_gate": 2,
+  "no_public_api": 7,
+  "unclear": 3
+ },
+ "buildability": {
+  "yes": 55,
+  "yes_with_caveats": 28,
+  "blocked": 17
+ },
+ "mcp": {
+  "official": 35,
+  "none_found": 34,
+  "community": 31
+ },
+ "by_category": {
+  "CRM and Sales": {
+   "self_serve_free": 2,
+   "self_serve_trial": 3,
+   "approval_required": 3,
+   "paid_plan_required": 2
+  },
+  "Support and Helpdesk": {
+   "paid_plan_required": 5,
+   "self_serve_trial": 3,
+   "self_serve_free": 2
+  },
+  "Communications and Messaging": {
+   "self_serve_trial": 3,
+   "approval_required": 5,
+   "self_serve_free": 2
+  },
+  "Marketing, Ads, Email and Social": {
+   "self_serve_free": 2,
+   "partner_gated": 6,
+   "self_serve_trial": 2
+  },
+  "Ecommerce": {
+   "self_serve_trial": 4,
+   "self_serve_free": 3,
+   "paid_plan_required": 3
+  },
+  "Data, SEO and Scraping": {
+   "paid_plan_required": 4,
+   "self_serve_trial": 3,
+   "self_serve_free": 3
+  },
+  "Developer, Infra and Data platforms": {
+   "self_serve_free": 7,
+   "self_serve_trial": 3
+  },
+  "Productivity and Project Management": {
+   "paid_plan_required": 3,
+   "self_serve_free": 4,
+   "self_serve_trial": 3
+  },
+  "Finance and Fintech": {
+   "partner_gated": 4,
+   "self_serve_trial": 3,
+   "approval_required": 2,
+   "paid_plan_required": 1
+  },
+  "AI, Research and Media-native": {
+   "unclear": 3,
+   "no_public_api": 3,
+   "self_serve_trial": 2,
+   "self_serve_free": 2
+  }
+ },
+ "easy_wins": [
+  "Salesforce",
+  "Copper",
+  "DealCloud",
+  "Intercom",
+  "Pylon",
+  "Plain",
+  "Slack",
+  "Zoho Cliq",
+  "Pumble",
+  "Discord",
+  "Vonage",
+  "LinkedIn Ads",
+  "GoHighLevel",
+  "Shopify",
+  "WooCommerce",
+  "BigCommerce",
+  "Salesforce Commerce Cloud",
+  "Squarespace",
+  "Gumroad",
+  "Bright Data",
+  "Sherlock",
+  "Clay",
+  "Vercel",
+  "Netlify",
+  "Neo4j",
+  "MongoDB Atlas",
+  "Sentry",
+  "Airtable",
+  "Linear",
+  "Jira",
+  "ClickUp",
+  "Harvest",
+  "Devin"
+ ],
+ "needs_outreach": [
+  "Pipedrive",
+  "Twenty",
+  "Podio",
+  "Zoho CRM",
+  "Close",
+  "Zendesk",
+  "Freshdesk",
+  "Front",
+  "LiveAgent",
+  "Help Scout",
+  "Twilio",
+  "Lark (Larksuite)",
+  "Telegram",
+  "WhatsApp Business",
+  "Aircall",
+  "Meta Ads",
+  "Mailchimp",
+  "Klaviyo",
+  "systeme.io",
+  "Pinterest",
+  "Threads (Meta)",
+  "SendGrid",
+  "Magento (Adobe Commerce)",
+  "Ecwid",
+  "fanbasis",
+  "DataForSEO",
+  "MrScraper",
+  "Apify",
+  "Firecrawl",
+  "Notion",
+  "Asana",
+  "Smartsheet",
+  "Stripe",
+  "Plaid",
+  "Binance",
+  "Paygent Connect",
+  "iPayX",
+  "Xero",
+  "Brex",
+  "Ramp",
+  "PitchBook",
+  "NotebookLM",
+  "Otter AI",
+  "Fathom",
+  "Consensus",
+  "Reducto",
+  "higgsfield",
+  "YouTube Transcript",
+  "Grain"
+ ],
+ "headlines": [
+  "api_key is the most common auth: 66/100 apps list it.",
+  "56% of apps are self-serve; 49% need payment, approval or outreach.",
+  "Most common blocker: rate_or_cost (8 apps).",
+  "33 easy wins (self-serve + buildable now); 17 blocked today.",
+  "Most gated category: Finance and Fintech.",
+  "Existing MCP found for 66/100 apps (35 official)."
+ ]
+}

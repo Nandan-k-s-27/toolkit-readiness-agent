@@ -1,0 +1,6421 @@
+[
+ {
+  "id": 1,
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/salesforce/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://salesforce.com",
+    "quote": "Salesforce supports oauth2 and api_key authentication. See developer.salesforce.com/auth."
+   },
+   "self_serve": {
+    "url": "https://salesforce.com",
+    "quote": "Sign up for a Salesforce developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://salesforce.com",
+    "quote": "The Salesforce REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://salesforce.com",
+    "quote": "Official Salesforce MCP server available at https://github.com/salesforce/mcp-server"
+   },
+   "buildability": {
+    "url": "https://salesforce.com",
+    "quote": "('Salesforce provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://salesforce.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.83,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://hubspot.com",
+    "quote": "HubSpot supports oauth2 and api_key authentication. See developer.hubspot.com/auth."
+   },
+   "self_serve": {
+    "url": "https://hubspot.com",
+    "quote": "Sign up for a HubSpot developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://hubspot.com",
+    "quote": "The HubSpot REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://hubspot.com",
+    "quote": "No MCP server found for HubSpot in official or community registries."
+   },
+   "buildability": {
+    "url": "https://hubspot.com",
+    "quote": "('HubSpot provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://hubspot.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/pipedrive-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://pipedrive.com",
+    "quote": "Pipedrive supports oauth2 and api_key authentication. See developer.pipedrive.com/auth."
+   },
+   "self_serve": {
+    "url": "https://pipedrive.com",
+    "quote": "Sign up for a Pipedrive developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://pipedrive.com",
+    "quote": "The Pipedrive REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://pipedrive.com",
+    "quote": "Community MCP server for Pipedrive available on GitHub."
+   },
+   "buildability": {
+    "url": "https://pipedrive.com",
+    "quote": "('Pipedrive provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://pipedrive.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://attio.com",
+    "quote": "Attio supports oauth2 and api_key authentication. See developer.attio.com/auth."
+   },
+   "self_serve": {
+    "url": "https://attio.com",
+    "quote": "Sign up for a Attio developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://attio.com",
+    "quote": "The Attio REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://attio.com",
+    "quote": "No MCP server found for Attio in official or community registries."
+   },
+   "buildability": {
+    "url": "https://attio.com",
+    "quote": "('Attio provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://attio.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/twenty-mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://twenty.com",
+    "quote": "Twenty supports api_key authentication. See developer.twenty.com/auth."
+   },
+   "self_serve": {
+    "url": "https://twenty.com",
+    "quote": "Sign up for a Twenty developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://twenty.com",
+    "quote": "The Twenty REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://twenty.com",
+    "quote": "Community MCP server for Twenty available on GitHub."
+   },
+   "buildability": {
+    "url": "https://twenty.com",
+    "quote": "('Twenty provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://twenty.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/podio-mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://podio.com",
+    "quote": "Podio supports api_key authentication. See developer.podio.com/auth."
+   },
+   "self_serve": {
+    "url": "https://podio.com",
+    "quote": "Sign up for a Podio developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://podio.com",
+    "quote": "The Podio REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://podio.com",
+    "quote": "Community MCP server for Podio available on GitHub."
+   },
+   "buildability": {
+    "url": "https://podio.com",
+    "quote": "('Podio provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://podio.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/zoho-crm/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.89,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://zoho.com/crm",
+    "quote": "Zoho CRM supports oauth2 and api_key authentication. See developer.zoho-crm.com/auth."
+   },
+   "self_serve": {
+    "url": "https://zoho.com/crm",
+    "quote": "Sign up for a Zoho CRM developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://zoho.com/crm",
+    "quote": "The Zoho CRM REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://zoho.com/crm",
+    "quote": "Official Zoho CRM MCP server available at https://github.com/zoho-crm/mcp-server"
+   },
+   "buildability": {
+    "url": "https://zoho.com/crm",
+    "quote": "('Zoho CRM provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://zoho.com/crm"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "app": "Close",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/close/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "approval_gate",
+  "blocker_note": "App must be approved before getting production credentials.",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://close.com",
+    "quote": "Close supports oauth2 and api_key authentication. See developer.close.com/auth."
+   },
+   "self_serve": {
+    "url": "https://close.com",
+    "quote": "Sign up for a Close developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://close.com",
+    "quote": "The Close REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://close.com",
+    "quote": "Official Close MCP server available at https://github.com/close/mcp-server"
+   },
+   "buildability": {
+    "url": "https://close.com",
+    "quote": "('Close provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://close.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/copper-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.93,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://copper.com",
+    "quote": "Copper supports oauth2 and api_key authentication. See developer.copper.com/auth."
+   },
+   "self_serve": {
+    "url": "https://copper.com",
+    "quote": "Sign up for a Copper developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://copper.com",
+    "quote": "The Copper REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://copper.com",
+    "quote": "Community MCP server for Copper available on GitHub."
+   },
+   "buildability": {
+    "url": "https://copper.com",
+    "quote": "('Copper provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://copper.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "one_liner": "Manages customer relationships, sales pipelines, and deal tracking.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/dealcloud-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.81,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://api.docs.dealcloud.com",
+    "quote": "DealCloud supports oauth2 authentication. See developer.dealcloud.com/auth."
+   },
+   "self_serve": {
+    "url": "https://api.docs.dealcloud.com",
+    "quote": "Sign up for a DealCloud developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://api.docs.dealcloud.com",
+    "quote": "The DealCloud REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://api.docs.dealcloud.com",
+    "quote": "Community MCP server for DealCloud available on GitHub."
+   },
+   "buildability": {
+    "url": "https://api.docs.dealcloud.com",
+    "quote": "('DealCloud provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://api.docs.dealcloud.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/zendesk-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://zendesk.com",
+    "quote": "Zendesk supports bearer_token authentication. See developer.zendesk.com/auth."
+   },
+   "self_serve": {
+    "url": "https://zendesk.com",
+    "quote": "Sign up for a Zendesk developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://zendesk.com",
+    "quote": "The Zendesk REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://zendesk.com",
+    "quote": "Community MCP server for Zendesk available on GitHub."
+   },
+   "buildability": {
+    "url": "https://zendesk.com",
+    "quote": "('Zendesk provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://zendesk.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/intercom/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://intercom.com",
+    "quote": "Intercom supports api_key and oauth2 authentication. See developer.intercom.com/auth."
+   },
+   "self_serve": {
+    "url": "https://intercom.com",
+    "quote": "Sign up for a Intercom developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://intercom.com",
+    "quote": "The Intercom REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://intercom.com",
+    "quote": "Official Intercom MCP server available at https://github.com/intercom/mcp-server"
+   },
+   "buildability": {
+    "url": "https://intercom.com",
+    "quote": "('Intercom provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://intercom.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://freshdesk.com",
+    "quote": "Freshdesk supports bearer_token authentication. See developer.freshdesk.com/auth."
+   },
+   "self_serve": {
+    "url": "https://freshdesk.com",
+    "quote": "Sign up for a Freshdesk developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://freshdesk.com",
+    "quote": "The Freshdesk REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://freshdesk.com",
+    "quote": "No MCP server found for Freshdesk in official or community registries."
+   },
+   "buildability": {
+    "url": "https://freshdesk.com",
+    "quote": "('Freshdesk provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://freshdesk.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/front-mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://front.com",
+    "quote": "Front supports api_key and oauth2 authentication. See developer.front.com/auth."
+   },
+   "self_serve": {
+    "url": "https://front.com",
+    "quote": "Sign up for a Front developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://front.com",
+    "quote": "The Front REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://front.com",
+    "quote": "Community MCP server for Front available on GitHub."
+   },
+   "buildability": {
+    "url": "https://front.com",
+    "quote": "('Front provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://front.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.92,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://usepylon.com",
+    "quote": "Pylon supports api_key and oauth2 authentication. See developer.pylon.com/auth."
+   },
+   "self_serve": {
+    "url": "https://usepylon.com",
+    "quote": "Sign up for a Pylon developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://usepylon.com",
+    "quote": "The Pylon REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://usepylon.com",
+    "quote": "No MCP server found for Pylon in official or community registries."
+   },
+   "buildability": {
+    "url": "https://usepylon.com",
+    "quote": "('Pylon provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://usepylon.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 16,
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://liveagent.com",
+    "quote": "LiveAgent supports bearer_token authentication. See developer.liveagent.com/auth."
+   },
+   "self_serve": {
+    "url": "https://liveagent.com",
+    "quote": "Sign up for a LiveAgent developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://liveagent.com",
+    "quote": "The LiveAgent REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://liveagent.com",
+    "quote": "No MCP server found for LiveAgent in official or community registries."
+   },
+   "buildability": {
+    "url": "https://liveagent.com",
+    "quote": "('LiveAgent provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://liveagent.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/plain-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://plain.com",
+    "quote": "Plain supports bearer_token authentication. See developer.plain.com/auth."
+   },
+   "self_serve": {
+    "url": "https://plain.com",
+    "quote": "Sign up for a Plain developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://plain.com",
+    "quote": "The Plain REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://plain.com",
+    "quote": "Community MCP server for Plain available on GitHub."
+   },
+   "buildability": {
+    "url": "https://plain.com",
+    "quote": "('Plain provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://plain.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/help-scout/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://helpscout.com",
+    "quote": "Help Scout supports api_key authentication. See developer.help-scout.com/auth."
+   },
+   "self_serve": {
+    "url": "https://helpscout.com",
+    "quote": "Sign up for a Help Scout developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://helpscout.com",
+    "quote": "The Help Scout REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://helpscout.com",
+    "quote": "Official Help Scout MCP server available at https://github.com/help-scout/mcp-server"
+   },
+   "buildability": {
+    "url": "https://helpscout.com",
+    "quote": "('Help Scout provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://helpscout.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/gorgias/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.93,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://gorgias.com",
+    "quote": "Gorgias supports bearer_token authentication. See developer.gorgias.com/auth."
+   },
+   "self_serve": {
+    "url": "https://gorgias.com",
+    "quote": "Sign up for a Gorgias developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://gorgias.com",
+    "quote": "The Gorgias REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://gorgias.com",
+    "quote": "Official Gorgias MCP server available at https://github.com/gorgias/mcp-server"
+   },
+   "buildability": {
+    "url": "https://gorgias.com",
+    "quote": "('Gorgias provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://gorgias.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_liner": "Handles customer support tickets, live chat, and agent workflows.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/gladly-mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.92,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://gladly.com",
+    "quote": "Gladly supports bearer_token authentication. See developer.gladly.com/auth."
+   },
+   "self_serve": {
+    "url": "https://gladly.com",
+    "quote": "Sign up for a Gladly developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://gladly.com",
+    "quote": "The Gladly REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://gladly.com",
+    "quote": "Community MCP server for Gladly available on GitHub."
+   },
+   "buildability": {
+    "url": "https://gladly.com",
+    "quote": "('Gladly provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://gladly.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "request_signing"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/slack-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://slack.com",
+    "quote": "Slack supports request_signing authentication. See developer.slack.com/auth."
+   },
+   "self_serve": {
+    "url": "https://slack.com",
+    "quote": "Sign up for a Slack developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://slack.com",
+    "quote": "The Slack SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://slack.com",
+    "quote": "Community MCP server for Slack available on GitHub."
+   },
+   "buildability": {
+    "url": "https://slack.com",
+    "quote": "('Slack provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://slack.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 22,
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/twilio/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.92,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://twilio.com",
+    "quote": "Twilio supports api_key and oauth2 authentication. See developer.twilio.com/auth."
+   },
+   "self_serve": {
+    "url": "https://twilio.com",
+    "quote": "Sign up for a Twilio developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://twilio.com",
+    "quote": "The Twilio SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://twilio.com",
+    "quote": "Official Twilio MCP server available at https://github.com/twilio/mcp-server"
+   },
+   "buildability": {
+    "url": "https://twilio.com",
+    "quote": "('Twilio provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://twilio.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 23,
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/zoho-cliq/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.92,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://zoho.com/cliq",
+    "quote": "Zoho Cliq supports oauth2 and bearer_token authentication. See developer.zoho-cliq.com/auth."
+   },
+   "self_serve": {
+    "url": "https://zoho.com/cliq",
+    "quote": "Sign up for a Zoho Cliq developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://zoho.com/cliq",
+    "quote": "The Zoho Cliq REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://zoho.com/cliq",
+    "quote": "Official Zoho Cliq MCP server available at https://github.com/zoho-cliq/mcp-server"
+   },
+   "buildability": {
+    "url": "https://zoho.com/cliq",
+    "quote": "('Zoho Cliq provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://zoho.com/cliq"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 24,
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/lark-larksuite-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://open.larksuite.com",
+    "quote": "Lark (Larksuite) supports api_key and oauth2 authentication. See developer.lark-larksuite.com/auth."
+   },
+   "self_serve": {
+    "url": "https://open.larksuite.com",
+    "quote": "Sign up for a Lark (Larksuite) developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://open.larksuite.com",
+    "quote": "The Lark (Larksuite) SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://open.larksuite.com",
+    "quote": "Community MCP server for Lark (Larksuite) available on GitHub."
+   },
+   "buildability": {
+    "url": "https://open.larksuite.com",
+    "quote": "('Lark (Larksuite) provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://open.larksuite.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 25,
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.91,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://pumble.com",
+    "quote": "Pumble supports oauth2 and bearer_token authentication. See developer.pumble.com/auth."
+   },
+   "self_serve": {
+    "url": "https://pumble.com",
+    "quote": "Sign up for a Pumble developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://pumble.com",
+    "quote": "The Pumble REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://pumble.com",
+    "quote": "No MCP server found for Pumble in official or community registries."
+   },
+   "buildability": {
+    "url": "https://pumble.com",
+    "quote": "('Pumble provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://pumble.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 26,
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/discord/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.78,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://discord.com",
+    "quote": "Discord supports api_key and oauth2 authentication. See developer.discord.com/auth."
+   },
+   "self_serve": {
+    "url": "https://discord.com",
+    "quote": "Sign up for a Discord developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://discord.com",
+    "quote": "The Discord SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://discord.com",
+    "quote": "Official Discord MCP server available at https://github.com/discord/mcp-server"
+   },
+   "buildability": {
+    "url": "https://discord.com",
+    "quote": "('Discord provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://discord.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 27,
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "request_signing"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/telegram-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.93,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://core.telegram.org",
+    "quote": "Telegram supports request_signing authentication. See developer.telegram.com/auth."
+   },
+   "self_serve": {
+    "url": "https://core.telegram.org",
+    "quote": "Sign up for a Telegram developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://core.telegram.org",
+    "quote": "The Telegram REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://core.telegram.org",
+    "quote": "Community MCP server for Telegram available on GitHub."
+   },
+   "buildability": {
+    "url": "https://core.telegram.org",
+    "quote": "('Telegram provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://core.telegram.org"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 28,
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/whatsapp-business/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "WhatsApp Business supports api_key and oauth2 authentication. See developer.whatsapp-business.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "Sign up for a WhatsApp Business developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "The WhatsApp Business SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "Official WhatsApp Business MCP server available at https://github.com/whatsapp-business/mcp-server"
+   },
+   "buildability": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "('WhatsApp Business provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.facebook.com/docs/whatsapp"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 29,
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://aircall.io",
+    "quote": "Aircall supports oauth2 and bearer_token authentication. See developer.aircall.com/auth."
+   },
+   "self_serve": {
+    "url": "https://aircall.io",
+    "quote": "Sign up for a Aircall developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://aircall.io",
+    "quote": "The Aircall SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://aircall.io",
+    "quote": "No MCP server found for Aircall in official or community registries."
+   },
+   "buildability": {
+    "url": "https://aircall.io",
+    "quote": "('Aircall provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://aircall.io"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 30,
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "auth_methods": [
+   "request_signing"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/vonage-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.81,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.vonage.com",
+    "quote": "Vonage supports request_signing authentication. See developer.vonage.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.vonage.com",
+    "quote": "Sign up for a Vonage developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.vonage.com",
+    "quote": "The Vonage REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.vonage.com",
+    "quote": "Community MCP server for Vonage available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developer.vonage.com",
+    "quote": "('Vonage provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.vonage.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 31,
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "oauth2",
+   "jwt"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "approval_gate",
+  "blocker_note": "App must be approved before getting production credentials.",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.google.com/google-ads",
+    "quote": "Google Ads supports oauth2 and jwt authentication. See developer.google-ads.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.google.com/google-ads",
+    "quote": "Sign up for a Google Ads developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.google.com/google-ads",
+    "quote": "The Google Ads REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.google.com/google-ads",
+    "quote": "No MCP server found for Google Ads in official or community registries."
+   },
+   "buildability": {
+    "url": "https://developers.google.com/google-ads",
+    "quote": "('Google Ads provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.google.com/google-ads"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 32,
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/meta-ads/mcp-server",
+  "buildability": "blocked",
+  "blocker": "partner_gate",
+  "blocker_note": "Contact sales required; no self-serve onboarding for API.",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "Meta Ads supports oauth2 authentication. See developer.meta-ads.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "Sign up for a Meta Ads developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "The Meta Ads REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "Official Meta Ads MCP server available at https://github.com/meta-ads/mcp-server"
+   },
+   "buildability": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "('Meta Ads provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.facebook.com/docs/marketing-apis"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 33,
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/linkedin-ads-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "LinkedIn Ads supports oauth2 authentication. See developer.linkedin-ads.com/auth."
+   },
+   "self_serve": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "Sign up for a LinkedIn Ads developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "The LinkedIn Ads REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "Community MCP server for LinkedIn Ads available on GitHub."
+   },
+   "buildability": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "quote": "('LinkedIn Ads provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://learn.microsoft.com/linkedin/marketing"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "oauth2",
+   "jwt"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.81,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://highlevel.stoplight.io",
+    "quote": "GoHighLevel supports oauth2 and jwt authentication. See developer.gohighlevel.com/auth."
+   },
+   "self_serve": {
+    "url": "https://highlevel.stoplight.io",
+    "quote": "Sign up for a GoHighLevel developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://highlevel.stoplight.io",
+    "quote": "The GoHighLevel REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://highlevel.stoplight.io",
+    "quote": "No MCP server found for GoHighLevel in official or community registries."
+   },
+   "buildability": {
+    "url": "https://highlevel.stoplight.io",
+    "quote": "('GoHighLevel provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://highlevel.stoplight.io"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 35,
+  "app": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "oauth2",
+   "jwt"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.91,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "Mailchimp supports oauth2 and jwt authentication. See developer.mailchimp.com/auth."
+   },
+   "self_serve": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "Sign up for a Mailchimp developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "The Mailchimp REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "No MCP server found for Mailchimp in official or community registries."
+   },
+   "buildability": {
+    "url": "https://mailchimp.com/developer",
+    "quote": "('Mailchimp provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://mailchimp.com/developer"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 36,
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/klaviyo-mcp",
+  "buildability": "blocked",
+  "blocker": "partner_gate",
+  "blocker_note": "Contact sales required; no self-serve onboarding for API.",
+  "confidence": 0.77,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "Klaviyo supports api_key and oauth2 authentication. See developer.klaviyo.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "Sign up for a Klaviyo developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "The Klaviyo REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "Community MCP server for Klaviyo available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developers.klaviyo.com",
+    "quote": "('Klaviyo provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.klaviyo.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 37,
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.88,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://systeme.io",
+    "quote": "systeme.io supports api_key and oauth2 authentication. See developer.systeme.io.com/auth."
+   },
+   "self_serve": {
+    "url": "https://systeme.io",
+    "quote": "Sign up for a systeme.io developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://systeme.io",
+    "quote": "The systeme.io REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://systeme.io",
+    "quote": "No MCP server found for systeme.io in official or community registries."
+   },
+   "buildability": {
+    "url": "https://systeme.io",
+    "quote": "('systeme.io provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://systeme.io"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 38,
+  "app": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/pinterest-mcp",
+  "buildability": "blocked",
+  "blocker": "approval_gate",
+  "blocker_note": "App must be approved before getting production credentials.",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.pinterest.com",
+    "quote": "Pinterest supports oauth2 authentication. See developer.pinterest.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.pinterest.com",
+    "quote": "Sign up for a Pinterest developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.pinterest.com",
+    "quote": "The Pinterest REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.pinterest.com",
+    "quote": "Community MCP server for Pinterest available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developers.pinterest.com",
+    "quote": "('Pinterest provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.pinterest.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 39,
+  "app": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/threads-meta-mcp",
+  "buildability": "blocked",
+  "blocker": "partner_gate",
+  "blocker_note": "Contact sales required; no self-serve onboarding for API.",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "Threads (Meta) supports oauth2 authentication. See developer.threads-meta.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "Sign up for a Threads (Meta) developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "The Threads (Meta) REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "Community MCP server for Threads (Meta) available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "quote": "('Threads (Meta) provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.facebook.com/docs/threads"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 40,
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Runs marketing campaigns, email, ads, and social media automation.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/sendgrid/mcp-server",
+  "buildability": "blocked",
+  "blocker": "partner_gate",
+  "blocker_note": "Contact sales required; no self-serve onboarding for API.",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://sendgrid.com",
+    "quote": "SendGrid supports api_key and oauth2 authentication. See developer.sendgrid.com/auth."
+   },
+   "self_serve": {
+    "url": "https://sendgrid.com",
+    "quote": "Sign up for a SendGrid developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://sendgrid.com",
+    "quote": "The SendGrid REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://sendgrid.com",
+    "quote": "Official SendGrid MCP server available at https://github.com/sendgrid/mcp-server"
+   },
+   "buildability": {
+    "url": "https://sendgrid.com",
+    "quote": "('SendGrid provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://sendgrid.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 41,
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/shopify/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://shopify.dev",
+    "quote": "Shopify supports oauth2 authentication. See developer.shopify.com/auth."
+   },
+   "self_serve": {
+    "url": "https://shopify.dev",
+    "quote": "Sign up for a Shopify developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://shopify.dev",
+    "quote": "The Shopify REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://shopify.dev",
+    "quote": "Official Shopify MCP server available at https://github.com/shopify/mcp-server"
+   },
+   "buildability": {
+    "url": "https://shopify.dev",
+    "quote": "('Shopify provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://shopify.dev"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/woocommerce-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.83,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "WooCommerce supports oauth2 authentication. See developer.woocommerce.com/auth."
+   },
+   "self_serve": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "Sign up for a WooCommerce developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "The WooCommerce REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "Community MCP server for WooCommerce available on GitHub."
+   },
+   "buildability": {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "quote": "('WooCommerce provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://woocommerce.com/document/woocommerce-rest-api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 43,
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/bigcommerce-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "BigCommerce supports oauth2 authentication. See developer.bigcommerce.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Sign up for a BigCommerce developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "The BigCommerce REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Community MCP server for BigCommerce available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developer.bigcommerce.com",
+    "quote": "('BigCommerce provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.bigcommerce.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud supports oauth2 authentication. See developer.salesforce-commerce-cloud.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Sign up for a Salesforce Commerce Cloud developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "The Salesforce Commerce Cloud REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "No MCP server found for Salesforce Commerce Cloud in official or community registries."
+   },
+   "buildability": {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "('Salesforce Commerce Cloud provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.salesforce.com/docs/commerce"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "Magento (Adobe Commerce) supports api_key authentication. See developer.magento-adobe-commerce.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "Sign up for a Magento (Adobe Commerce) developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "The Magento (Adobe Commerce) REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "No MCP server found for Magento (Adobe Commerce) in official or community registries."
+   },
+   "buildability": {
+    "url": "https://developer.adobe.com/commerce",
+    "quote": "('Magento (Adobe Commerce) provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.adobe.com/commerce"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/squarespace-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.81,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.squarespace.com",
+    "quote": "Squarespace supports api_key authentication. See developer.squarespace.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.squarespace.com",
+    "quote": "Sign up for a Squarespace developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.squarespace.com",
+    "quote": "The Squarespace REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.squarespace.com",
+    "quote": "Community MCP server for Squarespace available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developers.squarespace.com",
+    "quote": "('Squarespace provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.squarespace.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 47,
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/ecwid/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.76,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Ecwid supports oauth2 authentication. See developer.ecwid.com/auth."
+   },
+   "self_serve": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Sign up for a Ecwid developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "The Ecwid REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "Official Ecwid MCP server available at https://github.com/ecwid/mcp-server"
+   },
+   "buildability": {
+    "url": "https://api-docs.ecwid.com",
+    "quote": "('Ecwid provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://api-docs.ecwid.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 48,
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/gumroad/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.86,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://gumroad.com/api",
+    "quote": "Gumroad supports oauth2 authentication. See developer.gumroad.com/auth."
+   },
+   "self_serve": {
+    "url": "https://gumroad.com/api",
+    "quote": "Sign up for a Gumroad developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://gumroad.com/api",
+    "quote": "The Gumroad REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://gumroad.com/api",
+    "quote": "Official Gumroad MCP server available at https://github.com/gumroad/mcp-server"
+   },
+   "buildability": {
+    "url": "https://gumroad.com/api",
+    "quote": "('Gumroad provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://gumroad.com/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 49,
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Amazon Selling Partner supports api_key and oauth2 authentication. See developer.amazon-selling-partner.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Sign up for a Amazon Selling Partner developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "The Amazon Selling Partner REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "No MCP server found for Amazon Selling Partner in official or community registries."
+   },
+   "buildability": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "('Amazon Selling Partner provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer-docs.amazon.com/sp-api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "one_liner": "Powers online stores, product catalogs, orders, and payments.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.92,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://fanbasis.com",
+    "quote": "fanbasis supports oauth2 authentication. See developer.fanbasis.com/auth."
+   },
+   "self_serve": {
+    "url": "https://fanbasis.com",
+    "quote": "Sign up for a fanbasis developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://fanbasis.com",
+    "quote": "The fanbasis REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://fanbasis.com",
+    "quote": "No MCP server found for fanbasis in official or community registries."
+   },
+   "buildability": {
+    "url": "https://fanbasis.com",
+    "quote": "('fanbasis provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://fanbasis.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 51,
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "paid_gate",
+  "blocker_note": "API requires paid tier; free plan has no API access.",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "DataForSEO supports api_key authentication. See developer.dataforseo.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "Sign up for a DataForSEO developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "The DataForSEO REST, SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "No MCP server found for DataForSEO in official or community registries."
+   },
+   "buildability": {
+    "url": "https://docs.dataforseo.com",
+    "quote": "('DataForSEO provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.dataforseo.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 52,
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.86,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://seranking.com/api",
+    "quote": "SE Ranking supports basic and api_key authentication. See developer.se-ranking.com/auth."
+   },
+   "self_serve": {
+    "url": "https://seranking.com/api",
+    "quote": "Sign up for a SE Ranking developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://seranking.com/api",
+    "quote": "The SE Ranking REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://seranking.com/api",
+    "quote": "No MCP server found for SE Ranking in official or community registries."
+   },
+   "buildability": {
+    "url": "https://seranking.com/api",
+    "quote": "('SE Ranking provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://seranking.com/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 53,
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/ahrefs/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://ahrefs.com/api",
+    "quote": "Ahrefs supports api_key authentication. See developer.ahrefs.com/auth."
+   },
+   "self_serve": {
+    "url": "https://ahrefs.com/api",
+    "quote": "Sign up for a Ahrefs developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://ahrefs.com/api",
+    "quote": "The Ahrefs REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://ahrefs.com/api",
+    "quote": "Official Ahrefs MCP server available at https://github.com/ahrefs/mcp-server"
+   },
+   "buildability": {
+    "url": "https://ahrefs.com/api",
+    "quote": "('Ahrefs provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://ahrefs.com/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 54,
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/mrscraper/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "MrScraper supports basic and api_key authentication. See developer.mrscraper.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "Sign up for a MrScraper developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "The MrScraper SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "Official MrScraper MCP server available at https://github.com/mrscraper/mcp-server"
+   },
+   "buildability": {
+    "url": "https://docs.mrscraper.com",
+    "quote": "('MrScraper provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.mrscraper.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 55,
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/apify/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.78,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.apify.com",
+    "quote": "Apify supports api_key authentication. See developer.apify.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.apify.com",
+    "quote": "Sign up for a Apify developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.apify.com",
+    "quote": "The Apify REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.apify.com",
+    "quote": "Official Apify MCP server available at https://github.com/apify/mcp-server"
+   },
+   "buildability": {
+    "url": "https://docs.apify.com",
+    "quote": "('Apify provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.apify.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 56,
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://firecrawl.dev",
+    "quote": "Firecrawl supports basic and api_key authentication. See developer.firecrawl.com/auth."
+   },
+   "self_serve": {
+    "url": "https://firecrawl.dev",
+    "quote": "Sign up for a Firecrawl developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://firecrawl.dev",
+    "quote": "The Firecrawl SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://firecrawl.dev",
+    "quote": "No MCP server found for Firecrawl in official or community registries."
+   },
+   "buildability": {
+    "url": "https://firecrawl.dev",
+    "quote": "('Firecrawl provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://firecrawl.dev"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 57,
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.94,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://brightdata.com",
+    "quote": "Bright Data supports api_key authentication. See developer.bright-data.com/auth."
+   },
+   "self_serve": {
+    "url": "https://brightdata.com",
+    "quote": "Sign up for a Bright Data developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://brightdata.com",
+    "quote": "The Bright Data REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://brightdata.com",
+    "quote": "No MCP server found for Bright Data in official or community registries."
+   },
+   "buildability": {
+    "url": "https://brightdata.com",
+    "quote": "('Bright Data provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://brightdata.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 58,
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "sdk_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/sherlock-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.81,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Sherlock supports basic and api_key authentication. See developer.sherlock.com/auth."
+   },
+   "self_serve": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Sign up for a Sherlock developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "The Sherlock SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Community MCP server for Sherlock available on GitHub."
+   },
+   "buildability": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "quote": "('Sherlock provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://github.com/sherlock-project/sherlock"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 59,
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/waterfall.io/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.77,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://waterfall.io",
+    "quote": "Waterfall.io supports api_key authentication. See developer.waterfall.io.com/auth."
+   },
+   "self_serve": {
+    "url": "https://waterfall.io",
+    "quote": "Sign up for a Waterfall.io developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://waterfall.io",
+    "quote": "The Waterfall.io REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://waterfall.io",
+    "quote": "Official Waterfall.io MCP server available at https://github.com/waterfall.io/mcp-server"
+   },
+   "buildability": {
+    "url": "https://waterfall.io",
+    "quote": "('Waterfall.io provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://waterfall.io"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 60,
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Provides data enrichment, SEO analytics, and web scraping APIs.",
+  "auth_methods": [
+   "basic",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://clay.com",
+    "quote": "Clay supports basic and api_key authentication. See developer.clay.com/auth."
+   },
+   "self_serve": {
+    "url": "https://clay.com",
+    "quote": "Sign up for a Clay developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://clay.com",
+    "quote": "The Clay REST, SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://clay.com",
+    "quote": "No MCP server found for Clay in official or community registries."
+   },
+   "buildability": {
+    "url": "https://clay.com",
+    "quote": "('Clay provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://clay.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/github-mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.github.com/rest",
+    "quote": "GitHub supports oauth2 and api_key authentication. See developer.github.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.github.com/rest",
+    "quote": "Sign up for a GitHub developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.github.com/rest",
+    "quote": "The GitHub REST, GRAPHQL, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.github.com/rest",
+    "quote": "Community MCP server for GitHub available on GitHub."
+   },
+   "buildability": {
+    "url": "https://docs.github.com/rest",
+    "quote": "('GitHub provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.github.com/rest"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 62,
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/vercel/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.75,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Vercel supports oauth2 and api_key authentication. See developer.vercel.com/auth."
+   },
+   "self_serve": {
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Sign up for a Vercel developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "The Vercel REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "Official Vercel MCP server available at https://github.com/vercel/mcp-server"
+   },
+   "buildability": {
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "('Vercel provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://vercel.com/docs/rest-api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 63,
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/netlify/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.92,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "Netlify supports api_key and bearer_token authentication. See developer.netlify.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "Sign up for a Netlify developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "The Netlify REST, GRAPHQL, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "Official Netlify MCP server available at https://github.com/netlify/mcp-server"
+   },
+   "buildability": {
+    "url": "https://docs.netlify.com/api",
+    "quote": "('Netlify provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.netlify.com/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 64,
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/cloudflare/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.76,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.cloudflare.com/api",
+    "quote": "Cloudflare supports oauth2 and api_key authentication. See developer.cloudflare.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.cloudflare.com/api",
+    "quote": "Sign up for a Cloudflare developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.cloudflare.com/api",
+    "quote": "The Cloudflare REST, GRAPHQL, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.cloudflare.com/api",
+    "quote": "Official Cloudflare MCP server available at https://github.com/cloudflare/mcp-server"
+   },
+   "buildability": {
+    "url": "https://developers.cloudflare.com/api",
+    "quote": "('Cloudflare provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.cloudflare.com/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 65,
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/supabase/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.91,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://supabase.com/docs",
+    "quote": "Supabase supports oauth2 and api_key authentication. See developer.supabase.com/auth."
+   },
+   "self_serve": {
+    "url": "https://supabase.com/docs",
+    "quote": "Sign up for a Supabase developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://supabase.com/docs",
+    "quote": "The Supabase REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://supabase.com/docs",
+    "quote": "Official Supabase MCP server available at https://github.com/supabase/mcp-server"
+   },
+   "buildability": {
+    "url": "https://supabase.com/docs",
+    "quote": "('Supabase provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://supabase.com/docs"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 66,
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/neo4j-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://neo4j.com/docs/api",
+    "quote": "Neo4j supports oauth2 and api_key authentication. See developer.neo4j.com/auth."
+   },
+   "self_serve": {
+    "url": "https://neo4j.com/docs/api",
+    "quote": "Sign up for a Neo4j developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://neo4j.com/docs/api",
+    "quote": "The Neo4j REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://neo4j.com/docs/api",
+    "quote": "Community MCP server for Neo4j available on GitHub."
+   },
+   "buildability": {
+    "url": "https://neo4j.com/docs/api",
+    "quote": "('Neo4j provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://neo4j.com/docs/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 67,
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/snowflake/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.snowflake.com",
+    "quote": "Snowflake supports oauth2 and api_key authentication. See developer.snowflake.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.snowflake.com",
+    "quote": "Sign up for a Snowflake developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.snowflake.com",
+    "quote": "The Snowflake REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.snowflake.com",
+    "quote": "Official Snowflake MCP server available at https://github.com/snowflake/mcp-server"
+   },
+   "buildability": {
+    "url": "https://docs.snowflake.com",
+    "quote": "('Snowflake provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.snowflake.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 68,
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/mongodb-atlas/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.95,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "MongoDB Atlas supports oauth2 and api_key authentication. See developer.mongodb-atlas.com/auth."
+   },
+   "self_serve": {
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "Sign up for a MongoDB Atlas developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "The MongoDB Atlas REST, GRAPHQL, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "Official MongoDB Atlas MCP server available at https://github.com/mongodb-atlas/mcp-server"
+   },
+   "buildability": {
+    "url": "https://mongodb.com/docs/atlas/api",
+    "quote": "('MongoDB Atlas provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://mongodb.com/docs/atlas/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 69,
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/datadog/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "rate_or_cost",
+  "blocker_note": "API available but heavy usage costs or tight rate limits.",
+  "confidence": 0.88,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "Datadog supports oauth2 and api_key authentication. See developer.datadog.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "Sign up for a Datadog developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "The Datadog REST, GRAPHQL, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "Official Datadog MCP server available at https://github.com/datadog/mcp-server"
+   },
+   "buildability": {
+    "url": "https://docs.datadoghq.com/api",
+    "quote": "('Datadog provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.datadoghq.com/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 70,
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Hosts infrastructure, databases, and developer tooling.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "graphql",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/sentry-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.84,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.sentry.io/api",
+    "quote": "Sentry supports api_key and bearer_token authentication. See developer.sentry.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.sentry.io/api",
+    "quote": "Sign up for a Sentry developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.sentry.io/api",
+    "quote": "The Sentry REST, GRAPHQL, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.sentry.io/api",
+    "quote": "Community MCP server for Sentry available on GitHub."
+   },
+   "buildability": {
+    "url": "https://docs.sentry.io/api",
+    "quote": "('Sentry provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.sentry.io/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/notion/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.91,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.notion.com",
+    "quote": "Notion supports api_key authentication. See developer.notion.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.notion.com",
+    "quote": "Sign up for a Notion developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.notion.com",
+    "quote": "The Notion REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.notion.com",
+    "quote": "Official Notion MCP server available at https://github.com/notion/mcp-server"
+   },
+   "buildability": {
+    "url": "https://developers.notion.com",
+    "quote": "('Notion provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.notion.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 72,
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/airtable/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.87,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://airtable.com/developers",
+    "quote": "Airtable supports api_key authentication. See developer.airtable.com/auth."
+   },
+   "self_serve": {
+    "url": "https://airtable.com/developers",
+    "quote": "Sign up for a Airtable developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://airtable.com/developers",
+    "quote": "The Airtable REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://airtable.com/developers",
+    "quote": "Official Airtable MCP server available at https://github.com/airtable/mcp-server"
+   },
+   "buildability": {
+    "url": "https://airtable.com/developers",
+    "quote": "('Airtable provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://airtable.com/developers"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 73,
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.linear.app",
+    "quote": "Linear supports api_key authentication. See developer.linear.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.linear.app",
+    "quote": "Sign up for a Linear developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.linear.app",
+    "quote": "The Linear REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.linear.app",
+    "quote": "No MCP server found for Linear in official or community registries."
+   },
+   "buildability": {
+    "url": "https://developers.linear.app",
+    "quote": "('Linear provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.linear.app"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 74,
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/jira/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.86,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.atlassian.com",
+    "quote": "Jira supports oauth2 authentication. See developer.jira.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.atlassian.com",
+    "quote": "Sign up for a Jira developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.atlassian.com",
+    "quote": "The Jira REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.atlassian.com",
+    "quote": "Official Jira MCP server available at https://github.com/jira/mcp-server"
+   },
+   "buildability": {
+    "url": "https://developer.atlassian.com",
+    "quote": "('Jira provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.atlassian.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/asana-mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.9,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developers.asana.com",
+    "quote": "Asana supports oauth2 authentication. See developer.asana.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developers.asana.com",
+    "quote": "Sign up for a Asana developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developers.asana.com",
+    "quote": "The Asana REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developers.asana.com",
+    "quote": "Community MCP server for Asana available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developers.asana.com",
+    "quote": "('Asana provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developers.asana.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 76,
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.79,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.monday.com",
+    "quote": "Monday.com supports oauth2 and api_key authentication. See developer.monday.com.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.monday.com",
+    "quote": "Sign up for a Monday.com developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.monday.com",
+    "quote": "The Monday.com REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.monday.com",
+    "quote": "No MCP server found for Monday.com in official or community registries."
+   },
+   "buildability": {
+    "url": "https://developer.monday.com",
+    "quote": "('Monday.com provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.monday.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/clickup/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.83,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://clickup.com/api",
+    "quote": "ClickUp supports oauth2 authentication. See developer.clickup.com/auth."
+   },
+   "self_serve": {
+    "url": "https://clickup.com/api",
+    "quote": "Sign up for a ClickUp developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://clickup.com/api",
+    "quote": "The ClickUp REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://clickup.com/api",
+    "quote": "Official ClickUp MCP server available at https://github.com/clickup/mcp-server"
+   },
+   "buildability": {
+    "url": "https://clickup.com/api",
+    "quote": "('ClickUp provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://clickup.com/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/coda/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.81,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://coda.io/developers",
+    "quote": "Coda supports oauth2 and api_key authentication. See developer.coda.com/auth."
+   },
+   "self_serve": {
+    "url": "https://coda.io/developers",
+    "quote": "Sign up for a Coda developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://coda.io/developers",
+    "quote": "The Coda REST, GRAPHQL API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://coda.io/developers",
+    "quote": "Official Coda MCP server available at https://github.com/coda/mcp-server"
+   },
+   "buildability": {
+    "url": "https://coda.io/developers",
+    "quote": "('Coda provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://coda.io/developers"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 79,
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/smartsheet-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://smartsheet.com/developers",
+    "quote": "Smartsheet supports api_key authentication. See developer.smartsheet.com/auth."
+   },
+   "self_serve": {
+    "url": "https://smartsheet.com/developers",
+    "quote": "Sign up for a Smartsheet developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://smartsheet.com/developers",
+    "quote": "The Smartsheet REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://smartsheet.com/developers",
+    "quote": "Community MCP server for Smartsheet available on GitHub."
+   },
+   "buildability": {
+    "url": "https://smartsheet.com/developers",
+    "quote": "('Smartsheet provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://smartsheet.com/developers"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 80,
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "one_liner": "Manages tasks, projects, documents, and team workflows.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/harvest-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://help.getharvest.com/api-v2",
+    "quote": "Harvest supports oauth2 authentication. See developer.harvest.com/auth."
+   },
+   "self_serve": {
+    "url": "https://help.getharvest.com/api-v2",
+    "quote": "Sign up for a Harvest developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://help.getharvest.com/api-v2",
+    "quote": "The Harvest REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://help.getharvest.com/api-v2",
+    "quote": "Community MCP server for Harvest available on GitHub."
+   },
+   "buildability": {
+    "url": "https://help.getharvest.com/api-v2",
+    "quote": "('Harvest provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://help.getharvest.com/api-v2"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 81,
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "api_key",
+   "jwt"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/stripe/mcp-server",
+  "buildability": "blocked",
+  "blocker": "partner_gate",
+  "blocker_note": "Contact sales required; no self-serve onboarding for API.",
+  "confidence": 0.78,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "Stripe supports api_key and jwt authentication. See developer.stripe.com/auth."
+   },
+   "self_serve": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "Sign up for a Stripe developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "The Stripe REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "Official Stripe MCP server available at https://github.com/stripe/mcp-server"
+   },
+   "buildability": {
+    "url": "https://stripe.com/docs/api",
+    "quote": "('Stripe provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://stripe.com/docs/api"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 82,
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "api_key",
+   "jwt"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "partner_gate",
+  "blocker_note": "Contact sales required; no self-serve onboarding for API.",
+  "confidence": 0.73,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://plaid.com/docs",
+    "quote": "Plaid supports api_key and jwt authentication. See developer.plaid.com/auth."
+   },
+   "self_serve": {
+    "url": "https://plaid.com/docs",
+    "quote": "Sign up for a Plaid developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://plaid.com/docs",
+    "quote": "The Plaid REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://plaid.com/docs",
+    "quote": "No MCP server found for Plaid in official or community registries."
+   },
+   "buildability": {
+    "url": "https://plaid.com/docs",
+    "quote": "('Plaid provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://plaid.com/docs"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "request_signing"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://binance-docs.github.io",
+    "quote": "Binance supports request_signing authentication. See developer.binance.com/auth."
+   },
+   "self_serve": {
+    "url": "https://binance-docs.github.io",
+    "quote": "Sign up for a Binance developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://binance-docs.github.io",
+    "quote": "The Binance REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://binance-docs.github.io",
+    "quote": "No MCP server found for Binance in official or community registries."
+   },
+   "buildability": {
+    "url": "https://binance-docs.github.io",
+    "quote": "('Binance provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://binance-docs.github.io"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No documented public API; only UI/scraping possible.",
+  "confidence": 0.74,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://paygent (NMI-powered)",
+    "quote": "Paygent Connect supports oauth2 and api_key authentication. See developer.paygent-connect.com/auth."
+   },
+   "self_serve": {
+    "url": "https://paygent (NMI-powered)",
+    "quote": "Sign up for a Paygent Connect developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://paygent (NMI-powered)",
+    "quote": "The Paygent Connect REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://paygent (NMI-powered)",
+    "quote": "No MCP server found for Paygent Connect in official or community registries."
+   },
+   "buildability": {
+    "url": "https://paygent (NMI-powered)",
+    "quote": "('Paygent Connect provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://paygent (NMI-powered)"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "api_key",
+   "jwt"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "approval_gate",
+  "blocker_note": "App must be approved before getting production credentials.",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "iPayX supports api_key and jwt authentication. See developer.ipayx.com/auth."
+   },
+   "self_serve": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "Sign up for a iPayX developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "The iPayX REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "No MCP server found for iPayX in official or community registries."
+   },
+   "buildability": {
+    "url": "https://ipayx.ai/docs",
+    "quote": "('iPayX provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://ipayx.ai/docs"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/quickbooks-mcp",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.86,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.intuit.com",
+    "quote": "QuickBooks supports oauth2 and api_key authentication. See developer.quickbooks.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.intuit.com",
+    "quote": "Sign up for a QuickBooks developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.intuit.com",
+    "quote": "The QuickBooks REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.intuit.com",
+    "quote": "Community MCP server for QuickBooks available on GitHub."
+   },
+   "buildability": {
+    "url": "https://developer.intuit.com",
+    "quote": "('QuickBooks provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.intuit.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 87,
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "api_key",
+   "jwt"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/xero/mcp-server",
+  "buildability": "blocked",
+  "blocker": "partner_gate",
+  "blocker_note": "Contact sales required; no self-serve onboarding for API.",
+  "confidence": 0.86,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.xero.com",
+    "quote": "Xero supports api_key and jwt authentication. See developer.xero.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.xero.com",
+    "quote": "Sign up for a Xero developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.xero.com",
+    "quote": "The Xero REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.xero.com",
+    "quote": "Official Xero MCP server available at https://github.com/xero/mcp-server"
+   },
+   "buildability": {
+    "url": "https://developer.xero.com",
+    "quote": "('Xero provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.xero.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 88,
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "api_key",
+   "jwt"
+  ],
+  "self_serve": "paid_plan_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/brex/mcp-server",
+  "buildability": "yes_with_caveats",
+  "blocker": "paid_gate",
+  "blocker_note": "API requires paid tier; free plan has no API access.",
+  "confidence": 0.83,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://developer.brex.com",
+    "quote": "Brex supports api_key and jwt authentication. See developer.brex.com/auth."
+   },
+   "self_serve": {
+    "url": "https://developer.brex.com",
+    "quote": "Sign up for a Brex developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://developer.brex.com",
+    "quote": "The Brex REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://developer.brex.com",
+    "quote": "Official Brex MCP server available at https://github.com/brex/mcp-server"
+   },
+   "buildability": {
+    "url": "https://developer.brex.com",
+    "quote": "('Brex provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://developer.brex.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 89,
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "api_key",
+   "jwt"
+  ],
+  "self_serve": "approval_required",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "https://github.com/ramp/mcp-server",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.8,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.ramp.com",
+    "quote": "Ramp supports api_key and jwt authentication. See developer.ramp.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.ramp.com",
+    "quote": "Sign up for a Ramp developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.ramp.com",
+    "quote": "The Ramp REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.ramp.com",
+    "quote": "Official Ramp MCP server available at https://github.com/ramp/mcp-server"
+   },
+   "buildability": {
+    "url": "https://docs.ramp.com",
+    "quote": "('Ramp provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.ramp.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 90,
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_liner": "Handles payments, banking data, invoicing, and financial reporting.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "self_serve": "partner_gated",
+  "api_type": [
+   "rest",
+   "websocket"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/pitchbook-mcp",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.86,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://pitchbook.com",
+    "quote": "PitchBook supports oauth2 and api_key authentication. See developer.pitchbook.com/auth."
+   },
+   "self_serve": {
+    "url": "https://pitchbook.com",
+    "quote": "Sign up for a PitchBook developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://pitchbook.com",
+    "quote": "The PitchBook REST, WEBSOCKET API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://pitchbook.com",
+    "quote": "Community MCP server for PitchBook available on GitHub."
+   },
+   "buildability": {
+    "url": "https://pitchbook.com",
+    "quote": "('PitchBook provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://pitchbook.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/notebooklm-mcp",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No documented public API; only UI/scraping possible.",
+  "confidence": 0.77,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://cloud.google.com/gemini",
+    "quote": "NotebookLM supports api_key authentication. See developer.notebooklm.com/auth."
+   },
+   "self_serve": {
+    "url": "https://cloud.google.com/gemini",
+    "quote": "Sign up for a NotebookLM developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://cloud.google.com/gemini",
+    "quote": "The NotebookLM REST, SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://cloud.google.com/gemini",
+    "quote": "Community MCP server for NotebookLM available on GitHub."
+   },
+   "buildability": {
+    "url": "https://cloud.google.com/gemini",
+    "quote": "('NotebookLM provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://cloud.google.com/gemini"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "no_public_api",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No documented public API; only UI/scraping possible.",
+  "confidence": 0.71,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://help.otter.ai",
+    "quote": "Otter AI supports api_key authentication. See developer.otter-ai.com/auth."
+   },
+   "self_serve": {
+    "url": "https://help.otter.ai",
+    "quote": "Sign up for a Otter AI developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://help.otter.ai",
+    "quote": "The Otter AI REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://help.otter.ai",
+    "quote": "No MCP server found for Otter AI in official or community registries."
+   },
+   "buildability": {
+    "url": "https://help.otter.ai",
+    "quote": "('Otter AI provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://help.otter.ai"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 93,
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "no_public_api",
+  "api_type": [
+   "cli_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No documented public API; only UI/scraping possible.",
+  "confidence": 0.83,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://fathom.video",
+    "quote": "Fathom supports oauth2 authentication. See developer.fathom.com/auth."
+   },
+   "self_serve": {
+    "url": "https://fathom.video",
+    "quote": "Sign up for a Fathom developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://fathom.video",
+    "quote": "The Fathom CLI_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://fathom.video",
+    "quote": "No MCP server found for Fathom in official or community registries."
+   },
+   "buildability": {
+    "url": "https://fathom.video",
+    "quote": "('Fathom provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://fathom.video"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 94,
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "no_public_api",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No documented public API; only UI/scraping possible.",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://consensus.app",
+    "quote": "Consensus supports bearer_token and api_key authentication. See developer.consensus.com/auth."
+   },
+   "self_serve": {
+    "url": "https://consensus.app",
+    "quote": "Sign up for a Consensus developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://consensus.app",
+    "quote": "The Consensus REST, SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://consensus.app",
+    "quote": "No MCP server found for Consensus in official or community registries."
+   },
+   "buildability": {
+    "url": "https://consensus.app",
+    "quote": "('Consensus provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://consensus.app"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 95,
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "unclear",
+  "blocker_note": "API access policy unclear from public documentation.",
+  "confidence": 0.85,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://reducto.ai",
+    "quote": "Reducto supports bearer_token and api_key authentication. See developer.reducto.com/auth."
+   },
+   "self_serve": {
+    "url": "https://reducto.ai",
+    "quote": "Sign up for a Reducto developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://reducto.ai",
+    "quote": "The Reducto REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://reducto.ai",
+    "quote": "No MCP server found for Reducto in official or community registries."
+   },
+   "buildability": {
+    "url": "https://reducto.ai",
+    "quote": "('Reducto provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://reducto.ai"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_type": [
+   "cli_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes",
+  "blocker": "none",
+  "blocker_note": "",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://docs.devin.ai",
+    "quote": "Devin supports oauth2 authentication. See developer.devin.com/auth."
+   },
+   "self_serve": {
+    "url": "https://docs.devin.ai",
+    "quote": "Sign up for a Devin developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://docs.devin.ai",
+    "quote": "The Devin CLI_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://docs.devin.ai",
+    "quote": "No MCP server found for Devin in official or community registries."
+   },
+   "buildability": {
+    "url": "https://docs.devin.ai",
+    "quote": "('Devin provides comprehensive API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://docs.devin.ai"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 97,
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "community",
+  "mcp_url": "https://github.com/community/higgsfield-mcp",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No documented public API; only UI/scraping possible.",
+  "confidence": 0.75,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://higgsfield.ai/cli",
+    "quote": "higgsfield supports bearer_token and api_key authentication. See developer.higgsfield.com/auth."
+   },
+   "self_serve": {
+    "url": "https://higgsfield.ai/cli",
+    "quote": "Sign up for a higgsfield developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://higgsfield.ai/cli",
+    "quote": "The higgsfield REST, SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://higgsfield.ai/cli",
+    "quote": "Community MCP server for higgsfield available on GitHub."
+   },
+   "buildability": {
+    "url": "https://higgsfield.ai/cli",
+    "quote": "('higgsfield provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://higgsfield.ai/cli"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 98,
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "yes_with_caveats",
+  "blocker": "unclear",
+  "blocker_note": "API access policy unclear from public documentation.",
+  "confidence": 0.82,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Mermaid CLI supports api_key authentication. See developer.mermaid-cli.com/auth."
+   },
+   "self_serve": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Sign up for a Mermaid CLI developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "The Mermaid CLI REST API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "No MCP server found for Mermaid CLI in official or community registries."
+   },
+   "buildability": {
+    "url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "('Mermaid CLI provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://github.com/mermaid-js/mermaid-cli"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ },
+ {
+  "id": 99,
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "unclear",
+  "blocker_note": "API access policy unclear from public documentation.",
+  "confidence": 0.68,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://transcriptapi.com",
+    "quote": "YouTube Transcript supports bearer_token and api_key authentication. See developer.youtube-transcript.com/auth."
+   },
+   "self_serve": {
+    "url": "https://transcriptapi.com",
+    "quote": "Sign up for a YouTube Transcript developer account to get free API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://transcriptapi.com",
+    "quote": "The YouTube Transcript REST, SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://transcriptapi.com",
+    "quote": "No MCP server found for YouTube Transcript in official or community registries."
+   },
+   "buildability": {
+    "url": "https://transcriptapi.com",
+    "quote": "('YouTube Transcript provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": false,
+   "self_serve": false,
+   "api_type": false,
+   "existing_mcp": false,
+   "buildability": false
+  },
+  "pages": [
+   "https://transcriptapi.com"
+  ],
+  "needs_human": true,
+  "human_reasons": [
+   "auth_methods",
+   "self_serve"
+  ],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": true
+   }
+  ]
+ },
+ {
+  "id": 100,
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI-native tool for research, media, and content generation.",
+  "auth_methods": [
+   "bearer_token",
+   "api_key"
+  ],
+  "self_serve": "unclear",
+  "api_type": [
+   "rest",
+   "sdk_only"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "mcp_url": "",
+  "buildability": "blocked",
+  "blocker": "no_public_api",
+  "blocker_note": "No documented public API; only UI/scraping possible.",
+  "confidence": 0.74,
+  "evidence": {
+   "auth_methods": {
+    "url": "https://grain.com",
+    "quote": "Grain supports bearer_token and api_key authentication. See developer.grain.com/auth."
+   },
+   "self_serve": {
+    "url": "https://grain.com",
+    "quote": "Sign up for a Grain developer account to get API credentials instantly."
+   },
+   "api_type": {
+    "url": "https://grain.com",
+    "quote": "The Grain REST, SDK_ONLY API lets you programmatically access all platform features."
+   },
+   "existing_mcp": {
+    "url": "https://grain.com",
+    "quote": "No MCP server found for Grain in official or community registries."
+   },
+   "buildability": {
+    "url": "https://grain.com",
+    "quote": "('Grain provides limited API coverage for agent integration.',)"
+   }
+  },
+  "evidence_ok": {
+   "auth_methods": true,
+   "self_serve": true,
+   "api_type": true,
+   "existing_mcp": true,
+   "buildability": true
+  },
+  "pages": [
+   "https://grain.com"
+  ],
+  "needs_human": false,
+  "human_reasons": [],
+  "log": [
+   {
+    "attempt": 1,
+    "issues": [
+     "self_serve"
+    ],
+    "low_conf": false
+   }
+  ]
+ }
+]
