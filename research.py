@@ -21,7 +21,7 @@ Environment:
   COMPOSIO_SEARCH_SLUG default: COMPOSIO_SEARCH_DUCK_DUCK_GO_SEARCH
   COMPOSIO_USER_ID    default: default
 """
-import os, re, json, csv, sys, hashlib, argparse, pathlib, urllib.parse
+import os, re, json, csv, sys, hashlib, argparse, pathlib, urllib.parse, threading, time
 from concurrent.futures import ThreadPoolExecutor
 import requests
 from bs4 import BeautifulSoup
@@ -119,8 +119,7 @@ def gather(app, hint, queries, have=()):
 # ---------------------------------------------------------------------------
 # LLM Provider Abstraction: Gemini or Anthropic
 # ---------------------------------------------------------------------------
-_gemini_client = None
-_anthropic_client = None
+_client_lock = threading.Lock()
 
 def get_provider():
     p = os.getenv("LLM_PROVIDER")
@@ -130,37 +129,56 @@ def get_provider():
         return "gemini"
     if os.getenv("ANTHROPIC_API_KEY"):
         return "anthropic"
-    return "gemini"  # default to free Gemini
+    return "gemini"
 
 def llm_json(system, user):
     provider = get_provider()
 
     if provider == "gemini":
-        global _gemini_client
         from google import genai
         from google.genai import types
 
         api_key = os.getenv("GEMINI_API_KEY")
         if not api_key:
-            raise ValueError("GEMINI_API_KEY environment variable is not set. Get a free key at https://aistudio.google.com/")
+            raise ValueError("GEMINI_API_KEY environment variable is not set. Add it to .env")
 
-        if _gemini_client is None:
-            _gemini_client = genai.Client(api_key=api_key)
+        # Models to try: gemini-3.5-flash-lite (fast & high quota), fallback to gemini-2.5-flash
+        models_to_try = [
+            os.getenv("MODEL", "gemini-3.5-flash-lite"),
+            "gemini-2.5-flash",
+            "gemini-3.5-flash"
+        ]
 
-        model_name = os.getenv("MODEL", "gemini-2.5-flash")
-        config = types.GenerateContentConfig(
-            system_instruction=system,
-            response_mime_type="application/json",
-            temperature=0.2,
-        )
-        response = _gemini_client.models.generate_content(
-            model=model_name,
-            contents=user,
-            config=config,
-        )
-        t = (response.text or "").strip()
-        t = re.sub(r"^```(?:json)?|```$", "", t, flags=re.M).strip()
-        return json.loads(t[t.find("{"):t.rfind("}") + 1])
+        # Retry with exponential backoff for rate limits or temporary unavailability
+        last_err = None
+        for model_name in models_to_try:
+            for attempt in range(4):
+                try:
+                    with _client_lock:
+                        client = genai.Client(api_key=api_key)
+                    config = types.GenerateContentConfig(
+                        system_instruction=system,
+                        response_mime_type="application/json",
+                        temperature=0.2,
+                    )
+                    response = client.models.generate_content(
+                        model=model_name,
+                        contents=user,
+                        config=config,
+                    )
+                    t = (response.text or "").strip()
+                    t = re.sub(r"^```(?:json)?|```$", "", t, flags=re.M).strip()
+                    return json.loads(t[t.find("{"):t.rfind("}") + 1])
+                except Exception as e:
+                    last_err = e
+                    err_str = str(e).lower()
+                    if "429" in err_str or "resource_exhausted" in err_str or "503" in err_str or "unavailable" in err_str or "client has been closed" in err_str:
+                        sleep_time = (attempt + 1) * 3
+                        time.sleep(sleep_time)
+                        continue
+                    else:
+                        break  # Try next model if 404 or non-transient error
+        raise RuntimeError(f"All Gemini requests failed. Last error: {last_err}")
 
     else:
         # Anthropic provider
