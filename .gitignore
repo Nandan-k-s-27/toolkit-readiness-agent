@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# API keys / secrets
+.env
+.env.*
+*.key
+
+# Research cache (can be large, re-generated)
+cache/
+
+# Intermediate outputs that can be regenerated
+# (keep pass1 to show baseline, keep final for the page)
+# gold_labels.csv is hand-filled – keep it committed once filled
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
