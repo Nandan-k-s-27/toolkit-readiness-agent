@@ -3,7 +3,7 @@
 import json, pathlib
 from collections import Counter, defaultdict
 ROOT = pathlib.Path(__file__).parent
-R = json.load(open(ROOT / "results_final.json")); N = len(R)
+R = json.load(open(ROOT / "results_final.json", encoding="utf-8")); N = len(R)
 pct = lambda n: f"{round(100 * n / N)}%"
 auth = Counter(a for r in R for a in r.get("auth_methods", []))
 ss = Counter(r.get("self_serve") for r in R)
@@ -26,4 +26,4 @@ P = {"n": N, "auth": auth, "self_serve": ss, "blockers": bl, "buildability": bu,
         f"{len(easy)} easy wins (self-serve + buildable now); {bu.get('blocked', 0)} blocked today.",
         f"Most gated category: {gated_cat[0][0]}.",
         f"Existing MCP found for {mcp.get('official', 0) + mcp.get('community', 0)}/{N} apps ({mcp.get('official', 0)} official)."]}
-json.dump(P, open(ROOT / "patterns.json", "w"), indent=1); print("\n".join(P["headlines"]))
+json.dump(P, open(ROOT / "patterns.json", "w", encoding="utf-8"), indent=1); print("\n".join(P["headlines"]))

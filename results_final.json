@@ -1283,9 +1283,10 @@
   ]
  },
  {
-  "one_liner": "Slack connects your team, people, and AI agents through channels, workflows, and an MCP server.",
+  "one_liner": "Slack connects teams and AI agents through conversational channels, automated workflows, and an official MCP server.",
   "auth_methods": [
-   "oauth2"
+   "oauth2",
+   "bearer_token"
   ],
   "self_serve": "self_serve_free",
   "api_type": [
@@ -1297,7 +1298,7 @@
   "mcp_url": "",
   "buildability": "yes",
   "blocker": "none",
-  "blocker_note": "",
+  "blocker_note": "none",
   "confidence": 0.8,
   "evidence": {
    "auth_methods": {
@@ -1338,6 +1339,7 @@
    {
     "attempt": 1,
     "issues": [
+     "api_type",
      "auth_methods",
      "self_serve"
     ],
@@ -1346,8 +1348,7 @@
    {
     "attempt": 2,
     "issues": [
-     "api_type",
-     "auth_methods"
+     "self_serve"
     ],
     "low_conf": true
    }

@@ -1,16 +1,16 @@
 {
  "n": 100,
  "auth": {
-  "oauth2": 55,
+  "oauth2": 56,
   "api_key": 66,
-  "bearer_token": 16,
-  "request_signing": 4,
+  "bearer_token": 17,
+  "request_signing": 3,
   "jwt": 9,
   "basic": 5
  },
  "self_serve": {
-  "self_serve_free": 27,
-  "self_serve_trial": 29,
+  "self_serve_free": 28,
+  "self_serve_trial": 28,
   "approval_required": 10,
   "paid_plan_required": 18,
   "partner_gated": 10,
@@ -31,9 +31,9 @@
   "blocked": 17
  },
  "mcp": {
-  "official": 35,
+  "official": 36,
   "none_found": 34,
-  "community": 31
+  "community": 30
  },
  "by_category": {
   "CRM and Sales": {
@@ -48,9 +48,9 @@
    "self_serve_free": 2
   },
   "Communications and Messaging": {
-   "self_serve_trial": 3,
+   "self_serve_free": 3,
    "approval_required": 5,
-   "self_serve_free": 2
+   "self_serve_trial": 2
   },
   "Marketing, Ads, Email and Social": {
    "self_serve_free": 2,
@@ -181,6 +181,6 @@
   "Most common blocker: rate_or_cost (8 apps).",
   "33 easy wins (self-serve + buildable now); 17 blocked today.",
   "Most gated category: Finance and Fintech.",
-  "Existing MCP found for 66/100 apps (35 official)."
+  "Existing MCP found for 66/100 apps (36 official)."
  ]
 }

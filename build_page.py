@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 ROOT = pathlib.Path(__file__).parent
-ld = lambda n, d=None: json.load(open(ROOT / n)) if (ROOT / n).exists() else d
+ld = lambda n, d=None: json.load(open(ROOT / n, encoding="utf-8")) if (ROOT / n).exists() else d
 DATA = {"results": ld("results_final.json", []), "patterns": ld("patterns.json", {}), "accuracy": ld("accuracy.json"),
         "human_queue": ld("human_queue.json", []), "repo": os.getenv("REPO_URL", "#"), "notes": ld("human_notes.json", [])}
 blob = json.dumps(DATA).replace("</", "<\\/")
@@ -77,4 +77,4 @@ const t=el('table');const h=el('tr');['Field','Pass 1','Final'].forEach(x=>h.app
 Object.entries(A.fields).forEach(([f,s])=>{const r=el('tr');[f,(s.pass1*100).toFixed(0)+'%',(s.final*100).toFixed(0)+'%'].forEach(x=>r.append(el('td',x)));t.append(r)});v.append(t);
 v.append(el('h3','Misses (shown honestly)'));A.misses.forEach(m=>v.append(el('div',`[${m.stage}] ${m.app} · ${m.field}: agent="${m.agent}" vs docs="${m.gold}"`,'mut')))}
 </script></body></html>"""
-(ROOT / "index.html").write_text(HTML.replace("__DATA__", blob)); print("index.html written")
+(ROOT / "index.html").write_text(HTML.replace("__DATA__", blob), encoding="utf-8"); print("index.html written")
