@@ -345,19 +345,59 @@ if __name__ == "__main__":
         print(f"[*] Research agent running stage '{a.stage}' using provider: {provider.upper()}")
 
     if a.stage == "pass1":
+        # If running a single app, merge into existing results_pass1.json rather than overwriting all 100
+        existing_p1 = {}
+        p1_path = ROOT / "results_pass1.json"
+        if p1_path.exists():
+            try:
+                for x in json.load(open(p1_path)):
+                    existing_p1[x["app"]] = x
+            except Exception:
+                pass
+
         with ThreadPoolExecutor(a.workers) as ex:
-            res = list(ex.map(lambda r: pass1(r, demo=a.demo), apps))
-        (ROOT / "results_pass1.json").write_text(
-            json.dumps(sorted(res, key=lambda x: x["id"]), indent=1))
-        print(f"[pass1] done — {len(res)} apps → results_pass1.json")
+            new_res = list(ex.map(lambda r: pass1(r, demo=a.demo), apps))
+
+        for item in new_res:
+            existing_p1[item["app"]] = item
+
+        final_p1_list = sorted(existing_p1.values(), key=lambda x: x.get("id", 0))
+        p1_path.write_text(json.dumps(final_p1_list, indent=1))
+        print(f"[pass1] done — processed {len(new_res)} app(s), total in results_pass1.json: {len(final_p1_list)}")
     else:
-        p1 = {x["app"]: x for x in json.load(open(ROOT / "results_pass1.json"))}
+        p1_path = ROOT / "results_pass1.json"
+        if not p1_path.exists():
+            sys.exit("Error: results_pass1.json not found. Run 'python research.py pass1' first.")
+
+        p1 = {x["app"]: x for x in json.load(open(p1_path))}
+
+        # Filter apps to only those that exist in pass1
+        apps_to_run = [r for r in apps if r["app"] in p1]
+        if not apps_to_run:
+            sys.exit(f"Error: None of the target app(s) exist in results_pass1.json. Run pass1 for them first.")
+
+        # If previous results_final.json exists, merge into it
+        existing_final = {}
+        final_path = ROOT / "results_final.json"
+        if final_path.exists():
+            try:
+                for x in json.load(open(final_path)):
+                    existing_final[x["app"]] = x
+            except Exception:
+                pass
+
         with ThreadPoolExecutor(a.workers) as ex:
-            res = list(ex.map(lambda r: pass2(p1[r["app"]], r, demo=a.demo), apps))
-        res.sort(key=lambda x: x["id"])
-        (ROOT / "results_final.json").write_text(json.dumps(res, indent=1))
-        (ROOT / "human_queue.json").write_text(
-            json.dumps([{"app": x["app"], "fields": x["human_reasons"], "pages": x["pages"]}
-                        for x in res if x["needs_human"]], indent=1))
-        print(f"[pass2] done — {len(res)} apps → results_final.json"
-              f" | human queue: {sum(x['needs_human'] for x in res)} apps")
+            new_res = list(ex.map(lambda r: pass2(p1[r["app"]], r, demo=a.demo), apps_to_run))
+
+        for item in new_res:
+            existing_final[item["app"]] = item
+
+        final_res_list = sorted(existing_final.values(), key=lambda x: x.get("id", 0))
+        final_path.write_text(json.dumps(final_res_list, indent=1))
+
+        hq_list = [
+            {"app": x["app"], "fields": x.get("human_reasons", []), "pages": x.get("pages", [])}
+            for x in final_res_list if x.get("needs_human")
+        ]
+        (ROOT / "human_queue.json").write_text(json.dumps(hq_list, indent=1))
+        print(f"[pass2] done — processed {len(new_res)} app(s), total in results_final.json: {len(final_res_list)} | human queue: {len(hq_list)} apps")

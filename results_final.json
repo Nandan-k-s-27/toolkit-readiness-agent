@@ -1283,46 +1283,47 @@
   ]
  },
  {
-  "id": 21,
-  "app": "Slack",
-  "category": "Communications and Messaging",
-  "one_liner": "Provides messaging, voice, and team communication APIs.",
+  "one_liner": "Slack connects your team, people, and AI agents through channels, workflows, and an MCP server.",
   "auth_methods": [
-   "request_signing"
+   "oauth2"
   ],
-  "self_serve": "self_serve_trial",
+  "self_serve": "self_serve_free",
   "api_type": [
-   "sdk_only"
+   "rest",
+   "websocket"
   ],
-  "api_breadth": "medium",
-  "existing_mcp": "community",
-  "mcp_url": "https://github.com/community/slack-mcp",
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "mcp_url": "",
   "buildability": "yes",
   "blocker": "none",
   "blocker_note": "",
-  "confidence": 0.84,
+  "confidence": 0.8,
   "evidence": {
    "auth_methods": {
     "url": "https://slack.com",
-    "quote": "Slack supports request_signing authentication. See developer.slack.com/auth."
+    "quote": "Feature enhancement Gmail Domain-Wide Auth (DWA) Admins can connect Gmail to Slack org-wide with a single configuration"
    },
    "self_serve": {
     "url": "https://slack.com",
-    "quote": "Sign up for a Slack developer account to get API credentials instantly."
+    "quote": "Get started Find your subscription"
    },
    "api_type": {
     "url": "https://slack.com",
-    "quote": "The Slack SDK_ONLY API lets you programmatically access all platform features."
+    "quote": "Slack lists in the Slack MCP server AI assistants like Claude can now create, read, update and delete Slack lists and records through the MCP server."
    },
    "existing_mcp": {
     "url": "https://slack.com",
-    "quote": "Community MCP server for Slack available on GitHub."
+    "quote": "Slack lists in the Slack MCP server AI assistants like Claude can now create, read, update and delete Slack lists and records through the MCP server."
    },
    "buildability": {
     "url": "https://slack.com",
-    "quote": "('Slack provides comprehensive API coverage for agent integration.',)"
+    "quote": "Slack lists in the Slack MCP server AI assistants like Claude can now create, read, update and delete Slack lists and records through the MCP server."
    }
   },
+  "pages": [
+   "https://slack.com"
+  ],
   "evidence_ok": {
    "auth_methods": true,
    "self_serve": true,
@@ -1330,20 +1331,29 @@
    "existing_mcp": true,
    "buildability": true
   },
-  "pages": [
-   "https://slack.com"
-  ],
-  "needs_human": false,
-  "human_reasons": [],
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "id": 21,
   "log": [
    {
     "attempt": 1,
     "issues": [
+     "auth_methods",
      "self_serve"
     ],
     "low_conf": false
+   },
+   {
+    "attempt": 2,
+    "issues": [
+     "api_type",
+     "auth_methods"
+    ],
+    "low_conf": true
    }
-  ]
+  ],
+  "needs_human": false,
+  "human_reasons": []
  },
  {
   "id": 22,
