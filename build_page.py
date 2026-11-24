@@ -1535,6 +1535,7 @@ HTML = f"""<!doctype html>
   }};
 </script>
 
+<!-- release: v1.0.0 -->
 </body>
 </html>"""
 
