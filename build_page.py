@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Builds index.html (single self-contained page) from results_final/patterns/accuracy/human_queue JSON."""
 import json, pathlib, os
+from dotenv import load_dotenv
+
+load_dotenv()
 ROOT = pathlib.Path(__file__).parent
 ld = lambda n, d=None: json.load(open(ROOT / n)) if (ROOT / n).exists() else d
 DATA = {"results": ld("results_final.json", []), "patterns": ld("patterns.json", {}), "accuracy": ld("accuracy.json"),

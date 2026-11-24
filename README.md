@@ -5,26 +5,28 @@
 
 ## Quick Start (with Free Google Gemini API)
 
-You can run this completely free using **Google Gemini** (get a free key at [Google AI Studio](https://aistudio.google.com/)):
+1. Copy `.env.example` to `.env` (or open the provided `.env` file):
+   ```bash
+   cp .env.example .env
+   ```
+2. Paste your free Gemini API key into `.env`:
+   ```ini
+   GEMINI_API_KEY=your-gemini-key-here
+   ```
+   *(Get a free key in seconds at [Google AI Studio](https://aistudio.google.com/))*
 
-```bash
-git clone https://github.com/Nandan-k-s-27/toolkit-readiness-agent.git
-cd toolkit-readiness-agent
-pip install -r requirements.txt
+3. Run the pipeline directly (no PowerShell `$env` commands needed!):
+   ```bash
+   # Single-app test
+   python research.py pass1 --app Slack
 
-# Set your free Gemini API key
-export GEMINI_API_KEY="your-gemini-api-key"
-
-# Single-app run
-python research.py pass1 --app Slack
-
-# Full 100-app pipeline
-python research.py pass1
-python research.py pass2
-python analyze.py
-python build_page.py
-# open index.html in browser
-```
+   # Full 100-app pipeline
+   python research.py pass1
+   python research.py pass2
+   python analyze.py
+   python build_page.py
+   # open index.html in your browser
+   ```
 
 *(Anthropic Claude is also supported if you prefer: `export ANTHROPIC_API_KEY=...`)*
 

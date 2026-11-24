@@ -25,6 +25,10 @@ import os, re, json, csv, sys, hashlib, argparse, pathlib, urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 import requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+
+# Automatically load environment variables from .env file
+load_dotenv()
 
 ROOT = pathlib.Path(__file__).parent
 CACHE = ROOT / "cache"; CACHE.mkdir(exist_ok=True)
