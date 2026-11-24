@@ -4,7 +4,8 @@
 [![Single App Action](https://img.shields.io/badge/Run_Single_App-GitHub_Action-22c55e?style=for-the-badge&logo=githubactions)](https://github.com/Nandan-k-s-27/toolkit-readiness-agent/actions)
 
 > **Live Platform:** [https://toolkit-readiness-agent.vercel.app](https://toolkit-readiness-agent.vercel.app)  
-> **Key Finding:** 76/100 SaaS apps are buildable today with self-serve developer access, 62 have existing MCP implementations, and OAuth2 dominates authentication (60%); audited with 73% verbatim quote verification against live documentation and benchmarked across 30 hand-labeled ground-truth apps (70.0% buildability accuracy).
+> **Key Findings:** 76/100 SaaS apps are buildable today with self-serve developer access, 62 have existing MCP implementations, and OAuth2 dominates authentication (60%).  
+> **Ground-Truth Benchmark:** 73 of 100 quotes string-matched verbatim against official documentation; benchmarked against 30 hand-labeled ground-truth apps (70.0% buildability accuracy, 60.0% access model accuracy).
 
 ---
 

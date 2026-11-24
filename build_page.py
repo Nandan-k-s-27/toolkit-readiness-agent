@@ -780,6 +780,11 @@ HTML = f"""<!doctype html>
         A systematic audit across 10 software categories evaluating API surface, authentication gates, Model Context Protocol (MCP) servers, and developer self-serve accessibility. Backed by extracted quotes string-matched against live developer documentation (73% verified in Pass 2). Evaluated across 30 hand-labeled ground-truth applications with honest failure reporting.
       </p>
 
+      <!-- Plain-Text Patterns Summary -->
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--text);background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--ok);padding:10px 16px;border-radius:var(--radius-sm);margin-bottom:24px;line-height:1.5;">
+        <strong>Patterns Summary:</strong> OAuth2 dominates at 60/100 apps; 85% self-serve accessible; 12% gated by payment, approval or sales outreach; 62% have existing MCP servers (52 official); top blocker is unclear or custom enterprise pricing.
+      </div>
+
       <!-- Metric Grid -->
       <div class="metric-grid">
         <div class="metric-card active" onclick="filterByQuickStat('all')">
@@ -847,6 +852,12 @@ HTML = f"""<!doctype html>
           <div style="font-size:12.5px;color:var(--text-muted);line-height:1.5;">
             Buildability Accuracy: <strong>70.0%</strong> · Access Model: <strong>60.0%</strong> · Verbatim Quote Match: <strong>73.0%</strong>.<br>
             Honest Misses (Defeated the Agent): <em>Paygent Connect, Waterfall.io, Plaid, Ahrefs, Otter AI</em>.
+          </div>
+          <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim);display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <span>Run Single App:</span>
+            <code style="background:var(--surface-card);border:1px solid var(--border);padding:2px 7px;border-radius:3px;color:var(--accent);">python research.py pass1 --app Slack</code>
+            <span>or trigger via</span>
+            <a href="https://github.com/Nandan-k-s-27/toolkit-readiness-agent/actions" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">GitHub Actions Workflow Dispatch</a>
           </div>
         </div>
         <a href="#verification" class="btn btn-xs">
@@ -1099,6 +1110,27 @@ HTML = f"""<!doctype html>
       <div class="card" style="margin-bottom:20px;">
         <div class="card-title">Stratified Evaluation vs 30 Hand-Verified Applications</div>
         <div class="card-subtitle">Every ground-truth row was hand-checked against official documentation across all 10 categories. No circular self-labeling.</div>
+
+        <!-- Static Per-Field Evaluation Table (Accessible without JS) -->
+        <div style="overflow-x:auto;margin:18px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:12.5px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface-card);">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border);color:var(--text-dim);text-align:left;font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;">
+                <th style="padding:9px 14px;">Evaluation Dimension</th>
+                <th style="padding:9px 14px;">Pass 1 (Baseline)</th>
+                <th style="padding:9px 14px;">Pass 2 (Final)</th>
+                <th style="padding:9px 14px;">Ground Truth Sample (N=30)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:9px 14px;font-weight:600;">Buildability Accuracy</td><td style="padding:9px 14px;">66.7%</td><td style="padding:9px 14px;font-weight:700;color:var(--ok);">70.0%</td><td style="padding:9px 14px;color:var(--text-dim);">30 hand-checked apps across 10 verticals</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:9px 14px;font-weight:600;">Access Model (Self-Serve vs Gated)</td><td style="padding:9px 14px;">70.0%</td><td style="padding:9px 14px;font-weight:700;color:var(--blue);">60.0%</td><td style="padding:9px 14px;color:var(--text-dim);">Conservative critic penalty on edge-case trials</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:9px 14px;font-weight:600;">Model Context Protocol (MCP)</td><td style="padding:9px 14px;">33.3%</td><td style="padding:9px 14px;font-weight:700;color:var(--purple);">30.0%</td><td style="padding:9px 14px;color:var(--text-dim);">Official vs community tagging shifts</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:9px 14px;font-weight:600;">Authentication Protocol (Exact Set)</td><td style="padding:9px 14px;">26.7%</td><td style="padding:9px 14px;font-weight:700;color:var(--warn);">16.7%</td><td style="padding:9px 14px;color:var(--text-dim);">Strict exact multi-label matching (bearer vs api_key)</td></tr>
+              <tr><td style="padding:9px 14px;font-weight:700;">Verbatim Quote Match Rate</td><td style="padding:9px 14px;">68.0%</td><td style="padding:9px 14px;font-weight:700;color:var(--accent);">73.0% (73 of 100 quotes)</td><td style="padding:9px 14px;color:var(--text-dim);">String-matched verbatim against raw fetched doc HTML</td></tr>
+            </tbody>
+          </table>
+        </div>
 
         <div class="metric-grid" style="margin-bottom:20px;">
           <div class="metric-card">
